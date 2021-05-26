@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a88c1be-e569-428f-8e3e-6598be67f9cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/build_mock_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_data/labeled_data_orig/Sectioned0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_data/labeled_data_orig/Sectioned1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mock_data/labeled_data_orig/Sectioned2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERTFieldExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERTFieldExtractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERTFieldExtractorWoutST.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERTFieldExtractorWoutST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERTSectionTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERTSectionTokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BERTSectionTokenizerWithAux.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERTSectionTokenizerWithAux.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/BertForSequenceClassification_aux.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BertForSequenceClassification_aux.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,30 +99,7 @@
       <recent name="D:\Codes\NLP_RadRep\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python docs.Docutils Task in README.rst">
-    <configuration name="BERTFineTuningFieldExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NLP_RadRep" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="CUDA_VISIBLE_DEVICES" value="7,6,5,4" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Codes\BI-RADS-BERT\examples\BERTFineTuningFieldExtraction.py" />
-      <option name="PARAMETERS" value="--fine_tune --sfolder /jaylabs//amartel_data2/Grey/NLPRR_Experiments_old/Modality/BIRADSBERTml32 --field_name Modality --report_section Title --pre_trained_model /jaylabs/amartel_data2/Grey/RadReports/BIRADSBERT --max_sent_len 32" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.build_mock_data">
     <configuration name="BERTFineTuningFieldExtractionWAux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NLP_RadRep" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,6 +237,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="build_mock_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build_mock_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="post_ExperimentSummary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NLP_RadRep" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,19 +302,19 @@
       <item itemvalue="Python.ClassifyPathRad_test" />
       <item itemvalue="Python.RNNSectionTokenizerwAUX_TruncatedLoss_test" />
       <item itemvalue="Python.BERTFineTuningModalityClassification" />
-      <item itemvalue="Python.BERTFineTuningFieldExtraction" />
       <item itemvalue="Python.post_ExperimentSummary" />
       <item itemvalue="Python.BERTFineTuningFieldExtractionWAux" />
       <item itemvalue="Python.BERTFineTuningFieldExtractionWoutSectionization" />
       <item itemvalue="Python docs.Docutils Task in README.rst" />
+      <item itemvalue="Python.build_mock_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.build_mock_data" />
         <item itemvalue="Python docs.Docutils Task in README.rst" />
         <item itemvalue="Python.post_ExperimentSummary" />
         <item itemvalue="Python.BERTFineTuningFieldExtractionWAux" />
         <item itemvalue="Python.BERTFineTuningFieldExtractionWoutSectionization" />
-        <item itemvalue="Python.BERTFineTuningFieldExtraction" />
       </list>
     </recent_temporary>
   </component>
@@ -432,7 +431,7 @@
       <workItem from="1620756855040" duration="1737000" />
       <workItem from="1620840735907" duration="29116000" />
       <workItem from="1621018212903" duration="1338000" />
-      <workItem from="1621946598275" duration="20777000" />
+      <workItem from="1621946598275" duration="24257000" />
     </task>
     <task id="LOCAL-00001" summary="Project Reorganization and Formalization of the project for commercial deployment.">
       <created>1593008995040</created>
@@ -609,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622046799964</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Finished commenting all functions">
+      <created>1622053882598</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1622053882598</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +656,8 @@
     <MESSAGE value="Removed assort_applications folder" />
     <MESSAGE value="Project reorganization" />
     <MESSAGE value="More Comments added" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Comments added" />
+    <MESSAGE value="Finished commenting all functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished commenting all functions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1005,6 +1012,11 @@
           <line>7</line>
           <option name="timeStamp" value="2118" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build_mock_data.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="2181" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1077,6 +1089,7 @@
     <SUITE FILE_PATH="coverage/NLP_RadRep$report_disection_test_withnewdata.coverage" NAME="report_disection_test_withnewdata Coverage Results" MODIFIED="1600437087916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningSectionTokenization.coverage" NAME="BERTFineTuningSectionTokenization Coverage Results" MODIFIED="1620655020995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_RadRep$post_ExperimentSummary.coverage" NAME="post_ExperimentSummary Coverage Results" MODIFIED="1621001265180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BI_RADS_BERT$build_mock_data.coverage" NAME="build_mock_data Coverage Results" MODIFIED="1622058956751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningFieldExtraction.coverage" NAME="BERTFineTuningFieldExtraction Coverage Results" MODIFIED="1620757282557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP_RadRep$ClassifyPathRad_test.coverage" NAME="ClassifyPathRad_test Coverage Results" MODIFIED="1597943672268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/home/gkuling" />
     <SUITE FILE_PATH="coverage/NLP_RadRep$document_clustering.coverage" NAME="document_clustering Coverage Results" MODIFIED="1617973675127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />

@@ -4,7 +4,9 @@ Implementation of BERT on a desired in house data corpus.
 
 ## How to Run BERT Pretraining 
 
-Step 1: SQLtoDataFrame.py 
+### Step 1: SQLtoDataFrame.py
+
+This script can be ran to convert SQL data from a hospital pacs system to 
 
 Step 2: TextPreProcessingBERTModel.py
 
