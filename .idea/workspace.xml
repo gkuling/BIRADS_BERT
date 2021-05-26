@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a88c1be-e569-428f-8e3e-6598be67f9cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/models/BERTFieldExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/BERTFieldExtractor.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1YwI2iS8oWvvD7H747mb81XADLm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="credentialsType com.jetbrains.python.remote.PyCreateRemoteInterpreterDialog$PyCreateRemoteSdkForm" value="Web Deployment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dcm23d_segmentation_colab" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codes\NLP_RadRep\models" />
+      <recent name="D:\Codes\NLP_RadRep" />
+      <recent name="D:\Codes\NLP_RadRep\NLP_RadRep2" />
+      <recent name="D:\Codes\NLP_RadRep\sectionization" />
+      <recent name="D:\Codes\NLP_RadRep\tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Codes\BI-RADS-BERT\examples" />
+      <recent name="D:\Codes\BI-RADS-BERT" />
+      <recent name="D:\Codes\BI-RADS-BERT\util" />
+      <recent name="D:\Codes\NLP_RadRep" />
+      <recent name="D:\Codes\NLP_RadRep\models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python docs.Docutils Task in README.rst">
+    <configuration name="BERTFineTuningFieldExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="7,6,5,4" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Codes\BI-RADS-BERT\examples\BERTFineTuningFieldExtraction.py" />
+      <option name="PARAMETERS" value="--fine_tune --sfolder /jaylabs//amartel_data2/Grey/NLPRR_Experiments_old/Modality/BIRADSBERTml32 --field_name Modality --report_section Title --pre_trained_model /jaylabs/amartel_data2/Grey/RadReports/BIRADSBERT --max_sent_len 32" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BERTFineTuningFieldExtractionWAux" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0,1,2,3" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BERTFineTuningFieldExtractionWAux.py" />
+      <option name="PARAMETERS" value="--fine_tune --sfolder /jaylabs/amartel_data2/Grey/NLPRR_Experiments/DensitywAux/BIRADSBERT --field_name Density --report_section Findings --pre_trained_model /jaylabs/amartel_data2/Grey/RadReports/BIRADSBERT --max_sent_len 128" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BERTFineTuningFieldExtractionWAux" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0,1,2,5" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BERTFineTuningFieldExtractionWAux.py" />
+      <option name="PARAMETERS" value="--fine_tune --sfolder /jaylabs/amartel_data2/Grey/NLPRR_Experiments/DensitywAux/ClassiBERT --field_name Density --report_section Findings" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BERTFineTuningFieldExtractionWoutSectionization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0,1,2,3" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Codes\BI-RADS-BERT\examples\BERTFineTuningFieldExtractionWoutSectionization.py" />
+      <option name="PARAMETERS" value="--sfolder /jaylabs/amartel_data2/Grey/NLPRR_Experiments/NoSecToken/Density/BIRADSBERT --field_name Density --fine_tune --pre_trained_model /jaylabs/amartel_data2/Grey/RadReports/BIRADSBERT" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="BERTFineTuningModalityClassification" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="0" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BERTFineTuningModalityClassification.py" />
+      <option name="PARAMETERS" value="--fine_tune --sfolder /jaylabs/amartel_data2/Grey/NLPRR_Experiments/Modality/BIRADS_BERT --pre_trained_model /jaylabs/amartel_data2/Grey/RadReports/BIRADSBERT" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ClassifyPathRad_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1, CUDA_VISIBLE_DEVICES=7" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://gkuling@oberon.sri.utoronto.ca:22/home/gkuling/miniconda3/envs/MLenv/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="/home/gkuling" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Codes\NLP_RadRep\tests\ClassifyPathRad_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RNNSectionTokenizerwAUX_TruncatedLoss_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="CUDA_VISIBLE_DEVICES" value="7" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://gkuling@oberon.sri.utoronto.ca:22/home/gkuling/miniconda3/envs/py3-8env/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/RNNSectionTokenizerwAUX_TruncatedLoss_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="post_ExperimentSummary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Codes\BI-RADS-BERT\examples\post_ExperimentSummary.py" />
+      <option name="PARAMETERS" value="--folder /jaylabs/amartel_data2/Grey/NLPRR_Experiments/FldExtWSecWAux" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Docutils Task in README.rst" type="docs" factoryName="Docutils task" temporary="true">
+      <module name="NLP_RadRep" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$/README.rst" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/README.html" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="rst2html" />
+      <option name="docutils_open_in_browser" value="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ClassifyPathRad_test" />
+      <item itemvalue="Python.RNNSectionTokenizerwAUX_TruncatedLoss_test" />
+      <item itemvalue="Python.BERTFineTuningModalityClassification" />
+      <item itemvalue="Python.BERTFineTuningFieldExtraction" />
+      <item itemvalue="Python.post_ExperimentSummary" />
+      <item itemvalue="Python.BERTFineTuningFieldExtractionWAux" />
+      <item itemvalue="Python.BERTFineTuningFieldExtractionWoutSectionization" />
+      <item itemvalue="Python docs.Docutils Task in README.rst" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python docs.Docutils Task in README.rst" />
+        <item itemvalue="Python.post_ExperimentSummary" />
+        <item itemvalue="Python.BERTFineTuningFieldExtractionWAux" />
+        <item itemvalue="Python.BERTFineTuningFieldExtractionWoutSectionization" />
+        <item itemvalue="Python.BERTFineTuningFieldExtraction" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a88c1be-e569-428f-8e3e-6598be67f9cc" name="Default Changelist" comment="" />
+      <created>1583847024226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583847024226</updated>
+      <workItem from="1583847025390" duration="17808000" />
+      <workItem from="1584896871140" duration="12017000" />
+      <workItem from="1584983809619" duration="9654000" />
+      <workItem from="1585938450019" duration="2474000" />
+      <workItem from="1586703624561" duration="64043000" />
+      <workItem from="1587397659876" duration="43611000" />
+      <workItem from="1587997237468" duration="45661000" />
+      <workItem from="1588612478120" duration="45689000" />
+      <workItem from="1591119016073" duration="124000" />
+      <workItem from="1592407382325" duration="667000" />
+      <workItem from="1592937158446" duration="2074000" />
+      <workItem from="1592941898812" duration="9652000" />
+      <workItem from="1593020913037" duration="21571000" />
+      <workItem from="1594239218861" duration="271000" />
+      <workItem from="1594239498619" duration="505000" />
+      <workItem from="1594300775402" duration="67203000" />
+      <workItem from="1594993134425" duration="52819000" />
+      <workItem from="1595442592595" duration="93112000" />
+      <workItem from="1596633231708" duration="168000" />
+      <workItem from="1597240553293" duration="19945000" />
+      <workItem from="1597687127259" duration="4354000" />
+      <workItem from="1597848724966" duration="125690000" />
+      <workItem from="1598548836330" duration="23919000" />
+      <workItem from="1598637163948" duration="77321000" />
+      <workItem from="1600283097195" duration="12983000" />
+      <workItem from="1600357516177" duration="40854000" />
+      <workItem from="1600781395186" duration="270000" />
+      <workItem from="1600781789544" duration="19270000" />
+      <workItem from="1600873276461" duration="43119000" />
+      <workItem from="1601063746899" duration="9228000" />
+      <workItem from="1601301656963" duration="24123000" />
+      <workItem from="1601477749289" duration="34410000" />
+      <workItem from="1601664084491" duration="1378000" />
+      <workItem from="1602600631627" duration="8699000" />
+      <workItem from="1602768336354" duration="2520000" />
+      <workItem from="1602859828702" duration="14000" />
+      <workItem from="1603139745165" duration="756000" />
+      <workItem from="1603314443069" duration="34000" />
+      <workItem from="1603477927067" duration="2079000" />
+      <workItem from="1603731878564" duration="10834000" />
+      <workItem from="1603829715658" duration="27106000" />
+      <workItem from="1605277636617" duration="3428000" />
+      <workItem from="1608129813247" duration="2610000" />
+      <workItem from="1608141322073" duration="8000" />
+      <workItem from="1608218594509" duration="726000" />
+      <workItem from="1609169649490" duration="2412000" />
+      <workItem from="1610122674653" duration="1222000" />
+      <workItem from="1610639103579" duration="446000" />
+      <workItem from="1610721068418" duration="2753000" />
+      <workItem from="1610995145012" duration="1986000" />
+      <workItem from="1611153819070" duration="38000" />
+      <workItem from="1611331638511" duration="1273000" />
+      <workItem from="1614094916329" duration="31810000" />
+      <workItem from="1614692354088" duration="207000" />
+      <workItem from="1614692707307" duration="5845000" />
+      <workItem from="1614710905544" duration="17000" />
+      <workItem from="1615212937814" duration="13892000" />
+      <workItem from="1615322872046" duration="669000" />
+      <workItem from="1615574318670" duration="105943000" />
+      <workItem from="1616520894852" duration="30648000" />
+      <workItem from="1616621804842" duration="1182000" />
+      <workItem from="1616623006553" duration="777000" />
+      <workItem from="1616623797828" duration="50978000" />
+      <workItem from="1616957912408" duration="22414000" />
+      <workItem from="1617119452305" duration="63074000" />
+      <workItem from="1617632584178" duration="25656000" />
+      <workItem from="1617730866681" duration="22053000" />
+      <workItem from="1617824013536" duration="37867000" />
+      <workItem from="1618062233755" duration="14768000" />
+      <workItem from="1618232938610" duration="22600000" />
+      <workItem from="1618323050243" duration="17170000" />
+      <workItem from="1618405520172" duration="184000" />
+      <workItem from="1618405730256" duration="17473000" />
+      <workItem from="1618496317938" duration="25955000" />
+      <workItem from="1618601732049" duration="14501000" />
+      <workItem from="1618839272044" duration="6283000" />
+      <workItem from="1619119217074" duration="6379000" />
+      <workItem from="1619274447371" duration="7415000" />
+      <workItem from="1619439502468" duration="11441000" />
+      <workItem from="1619468396743" duration="23642000" />
+      <workItem from="1619554727237" duration="493000" />
+      <workItem from="1619555594282" duration="172000" />
+      <workItem from="1619556012418" duration="1009000" />
+      <workItem from="1619559448854" duration="986000" />
+      <workItem from="1619612323376" duration="10772000" />
+      <workItem from="1619702905617" duration="1248000" />
+      <workItem from="1619718222350" duration="621000" />
+      <workItem from="1619718857873" duration="18879000" />
+      <workItem from="1620045198948" duration="25272000" />
+      <workItem from="1620143203260" duration="22703000" />
+      <workItem from="1620392496347" duration="26577000" />
+      <workItem from="1620485082257" duration="2250000" />
+      <workItem from="1620650915637" duration="6773000" />
+      <workItem from="1620657721447" duration="44000" />
+      <workItem from="1620657777199" duration="174000" />
+      <workItem from="1620659841880" duration="214000" />
+      <workItem from="1620660532599" duration="298000" />
+      <workItem from="1620660841140" duration="1281000" />
+      <workItem from="1620662140029" duration="28920000" />
+      <workItem from="1620756855040" duration="1737000" />
+      <workItem from="1620840735907" duration="29116000" />
+      <workItem from="1621018212903" duration="1338000" />
+      <workItem from="1621946598275" duration="18630000" />
+    </task>
+    <task id="LOCAL-00001" summary="Project Reorganization and Formalization of the project for commercial deployment.">
+      <created>1593008995040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593008995040</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Reorganization of project folder">
+      <created>1594301677244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594301677244</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished a vocab clustering model">
+      <created>1594326998389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594326998389</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finished reorganization of the ML Section Tokenizer">
+      <created>1594748889360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594748889360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finished Modality Labeling with an accuracy of 97%">
+      <created>1595010262874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595010262874</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated the sectionizer, and labelers for field extraction">
+      <created>1595960356107</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595960356107</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit of current codes">
+      <created>1610122696260</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610122696260</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Commit before Updates">
+      <created>1614095011978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614095011978</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some project reorganization before building a BERT model for NLP interpretations">
+      <created>1616071372974</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616071372975</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Committing results with a BERT Classifier without auxillary data. Going to try previous line label added in">
+      <created>1618417385327</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618417385327</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finished with previous line auxillary data. Got 96% +/- 8% accuracy">
+      <created>1618840519969</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618840519969</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Finished with previous line, documnet length and sent number auxillary data. Got 96% +/- 8% accuracy">
+      <created>1618841755889</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618841755889</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Finished updating MLM training. Ready to run on ComputeCanada">
+      <created>1619713797380</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1619713797380</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Tidy up some of the predictive models with inheritance">
+      <created>1619885892917</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1619885892917</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Amalgamated the field extractor models">
+      <created>1620744151395</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620744151395</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Removal of setup file">
+      <created>1621946745777</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621946745777</updated>
+    </task>
+    <task id="LOCAL-00017" summary="PEP8 Edits">
+      <created>1621949256074</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621949256074</updated>
+    </task>
+    <task id="LOCAL-00018" summary="PEP8 Edits">
+      <created>1621950462572</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621950462572</updated>
+    </task>
+    <task id="LOCAL-00019" summary="PEP8 Edits">
+      <created>1621951574579</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1621951574579</updated>
+    </task>
+    <task id="LOCAL-00020" summary="PEP8 Edits">
+      <created>1621953109838</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1621953109838</updated>
+    </task>
+    <task id="LOCAL-00021" summary="PEP8 Edits">
+      <created>1621953610690</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621953610690</updated>
+    </task>
+    <task id="LOCAL-00022" summary="PEP8 Edits util">
+      <created>1621966227127</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621966227127</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Removed assort_applications folder">
+      <created>1621966317994</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621966317994</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Project reorganization">
+      <created>1622046138863</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1622046138863</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project Reorganization and Formalization of the project for commercial deployment." />
+    <MESSAGE value="Reorganization of project folder" />
+    <MESSAGE value="Finished a vocab clustering model" />
+    <MESSAGE value="Finished reorganization of the ML Section Tokenizer" />
+    <MESSAGE value="Finished Modality Labeling with an accuracy of 97%" />
+    <MESSAGE value="Updated the sectionizer, and labelers for field extraction" />
+    <MESSAGE value="Commit of current codes" />
+    <MESSAGE value="Commit before Updates" />
+    <MESSAGE value="Some project reorganization before building a BERT model for NLP interpretations" />
+    <MESSAGE value="Committing results with a BERT Classifier without auxillary data. Going to try previous line label added in" />
+    <MESSAGE value="Finished with previous line auxillary data. Got 96% +/- 8% accuracy" />
+    <MESSAGE value="Finished with previous line, documnet length and sent number auxillary data. Got 96% +/- 8% accuracy" />
+    <MESSAGE value="Finished updating MLM training. Ready to run on ComputeCanada" />
+    <MESSAGE value="Tidy up some of the predictive models with inheritance" />
+    <MESSAGE value="Amalgamated the field extractor models" />
+    <MESSAGE value="Removal of setup file" />
+    <MESSAGE value="PEP8 Edits" />
+    <MESSAGE value="PEP8 Edits util" />
+    <MESSAGE value="Removed assort_applications folder" />
+    <MESSAGE value="Project reorganization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project reorganization" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep0/seq2seq/train.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep0/ManualLabeling.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep0/ManualLabeling.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep0/VocabClustering.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep0/developSectionTokenizer.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/classifiers/feature_extraction.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/Vocabulary_Clustering_classifier_test.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/density_extraction_test.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/modality_extraction_test.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="568" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/ClassifyPathRad_test.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="639" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/RNNSectionTokenizer_test.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="681" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/RNNSectionTokenizerwAUX_test.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="718" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/SectionTokenizer_test.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="757" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/sectionization/RNNwAux_TruncatedLossSectionTokenizer.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="760" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/sectionization/RNNwAux_TruncatedLossSectionTokenizer.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="761" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/sectionization/RNNwAux_TruncatedLossSectionTokenizer.py</url>
+          <line>479</line>
+          <option name="timeStamp" value="762" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/TransformerSectionTokenizer_test.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="779" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/RNNSectionTokenizerwAUX_TruncatedLoss_test.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="780" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/field_extraction/ModalityLabeler.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="787" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_previousCa_extraction_test.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="812" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_density_extraction_test.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="815" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_purpose_extraction_test.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="826" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deepBreastReportDisector_test.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="840" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/BIS2020Analysis.py</url>
+          <line>206</line>
+          <option name="timeStamp" value="912" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/BIS2020Analysis.py</url>
+          <line>205</line>
+          <option name="timeStamp" value="925" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/sectokenization_dataprep.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="963" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/add_BMscanavailability_toBIS2020.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="965" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/BIS2020Analysis.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="984" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/BIS2020Analysis_edit.py</url>
+          <line>165</line>
+          <option name="timeStamp" value="1005" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/DataDeterminationForLongitudinalStudy.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="1060" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/classifiers/utils.py</url>
+          <line>241</line>
+          <option name="timeStamp" value="1065" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/get_accessions_for_mrns.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="1066" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/add_CADnumandBPE_toBIS2020.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1074" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_bpe_extraction_test.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="1076" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deepBreastReportDisector_test.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="1082" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/BIS2020Analysis_edit2.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="1091" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="1092" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="1104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="1105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="1106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/IWBIREdo.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="1114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_modality_extraction_test.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="1117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/sectionization/TransformerSectionTokenizer.py</url>
+          <line>759</line>
+          <option name="timeStamp" value="1120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/TransformerSectionTokenizer_test_deconstructed.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="1138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/field_extraction/DeepBPELabeler.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="1152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/deep_menopause_extraction_test.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="1157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/tests/TransformerSectionTokenizer_test.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="1164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/assorted_applications/scrap.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/sectionization/TransformerSectionTokenizer2.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="1205" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/deepClassifiers/Model_Transformer/model.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="1210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep1/deepClassifiers/Model_Transformer/model.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="1211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/MaskedLanguageModel.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/MaskedLanguageModel.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="1250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/MLM_Training_mytry.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="1285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/transformer_exploration.py</url>
+          <line>712</line>
+          <option name="timeStamp" value="1295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/MLMDataset.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="1304" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/MLM_Training_mytry.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="1307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/transformer_exploration.py</url>
+          <line>616</line>
+          <option name="timeStamp" value="1309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/transformer_exploration.py</url>
+          <line>645</line>
+          <option name="timeStamp" value="1316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.PyCharm2019.2/system/remote_sources/1292533968/-842438901/transformers/data/datasets/language_modeling.py</url>
+          <line>452</line>
+          <option name="timeStamp" value="1376" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.PyCharm2019.2/system/remote_sources/1292533968/-842438901/transformers/data/datasets/language_modeling.py</url>
+          <line>418</line>
+          <option name="timeStamp" value="1378" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.PyCharm2019.2/system/remote_sources/1292533968/-842438901/transformers/trainer_utils.py</url>
+          <line>349</line>
+          <option name="timeStamp" value="1381" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/TextDataset.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="1398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/check_eval_dump.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="1427" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/BIRADSBERTSectionTokenizer_test.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="1456" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/document_clustering.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="1801" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/BIRADSBERTwAuxSectionTokenizer.py</url>
+          <line>226</line>
+          <option name="timeStamp" value="2005" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scrap.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="2038" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/NLP_RadRep2/BIRADSBERTSectionTokenizer_test.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="2118" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="incorrect[1][1]['sectionized'].__len__()" />
+        <watch expression="a._prob_dict[0]" />
+        <watch expression="y_pred" />
+        <watch expression="dataset.val_iterator" />
+        <watch expression="test_file" />
+        <watch expression="incorrect[0][1]" />
+        <watch expression="data" />
+        <watch expression="add_on_data[20]" />
+        <watch expression="match_values" language="Python" />
+        <watch expression="considered_lines[25]" />
+        <watch expression="features" />
+        <watch expression="arr[18]" />
+        <watch expression="incorrect[0]" />
+        <watch expression="__py_debug_temp_var_914455362" />
+        <watch expression="self" />
+        <watch expression="output" />
+        <watch expression="self" />
+        <watch expression="pt_profile" />
+        <watch expression="rep_disection" />
+        <watch expression="patient_pairs" />
+        <watch expression="patient_pairs" />
+        <watch expression="incorrect[25][0]['HX']" />
+        <watch expression="incorrect[26]" />
+        <watch expression="incorrect[6][0]['Ethics']" />
+        <watch expression="__py_debug_temp_var_1287315286" />
+        <watch expression="incorrect[9][0]['HX']" />
+        <watch expression="row" />
+        <watch expression="run_third_check" />
+        <watch expression="incorrect[15][0]['Sig']" />
+        <watch expression="new_data[4]" />
+        <watch expression="incorrect[6]" />
+        <watch expression="self.TEXT" />
+        <watch expression="self.label" />
+        <watch expression="rats.b2j" />
+        <watch expression="rats.matching_blocks" />
+        <watch expression="no_labels" />
+        <watch expression="toomany_labels" />
+        <watch expression="toomany_labels[15]" />
+        <watch expression="toomany_labels[15][0].__len__()" />
+        <watch expression="toomany_labels[15]" />
+        <watch expression="btch_sz" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/NLP_RadRep$Vocabulary_Clustering_classifier_test.coverage" NAME="Vocabulary_Clustering_classifier_test Coverage Results" MODIFIED="1594929334261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningFieldExtractionWoutSectionization.coverage" NAME="BERTFineTuningFieldExtractionWoutSectionization Coverage Results" MODIFIED="1620848443406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MLSectionTokenizer_test.coverage" NAME="MLSectionTokenizer_test Coverage Results" MODIFIED="1595508947627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$report_disection_test_withnewdata__1_.coverage" NAME="report_disection_test_withnewdata (1) Coverage Results" MODIFIED="1596211182687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_density_extraction_test.coverage" NAME="deep_density_extraction_test Coverage Results" MODIFIED="1603734819906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$train.coverage" NAME="train Coverage Results" MODIFIED="1583866026320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MLSectionTokenizer.coverage" NAME="MLSectionTokenizer Coverage Results" MODIFIED="1588951834115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTSectionTokenizer.coverage" NAME="BERTSectionTokenizer Coverage Results" MODIFIED="1619447175989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$report_disection_test.coverage" NAME="report_disection_test Coverage Results" MODIFIED="1595352775752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BIS2020Analysis_edit2.coverage" NAME="BIS2020Analysis_edit2 Coverage Results" MODIFIED="1603892458582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TransformerSectionTokenizer_test_deconstructed__1_.coverage" NAME="TransformerSectionTokenizer_test_deconstructed (1) Coverage Results" MODIFIED="1616075662849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep1/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$modality_extraction_test.coverage" NAME="modality_extraction_test Coverage Results" MODIFIED="1596031199624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$query_biomatrix_database.coverage" NAME="query_biomatrix_database Coverage Results" MODIFIED="1597343626389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="Y:/Grey/2016-SQLCodesFromChristina" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$report_disection_test_withnewdata.coverage" NAME="report_disection_test_withnewdata Coverage Results" MODIFIED="1600437087916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningSectionTokenization.coverage" NAME="BERTFineTuningSectionTokenization Coverage Results" MODIFIED="1620655020995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$post_ExperimentSummary.coverage" NAME="post_ExperimentSummary Coverage Results" MODIFIED="1621001265180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningFieldExtraction.coverage" NAME="BERTFineTuningFieldExtraction Coverage Results" MODIFIED="1620757282557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$ClassifyPathRad_test.coverage" NAME="ClassifyPathRad_test Coverage Results" MODIFIED="1597943672268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/home/gkuling" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$document_clustering.coverage" NAME="document_clustering Coverage Results" MODIFIED="1617973675127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$data_csvtotxt.coverage" NAME="data_csvtotxt Coverage Results" MODIFIED="1619527909893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$RNNSectionTokenizerwAUX_TruncatedLoss_test.coverage" NAME="RNNSectionTokenizerwAUX_TruncatedLoss_test Coverage Results" MODIFIED="1598555361084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$field_extraction_training_test.coverage" NAME="field_extraction_training_test Coverage Results" MODIFIED="1594326890507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$ClassifyPathRad_test__1_.coverage" NAME="ClassifyPathRad_test (1) Coverage Results" MODIFIED="1600365342382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningExamPurposeClassification.coverage" NAME="BERTFineTuningExamPurposeClassification Coverage Results" MODIFIED="1620072020607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$weaklabelling.coverage" NAME="weaklabelling Coverage Results" MODIFIED="1597969117760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MLM_Training_mytry.coverage" NAME="MLM_Training_mytry Coverage Results" MODIFIED="1616677718066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$previousCa_extraction_test.coverage" NAME="previousCa_extraction_test Coverage Results" MODIFIED="1595956356540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$VocabClustering.coverage" NAME="VocabClustering Coverage Results" MODIFIED="1586978144828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$get_accessions_for_mrns.coverage" NAME="get_accessions_for_mrns Coverage Results" MODIFIED="1610723364583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningDensityClassification.coverage" NAME="BERTFineTuningDensityClassification Coverage Results" MODIFIED="1620073375019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$field_extraction.coverage" NAME="field_extraction Coverage Results" MODIFIED="1593193270146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$IWBIREdo.coverage" NAME="IWBIREdo Coverage Results" MODIFIED="1604345606249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$_deconstructed.coverage" NAME="_deconstructed Coverage Results" MODIFIED="1614095812595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_modality_extraction_test.coverage" NAME="deep_modality_extraction_test Coverage Results" MODIFIED="1614095541324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningFieldExtractionWModality.coverage" NAME="BERTFineTuningFieldExtractionWModality Coverage Results" MODIFIED="1620678902154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$data_prep_MLSectionizer.coverage" NAME="data_prep_MLSectionizer Coverage Results" MODIFIED="1587399915240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTSectionTokenizerWithAux.coverage" NAME="BERTSectionTokenizerWithAux Coverage Results" MODIFIED="1619446985719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$Integrate_review_into_labeleddata.coverage" NAME="Integrate_review_into_labeleddata Coverage Results" MODIFIED="1614357219361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningPreviousCancerClassification.coverage" NAME="BERTFineTuningPreviousCancerClassification Coverage Results" MODIFIED="1620071117871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_menopause_extraction_test.coverage" NAME="deep_menopause_extraction_test Coverage Results" MODIFIED="1614700320710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningMenopuasalStatusClassification.coverage" NAME="BERTFineTuningMenopuasalStatusClassification Coverage Results" MODIFIED="1620670556883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$developSectionTokenizer.coverage" NAME="developSectionTokenizer Coverage Results" MODIFIED="1587498806325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$searchClassifier_test.coverage" NAME="searchClassifier_test Coverage Results" MODIFIED="1594651784268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$add_BMscanavailability_toBIS2020.coverage" NAME="add_BMscanavailability_toBIS2020 Coverage Results" MODIFIED="1601309767643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TextDatasetForNextSentencePrediction.coverage" NAME="TextDatasetForNextSentencePrediction Coverage Results" MODIFIED="1617030921970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$feature_extraction.coverage" NAME="feature_extraction Coverage Results" MODIFIED="1594738678988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TransformerSectionTokenizer_test_deconstructed.coverage" NAME="TransformerSectionTokenizer_test_deconstructed Coverage Results" MODIFIED="1616075917543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_previousCa_extraction_test.coverage" NAME="deep_previousCa_extraction_test Coverage Results" MODIFIED="1601317318333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$DataDeterminationForLongitudinalStudy.coverage" NAME="DataDeterminationForLongitudinalStudy Coverage Results" MODIFIED="1601651669941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TransformerSectionTokenizer_test.coverage" NAME="TransformerSectionTokenizer_test Coverage Results" MODIFIED="1615233524994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$spreadsheet_clean.coverage" NAME="spreadsheet_clean Coverage Results" MODIFIED="1594836515151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$RNNSectionTokenizerwAUX_test.coverage" NAME="RNNSectionTokenizerwAUX_test Coverage Results" MODIFIED="1598467716826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$patient_profiler_test.coverage" NAME="patient_profiler_test Coverage Results" MODIFIED="1596204009459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$density_extraction_test.coverage" NAME="density_extraction_test Coverage Results" MODIFIED="1595960257912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$data_check_MLSectionizer.coverage" NAME="data_check_MLSectionizer Coverage Results" MODIFIED="1593011810967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$field_extraction_Reviewer_test.coverage" NAME="field_extraction_Reviewer_test Coverage Results" MODIFIED="1614355022519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_pathology_extraction_test.coverage" NAME="deep_pathology_extraction_test Coverage Results" MODIFIED="1615242712867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$sectokenization_dataprep.coverage" NAME="sectokenization_dataprep Coverage Results" MODIFIED="1600892681249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningModalityClassification.coverage" NAME="BERTFineTuningModalityClassification Coverage Results" MODIFIED="1620055481843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$scrap.coverage" NAME="scrap Coverage Results" MODIFIED="1618679688417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_bpe_extraction_test.coverage" NAME="deep_bpe_extraction_test Coverage Results" MODIFIED="1603734912350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BIS2020Analysis.coverage" NAME="BIS2020Analysis Coverage Results" MODIFIED="1601479389901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deep_purpose_extraction_test.coverage" NAME="deep_purpose_extraction_test Coverage Results" MODIFIED="1601319094331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$scratch_edit_saved_Data.coverage" NAME="scratch_edit_saved_Data Coverage Results" MODIFIED="1602611565450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$transformer_exploration.coverage" NAME="transformer_exploration Coverage Results" MODIFIED="1616625344645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$check_eval_dump.coverage" NAME="check_eval_dump Coverage Results" MODIFIED="1617375114787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MaskedLanguageModel_Dataset.coverage" NAME="MaskedLanguageModel_Dataset Coverage Results" MODIFIED="1616443367515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningMenopuasalStatusClassification__1_.coverage" NAME="BERTFineTuningMenopuasalStatusClassification Coverage Results" MODIFIED="1619888795853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$sentence_of_interest_reviewer.coverage" NAME="sentence_of_interest_reviewer Coverage Results" MODIFIED="1595261077746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BIRADSBERTSectionTokenizer.coverage" NAME="BIRADSBERTSectionTokenizer Coverage Results" MODIFIED="1618323107619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningMenstrualStatusClassification.coverage" NAME="BERTFineTuningMenopuasalStatusClassification Coverage Results" MODIFIED="1619888266077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$add_CADnumandBPE_toBIS2020.coverage" NAME="add_CADnumandBPE_toBIS2020 Coverage Results" MODIFIED="1603732554403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$deepBreastReportDisector_test.coverage" NAME="deepBreastReportDisector_test Coverage Results" MODIFIED="1604419238377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TextPreProcessingBERTModel.coverage" NAME="TextPreProcessingBERTModel Coverage Results" MODIFIED="1619532424919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MLM_Training_transformers.coverage" NAME="MLM_Training_transformers Coverage Results" MODIFIED="1619550600138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$field_extraction_test.coverage" NAME="field_extraction_test Coverage Results" MODIFIED="1594317601708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$DataDeterminationForDrBLacoste.coverage" NAME="DataDeterminationForDrBLacoste Coverage Results" MODIFIED="1601566244432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BIRADSBERTSectionTokenizer_test.coverage" NAME="BIRADSBERTSectionTokenizer_test Coverage Results" MODIFIED="1619123587924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$SectionTokenizer_test.coverage" NAME="SectionTokenizer_test Coverage Results" MODIFIED="1598454563270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$TextPreprocessing.coverage" NAME="TextPreprocessing Coverage Results" MODIFIED="1618243786074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BIS2020Analysis_edit.coverage" NAME="BIS2020Analysis_edit Coverage Results" MODIFIED="1601483908746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BI_RADS_BERT$Docutils_Task_in_README_rst.coverage" NAME="Docutils Task in README.rst Coverage Results" MODIFIED="1621946965906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$SQLtoDataFrame.coverage" NAME="SQLtoDataFrame Coverage Results" MODIFIED="1600700822111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$MLM_Training.coverage" NAME="MLM_Training Coverage Results" MODIFIED="1616593163687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NLP_RadRep2" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$ManualLabeling.coverage" NAME="ManualLabeling Coverage Results" MODIFIED="1584996312939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningBPEClassification.coverage" NAME="BERTFineTuningBPEClassification Coverage Results" MODIFIED="1620076498416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$BERTFineTuningFieldExtractionWAux__1_.coverage" NAME="BERTFineTuningFieldExtractionWAux Coverage Results" MODIFIED="1620997489897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$modality_extraction_votinexperiment_test.coverage" NAME="modality_extraction_votinexperiment_test Coverage Results" MODIFIED="1596120163695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP_RadRep$RNNSectionTokenizer_test.coverage" NAME="RNNSectionTokenizer_test Coverage Results" MODIFIED="1598025639690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+  </component>
+</project>
