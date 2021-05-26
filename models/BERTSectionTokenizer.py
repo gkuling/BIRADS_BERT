@@ -3,14 +3,25 @@ from util.TextPreprocessing import report_preprocess, \
 from .BERTFineTuningDeployment import *
 
 class BERTSectionTokenizer(BERTFineTuningDeployment):
+    """
+    BERTFineTuning Deployment for section tokenization without auxiliary data
+    """
     def __init__(self, redacted_input=False):
+        """
+        Initializer for BERTSectionTokenizer without auxiliary data
+        :param redacted_input: bool, choice to use the model with redacted data
+        """
         super(BERTSectionTokenizer, self).__init__(redacted_input,
                                                    aux_data=0)
         self.redacted_input = redacted_input
         self.max_len = 32
 
     def setup_data_for_training(self, dt):
-        dset = []
+        """
+        setup data and model for training
+        :param dt: list of dicts, data for training
+        :return: list, of preprocessed data, [label, input tokens]
+        """
         print('Running Data Preparation for Training')
         labels = ['PrIM',
                   'Procedure',
@@ -74,6 +85,11 @@ class BERTSectionTokenizer(BERTFineTuningDeployment):
         return dset_split
 
     def predict(self, x):
+        """
+        prediction on x
+        :param x: str, raw text report
+        :return: dict, of the report split into sections
+        """
         self.model.eval()
         processed_data = report_preprocess(x)
         sents, orig_sents = get_sents_and_redacted(processed_data)

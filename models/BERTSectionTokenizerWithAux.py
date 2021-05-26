@@ -18,7 +18,12 @@ class BERTSectionTokenizerWithAux(BERTFineTuningDeployment):
         self.max_len = 32
 
     def setup_data_for_training(self, dt):
-        dset = []
+        """
+        setup data and model for training
+        :param dt: list of dicts, data for training
+        :return: list, of preprocessed data, [label, input tokens, auxiliary
+            data: [prev sent label, sent number, total number of sent]
+        """
         print('Running Data Preparation for Training')
         labels = ['PrIM',
                   'Procedure',
@@ -89,6 +94,11 @@ class BERTSectionTokenizerWithAux(BERTFineTuningDeployment):
         return dset_split
 
     def predict(self, x):
+        """
+        prediction on x
+        :param x: str, raw text report
+        :return: dict, of the report split into sections
+        """
         self.model.eval()
         processed_data = report_preprocess(x)
         sents, orig_sents = get_sents_and_redacted(processed_data)

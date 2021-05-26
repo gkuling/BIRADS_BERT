@@ -16,8 +16,8 @@ class BERTFieldExtractor(BERTFineTuningDeployment):
     def setup_data_for_training(self, dt):
         """
         setp up of data and model for training.
-        :param dt: data set
-        :return: preprocessed data
+        :param dt: list of dicts, data for training
+        :return: list, of preprocessed data, [label, input tokens]
         """
         name_or_path = self.config._name_or_path
         self.model = BertForSequenceClassification_aux.from_pretrained(
