@@ -1,0 +1,8 @@
+Exam Title.
+CLINICAL INDICATION: N/A.
+TECHNIQUE: Imaging was performed using a 1.5 T GE magnet..
+REFERENCE EXAM: Reference is made to the most recent.
+FINDINGS: The breasts are ..
+OPINION: No MRI findings of cancer.
+BI-RADS: category.
+
