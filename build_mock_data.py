@@ -1,5 +1,7 @@
 import os
 import numpy as np
+import pandas as pd
+
 if __name__=='__main__':
     folder = './mock_data/labeled_data_orig'
     ofolder = os.getcwd() + '/mock_data/labeled_data'
@@ -81,4 +83,28 @@ if __name__=='__main__':
         with open(ofolder + '/Sectioned' + str(i) + '.txt', 'w') as f:
             print(base, file=f)
 
+    df = {'PID': [],
+          'ExamDate':[],
+          'ReportTxt': []}
+    files = [ofolder + '/' + fl for fl in os.listdir(ofolder)]
+    for fl in files:
+        rep = eval(open(fl).read())
+        df['PID'].append(rep['PID'])
+        df['ExamDate'].append(rep['date'])
+        df['ReportTxt'].append(rep['original_report'])
+    df = pd.DataFrame(df)
+    df.to_csv(os.getcwd() + '/mock_data/reports_by_exam.csv')
+    new_df = {'AccNum': [],
+              'ExamDate':[],
+              'ReportTxt': [],
+              'SequenceNumber': []}
+    for exam in df.itertuples():
+        rows = exam.ReportTxt.split('\n')
+        for i, row in enumerate(rows):
+            new_df['AccNum'].append(exam.PID)
+            new_df['ExamDate'].append(exam.ExamDate)
+            new_df['ReportTxt'].append(row)
+            new_df['SequenceNumber'].append(i)
+    new_df = pd.DataFrame(new_df)
+    new_df.to_csv(os.getcwd() + '/mock_data/sql_dataframe.csv')
     print('')

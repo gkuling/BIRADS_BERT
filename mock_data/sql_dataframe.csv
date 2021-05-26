@@ -1,0 +1,813 @@
+,AccNum,ExamDate,ReportTxt,SequenceNumber
+0,0,YYYY-MM-DD,Exam Title,0
+1,0,YYYY-MM-DD,,1
+2,0,YYYY-MM-DD,Compared to Previous: N/A,2
+3,0,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+4,0,YYYY-MM-DD,Mastectomy: N/A,4
+5,0,YYYY-MM-DD,,5
+6,0,YYYY-MM-DD,Recall client in 1 year: N/A,6
+7,0,YYYY-MM-DD,,7
+8,0,YYYY-MM-DD,,8
+9,0,YYYY-MM-DD,BIRADS-category,9
+10,0,YYYY-MM-DD,_____________,10
+11,0,YYYY-MM-DD,,11
+12,0,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+13,1,YYYY-MM-DD,Exam Title,0
+14,1,YYYY-MM-DD,,1
+15,1,YYYY-MM-DD,The mass in the ... ,2
+16,1,YYYY-MM-DD,,3
+17,1,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+18,1,YYYY-MM-DD,_____________,5
+19,1,YYYY-MM-DD,,6
+20,1,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+21,1,YYYY-MM-DD,,8
+22,1,YYYY-MM-DD,,9
+23,1,YYYY-MM-DD,,10
+24,1,YYYY-MM-DD,,11
+25,1,YYYY-MM-DD,,12
+26,1,YYYY-MM-DD,,13
+27,1,YYYY-MM-DD,--- Addendum ---,14
+28,1,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+29,1,YYYY-MM-DD,,16
+30,1,YYYY-MM-DD,--- Addendum end ---,17
+31,2,YYYY-MM-DD,Exam Title,0
+32,2,YYYY-MM-DD,,1
+33,2,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+34,2,YYYY-MM-DD,,3
+35,2,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+36,2,YYYY-MM-DD,,5
+37,2,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+38,2,YYYY-MM-DD,,7
+39,2,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+40,2,YYYY-MM-DD,,9
+41,2,YYYY-MM-DD,,10
+42,2,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+43,2,YYYY-MM-DD,,12
+44,2,YYYY-MM-DD,BI-RADS: category,13
+45,2,YYYY-MM-DD,,14
+46,2,YYYY-MM-DD,,15
+47,2,YYYY-MM-DD,_____________,16
+48,2,YYYY-MM-DD,,17
+49,2,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+50,3,YYYY-MM-DD,Exam Title,0
+51,3,YYYY-MM-DD,,1
+52,3,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+53,3,YYYY-MM-DD,,3
+54,3,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+55,3,YYYY-MM-DD,,5
+56,3,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+57,3,YYYY-MM-DD,,7
+58,3,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+59,3,YYYY-MM-DD,,9
+60,3,YYYY-MM-DD,,10
+61,3,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+62,3,YYYY-MM-DD,,12
+63,3,YYYY-MM-DD,BI-RADS: category,13
+64,3,YYYY-MM-DD,,14
+65,3,YYYY-MM-DD,,15
+66,3,YYYY-MM-DD,_____________,16
+67,3,YYYY-MM-DD,,17
+68,3,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+69,4,YYYY-MM-DD,Exam Title,0
+70,4,YYYY-MM-DD,,1
+71,4,YYYY-MM-DD,The mass in the ... ,2
+72,4,YYYY-MM-DD,,3
+73,4,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+74,4,YYYY-MM-DD,_____________,5
+75,4,YYYY-MM-DD,,6
+76,4,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+77,4,YYYY-MM-DD,,8
+78,4,YYYY-MM-DD,,9
+79,4,YYYY-MM-DD,,10
+80,4,YYYY-MM-DD,,11
+81,4,YYYY-MM-DD,,12
+82,4,YYYY-MM-DD,,13
+83,4,YYYY-MM-DD,--- Addendum ---,14
+84,4,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+85,4,YYYY-MM-DD,,16
+86,4,YYYY-MM-DD,--- Addendum end ---,17
+87,5,YYYY-MM-DD,Exam Title,0
+88,5,YYYY-MM-DD,,1
+89,5,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+90,5,YYYY-MM-DD,,3
+91,5,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+92,5,YYYY-MM-DD,,5
+93,5,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+94,5,YYYY-MM-DD,,7
+95,5,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+96,5,YYYY-MM-DD,,9
+97,5,YYYY-MM-DD,,10
+98,5,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+99,5,YYYY-MM-DD,,12
+100,5,YYYY-MM-DD,BI-RADS: category,13
+101,5,YYYY-MM-DD,,14
+102,5,YYYY-MM-DD,,15
+103,5,YYYY-MM-DD,_____________,16
+104,5,YYYY-MM-DD,,17
+105,5,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+106,6,YYYY-MM-DD,Exam Title,0
+107,6,YYYY-MM-DD,,1
+108,6,YYYY-MM-DD,The mass in the ... ,2
+109,6,YYYY-MM-DD,,3
+110,6,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+111,6,YYYY-MM-DD,_____________,5
+112,6,YYYY-MM-DD,,6
+113,6,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+114,6,YYYY-MM-DD,,8
+115,6,YYYY-MM-DD,,9
+116,6,YYYY-MM-DD,,10
+117,6,YYYY-MM-DD,,11
+118,6,YYYY-MM-DD,,12
+119,6,YYYY-MM-DD,,13
+120,6,YYYY-MM-DD,--- Addendum ---,14
+121,6,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+122,6,YYYY-MM-DD,,16
+123,6,YYYY-MM-DD,--- Addendum end ---,17
+124,7,YYYY-MM-DD,Exam Title,0
+125,7,YYYY-MM-DD,,1
+126,7,YYYY-MM-DD,Compared to Previous: N/A,2
+127,7,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+128,7,YYYY-MM-DD,Mastectomy: N/A,4
+129,7,YYYY-MM-DD,,5
+130,7,YYYY-MM-DD,Recall client in 1 year: N/A,6
+131,7,YYYY-MM-DD,,7
+132,7,YYYY-MM-DD,,8
+133,7,YYYY-MM-DD,BIRADS-category,9
+134,7,YYYY-MM-DD,_____________,10
+135,7,YYYY-MM-DD,,11
+136,7,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+137,8,YYYY-MM-DD,Exam Title,0
+138,8,YYYY-MM-DD,,1
+139,8,YYYY-MM-DD,The mass in the ... ,2
+140,8,YYYY-MM-DD,,3
+141,8,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+142,8,YYYY-MM-DD,_____________,5
+143,8,YYYY-MM-DD,,6
+144,8,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+145,8,YYYY-MM-DD,,8
+146,8,YYYY-MM-DD,,9
+147,8,YYYY-MM-DD,,10
+148,8,YYYY-MM-DD,,11
+149,8,YYYY-MM-DD,,12
+150,8,YYYY-MM-DD,,13
+151,8,YYYY-MM-DD,--- Addendum ---,14
+152,8,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+153,8,YYYY-MM-DD,,16
+154,8,YYYY-MM-DD,--- Addendum end ---,17
+155,9,YYYY-MM-DD,Exam Title,0
+156,9,YYYY-MM-DD,,1
+157,9,YYYY-MM-DD,The mass in the ... ,2
+158,9,YYYY-MM-DD,,3
+159,9,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+160,9,YYYY-MM-DD,_____________,5
+161,9,YYYY-MM-DD,,6
+162,9,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+163,9,YYYY-MM-DD,,8
+164,9,YYYY-MM-DD,,9
+165,9,YYYY-MM-DD,,10
+166,9,YYYY-MM-DD,,11
+167,9,YYYY-MM-DD,,12
+168,9,YYYY-MM-DD,,13
+169,9,YYYY-MM-DD,--- Addendum ---,14
+170,9,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+171,9,YYYY-MM-DD,,16
+172,9,YYYY-MM-DD,--- Addendum end ---,17
+173,10,YYYY-MM-DD,Exam Title,0
+174,10,YYYY-MM-DD,,1
+175,10,YYYY-MM-DD,The mass in the ... ,2
+176,10,YYYY-MM-DD,,3
+177,10,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+178,10,YYYY-MM-DD,_____________,5
+179,10,YYYY-MM-DD,,6
+180,10,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+181,10,YYYY-MM-DD,,8
+182,10,YYYY-MM-DD,,9
+183,10,YYYY-MM-DD,,10
+184,10,YYYY-MM-DD,,11
+185,10,YYYY-MM-DD,,12
+186,10,YYYY-MM-DD,,13
+187,10,YYYY-MM-DD,--- Addendum ---,14
+188,10,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+189,10,YYYY-MM-DD,,16
+190,10,YYYY-MM-DD,--- Addendum end ---,17
+191,11,YYYY-MM-DD,Exam Title,0
+192,11,YYYY-MM-DD,,1
+193,11,YYYY-MM-DD,Compared to Previous: N/A,2
+194,11,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+195,11,YYYY-MM-DD,Mastectomy: N/A,4
+196,11,YYYY-MM-DD,,5
+197,11,YYYY-MM-DD,Recall client in 1 year: N/A,6
+198,11,YYYY-MM-DD,,7
+199,11,YYYY-MM-DD,,8
+200,11,YYYY-MM-DD,BIRADS-category,9
+201,11,YYYY-MM-DD,_____________,10
+202,11,YYYY-MM-DD,,11
+203,11,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+204,12,YYYY-MM-DD,Exam Title,0
+205,12,YYYY-MM-DD,,1
+206,12,YYYY-MM-DD,The mass in the ... ,2
+207,12,YYYY-MM-DD,,3
+208,12,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+209,12,YYYY-MM-DD,_____________,5
+210,12,YYYY-MM-DD,,6
+211,12,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+212,12,YYYY-MM-DD,,8
+213,12,YYYY-MM-DD,,9
+214,12,YYYY-MM-DD,,10
+215,12,YYYY-MM-DD,,11
+216,12,YYYY-MM-DD,,12
+217,12,YYYY-MM-DD,,13
+218,12,YYYY-MM-DD,--- Addendum ---,14
+219,12,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+220,12,YYYY-MM-DD,,16
+221,12,YYYY-MM-DD,--- Addendum end ---,17
+222,13,YYYY-MM-DD,Exam Title,0
+223,13,YYYY-MM-DD,,1
+224,13,YYYY-MM-DD,Compared to Previous: N/A,2
+225,13,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+226,13,YYYY-MM-DD,Mastectomy: N/A,4
+227,13,YYYY-MM-DD,,5
+228,13,YYYY-MM-DD,Recall client in 1 year: N/A,6
+229,13,YYYY-MM-DD,,7
+230,13,YYYY-MM-DD,,8
+231,13,YYYY-MM-DD,BIRADS-category,9
+232,13,YYYY-MM-DD,_____________,10
+233,13,YYYY-MM-DD,,11
+234,13,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+235,14,YYYY-MM-DD,Exam Title,0
+236,14,YYYY-MM-DD,,1
+237,14,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+238,14,YYYY-MM-DD,,3
+239,14,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+240,14,YYYY-MM-DD,,5
+241,14,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+242,14,YYYY-MM-DD,,7
+243,14,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+244,14,YYYY-MM-DD,,9
+245,14,YYYY-MM-DD,,10
+246,14,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+247,14,YYYY-MM-DD,,12
+248,14,YYYY-MM-DD,BI-RADS: category,13
+249,14,YYYY-MM-DD,,14
+250,14,YYYY-MM-DD,,15
+251,14,YYYY-MM-DD,_____________,16
+252,14,YYYY-MM-DD,,17
+253,14,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+254,15,YYYY-MM-DD,Exam Title,0
+255,15,YYYY-MM-DD,,1
+256,15,YYYY-MM-DD,Compared to Previous: N/A,2
+257,15,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+258,15,YYYY-MM-DD,Mastectomy: N/A,4
+259,15,YYYY-MM-DD,,5
+260,15,YYYY-MM-DD,Recall client in 1 year: N/A,6
+261,15,YYYY-MM-DD,,7
+262,15,YYYY-MM-DD,,8
+263,15,YYYY-MM-DD,BIRADS-category,9
+264,15,YYYY-MM-DD,_____________,10
+265,15,YYYY-MM-DD,,11
+266,15,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+267,16,YYYY-MM-DD,Exam Title,0
+268,16,YYYY-MM-DD,,1
+269,16,YYYY-MM-DD,The mass in the ... ,2
+270,16,YYYY-MM-DD,,3
+271,16,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+272,16,YYYY-MM-DD,_____________,5
+273,16,YYYY-MM-DD,,6
+274,16,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+275,16,YYYY-MM-DD,,8
+276,16,YYYY-MM-DD,,9
+277,16,YYYY-MM-DD,,10
+278,16,YYYY-MM-DD,,11
+279,16,YYYY-MM-DD,,12
+280,16,YYYY-MM-DD,,13
+281,16,YYYY-MM-DD,--- Addendum ---,14
+282,16,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+283,16,YYYY-MM-DD,,16
+284,16,YYYY-MM-DD,--- Addendum end ---,17
+285,17,YYYY-MM-DD,Exam Title,0
+286,17,YYYY-MM-DD,,1
+287,17,YYYY-MM-DD,Compared to Previous: N/A,2
+288,17,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+289,17,YYYY-MM-DD,Mastectomy: N/A,4
+290,17,YYYY-MM-DD,,5
+291,17,YYYY-MM-DD,Recall client in 1 year: N/A,6
+292,17,YYYY-MM-DD,,7
+293,17,YYYY-MM-DD,,8
+294,17,YYYY-MM-DD,BIRADS-category,9
+295,17,YYYY-MM-DD,_____________,10
+296,17,YYYY-MM-DD,,11
+297,17,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+298,18,YYYY-MM-DD,Exam Title,0
+299,18,YYYY-MM-DD,,1
+300,18,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+301,18,YYYY-MM-DD,,3
+302,18,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+303,18,YYYY-MM-DD,,5
+304,18,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+305,18,YYYY-MM-DD,,7
+306,18,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+307,18,YYYY-MM-DD,,9
+308,18,YYYY-MM-DD,,10
+309,18,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+310,18,YYYY-MM-DD,,12
+311,18,YYYY-MM-DD,BI-RADS: category,13
+312,18,YYYY-MM-DD,,14
+313,18,YYYY-MM-DD,,15
+314,18,YYYY-MM-DD,_____________,16
+315,18,YYYY-MM-DD,,17
+316,18,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+317,19,YYYY-MM-DD,Exam Title,0
+318,19,YYYY-MM-DD,,1
+319,19,YYYY-MM-DD,The mass in the ... ,2
+320,19,YYYY-MM-DD,,3
+321,19,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+322,19,YYYY-MM-DD,_____________,5
+323,19,YYYY-MM-DD,,6
+324,19,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+325,19,YYYY-MM-DD,,8
+326,19,YYYY-MM-DD,,9
+327,19,YYYY-MM-DD,,10
+328,19,YYYY-MM-DD,,11
+329,19,YYYY-MM-DD,,12
+330,19,YYYY-MM-DD,,13
+331,19,YYYY-MM-DD,--- Addendum ---,14
+332,19,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+333,19,YYYY-MM-DD,,16
+334,19,YYYY-MM-DD,--- Addendum end ---,17
+335,20,YYYY-MM-DD,Exam Title,0
+336,20,YYYY-MM-DD,,1
+337,20,YYYY-MM-DD,Compared to Previous: N/A,2
+338,20,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+339,20,YYYY-MM-DD,Mastectomy: N/A,4
+340,20,YYYY-MM-DD,,5
+341,20,YYYY-MM-DD,Recall client in 1 year: N/A,6
+342,20,YYYY-MM-DD,,7
+343,20,YYYY-MM-DD,,8
+344,20,YYYY-MM-DD,BIRADS-category,9
+345,20,YYYY-MM-DD,_____________,10
+346,20,YYYY-MM-DD,,11
+347,20,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+348,21,YYYY-MM-DD,Exam Title,0
+349,21,YYYY-MM-DD,,1
+350,21,YYYY-MM-DD,The mass in the ... ,2
+351,21,YYYY-MM-DD,,3
+352,21,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+353,21,YYYY-MM-DD,_____________,5
+354,21,YYYY-MM-DD,,6
+355,21,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+356,21,YYYY-MM-DD,,8
+357,21,YYYY-MM-DD,,9
+358,21,YYYY-MM-DD,,10
+359,21,YYYY-MM-DD,,11
+360,21,YYYY-MM-DD,,12
+361,21,YYYY-MM-DD,,13
+362,21,YYYY-MM-DD,--- Addendum ---,14
+363,21,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+364,21,YYYY-MM-DD,,16
+365,21,YYYY-MM-DD,--- Addendum end ---,17
+366,22,YYYY-MM-DD,Exam Title,0
+367,22,YYYY-MM-DD,,1
+368,22,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+369,22,YYYY-MM-DD,,3
+370,22,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+371,22,YYYY-MM-DD,,5
+372,22,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+373,22,YYYY-MM-DD,,7
+374,22,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+375,22,YYYY-MM-DD,,9
+376,22,YYYY-MM-DD,,10
+377,22,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+378,22,YYYY-MM-DD,,12
+379,22,YYYY-MM-DD,BI-RADS: category,13
+380,22,YYYY-MM-DD,,14
+381,22,YYYY-MM-DD,,15
+382,22,YYYY-MM-DD,_____________,16
+383,22,YYYY-MM-DD,,17
+384,22,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+385,23,YYYY-MM-DD,Exam Title,0
+386,23,YYYY-MM-DD,,1
+387,23,YYYY-MM-DD,Compared to Previous: N/A,2
+388,23,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+389,23,YYYY-MM-DD,Mastectomy: N/A,4
+390,23,YYYY-MM-DD,,5
+391,23,YYYY-MM-DD,Recall client in 1 year: N/A,6
+392,23,YYYY-MM-DD,,7
+393,23,YYYY-MM-DD,,8
+394,23,YYYY-MM-DD,BIRADS-category,9
+395,23,YYYY-MM-DD,_____________,10
+396,23,YYYY-MM-DD,,11
+397,23,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+398,24,YYYY-MM-DD,Exam Title,0
+399,24,YYYY-MM-DD,,1
+400,24,YYYY-MM-DD,Compared to Previous: N/A,2
+401,24,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+402,24,YYYY-MM-DD,Mastectomy: N/A,4
+403,24,YYYY-MM-DD,,5
+404,24,YYYY-MM-DD,Recall client in 1 year: N/A,6
+405,24,YYYY-MM-DD,,7
+406,24,YYYY-MM-DD,,8
+407,24,YYYY-MM-DD,BIRADS-category,9
+408,24,YYYY-MM-DD,_____________,10
+409,24,YYYY-MM-DD,,11
+410,24,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+411,25,YYYY-MM-DD,Exam Title,0
+412,25,YYYY-MM-DD,,1
+413,25,YYYY-MM-DD,Compared to Previous: N/A,2
+414,25,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+415,25,YYYY-MM-DD,Mastectomy: N/A,4
+416,25,YYYY-MM-DD,,5
+417,25,YYYY-MM-DD,Recall client in 1 year: N/A,6
+418,25,YYYY-MM-DD,,7
+419,25,YYYY-MM-DD,,8
+420,25,YYYY-MM-DD,BIRADS-category,9
+421,25,YYYY-MM-DD,_____________,10
+422,25,YYYY-MM-DD,,11
+423,25,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+424,26,YYYY-MM-DD,Exam Title,0
+425,26,YYYY-MM-DD,,1
+426,26,YYYY-MM-DD,The mass in the ... ,2
+427,26,YYYY-MM-DD,,3
+428,26,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+429,26,YYYY-MM-DD,_____________,5
+430,26,YYYY-MM-DD,,6
+431,26,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+432,26,YYYY-MM-DD,,8
+433,26,YYYY-MM-DD,,9
+434,26,YYYY-MM-DD,,10
+435,26,YYYY-MM-DD,,11
+436,26,YYYY-MM-DD,,12
+437,26,YYYY-MM-DD,,13
+438,26,YYYY-MM-DD,--- Addendum ---,14
+439,26,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+440,26,YYYY-MM-DD,,16
+441,26,YYYY-MM-DD,--- Addendum end ---,17
+442,27,YYYY-MM-DD,Exam Title,0
+443,27,YYYY-MM-DD,,1
+444,27,YYYY-MM-DD,The mass in the ... ,2
+445,27,YYYY-MM-DD,,3
+446,27,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+447,27,YYYY-MM-DD,_____________,5
+448,27,YYYY-MM-DD,,6
+449,27,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+450,27,YYYY-MM-DD,,8
+451,27,YYYY-MM-DD,,9
+452,27,YYYY-MM-DD,,10
+453,27,YYYY-MM-DD,,11
+454,27,YYYY-MM-DD,,12
+455,27,YYYY-MM-DD,,13
+456,27,YYYY-MM-DD,--- Addendum ---,14
+457,27,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+458,27,YYYY-MM-DD,,16
+459,27,YYYY-MM-DD,--- Addendum end ---,17
+460,28,YYYY-MM-DD,Exam Title,0
+461,28,YYYY-MM-DD,,1
+462,28,YYYY-MM-DD,Compared to Previous: N/A,2
+463,28,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+464,28,YYYY-MM-DD,Mastectomy: N/A,4
+465,28,YYYY-MM-DD,,5
+466,28,YYYY-MM-DD,Recall client in 1 year: N/A,6
+467,28,YYYY-MM-DD,,7
+468,28,YYYY-MM-DD,,8
+469,28,YYYY-MM-DD,BIRADS-category,9
+470,28,YYYY-MM-DD,_____________,10
+471,28,YYYY-MM-DD,,11
+472,28,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+473,29,YYYY-MM-DD,Exam Title,0
+474,29,YYYY-MM-DD,,1
+475,29,YYYY-MM-DD,Compared to Previous: N/A,2
+476,29,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+477,29,YYYY-MM-DD,Mastectomy: N/A,4
+478,29,YYYY-MM-DD,,5
+479,29,YYYY-MM-DD,Recall client in 1 year: N/A,6
+480,29,YYYY-MM-DD,,7
+481,29,YYYY-MM-DD,,8
+482,29,YYYY-MM-DD,BIRADS-category,9
+483,29,YYYY-MM-DD,_____________,10
+484,29,YYYY-MM-DD,,11
+485,29,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+486,30,YYYY-MM-DD,Exam Title,0
+487,30,YYYY-MM-DD,,1
+488,30,YYYY-MM-DD,Compared to Previous: N/A,2
+489,30,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+490,30,YYYY-MM-DD,Mastectomy: N/A,4
+491,30,YYYY-MM-DD,,5
+492,30,YYYY-MM-DD,Recall client in 1 year: N/A,6
+493,30,YYYY-MM-DD,,7
+494,30,YYYY-MM-DD,,8
+495,30,YYYY-MM-DD,BIRADS-category,9
+496,30,YYYY-MM-DD,_____________,10
+497,30,YYYY-MM-DD,,11
+498,30,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+499,31,YYYY-MM-DD,Exam Title,0
+500,31,YYYY-MM-DD,,1
+501,31,YYYY-MM-DD,The mass in the ... ,2
+502,31,YYYY-MM-DD,,3
+503,31,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+504,31,YYYY-MM-DD,_____________,5
+505,31,YYYY-MM-DD,,6
+506,31,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+507,31,YYYY-MM-DD,,8
+508,31,YYYY-MM-DD,,9
+509,31,YYYY-MM-DD,,10
+510,31,YYYY-MM-DD,,11
+511,31,YYYY-MM-DD,,12
+512,31,YYYY-MM-DD,,13
+513,31,YYYY-MM-DD,--- Addendum ---,14
+514,31,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+515,31,YYYY-MM-DD,,16
+516,31,YYYY-MM-DD,--- Addendum end ---,17
+517,32,YYYY-MM-DD,Exam Title,0
+518,32,YYYY-MM-DD,,1
+519,32,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+520,32,YYYY-MM-DD,,3
+521,32,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+522,32,YYYY-MM-DD,,5
+523,32,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+524,32,YYYY-MM-DD,,7
+525,32,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+526,32,YYYY-MM-DD,,9
+527,32,YYYY-MM-DD,,10
+528,32,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+529,32,YYYY-MM-DD,,12
+530,32,YYYY-MM-DD,BI-RADS: category,13
+531,32,YYYY-MM-DD,,14
+532,32,YYYY-MM-DD,,15
+533,32,YYYY-MM-DD,_____________,16
+534,32,YYYY-MM-DD,,17
+535,32,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+536,33,YYYY-MM-DD,Exam Title,0
+537,33,YYYY-MM-DD,,1
+538,33,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+539,33,YYYY-MM-DD,,3
+540,33,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+541,33,YYYY-MM-DD,,5
+542,33,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+543,33,YYYY-MM-DD,,7
+544,33,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+545,33,YYYY-MM-DD,,9
+546,33,YYYY-MM-DD,,10
+547,33,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+548,33,YYYY-MM-DD,,12
+549,33,YYYY-MM-DD,BI-RADS: category,13
+550,33,YYYY-MM-DD,,14
+551,33,YYYY-MM-DD,,15
+552,33,YYYY-MM-DD,_____________,16
+553,33,YYYY-MM-DD,,17
+554,33,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+555,34,YYYY-MM-DD,Exam Title,0
+556,34,YYYY-MM-DD,,1
+557,34,YYYY-MM-DD,The mass in the ... ,2
+558,34,YYYY-MM-DD,,3
+559,34,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+560,34,YYYY-MM-DD,_____________,5
+561,34,YYYY-MM-DD,,6
+562,34,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+563,34,YYYY-MM-DD,,8
+564,34,YYYY-MM-DD,,9
+565,34,YYYY-MM-DD,,10
+566,34,YYYY-MM-DD,,11
+567,34,YYYY-MM-DD,,12
+568,34,YYYY-MM-DD,,13
+569,34,YYYY-MM-DD,--- Addendum ---,14
+570,34,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+571,34,YYYY-MM-DD,,16
+572,34,YYYY-MM-DD,--- Addendum end ---,17
+573,35,YYYY-MM-DD,Exam Title,0
+574,35,YYYY-MM-DD,,1
+575,35,YYYY-MM-DD,The mass in the ... ,2
+576,35,YYYY-MM-DD,,3
+577,35,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+578,35,YYYY-MM-DD,_____________,5
+579,35,YYYY-MM-DD,,6
+580,35,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+581,35,YYYY-MM-DD,,8
+582,35,YYYY-MM-DD,,9
+583,35,YYYY-MM-DD,,10
+584,35,YYYY-MM-DD,,11
+585,35,YYYY-MM-DD,,12
+586,35,YYYY-MM-DD,,13
+587,35,YYYY-MM-DD,--- Addendum ---,14
+588,35,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+589,35,YYYY-MM-DD,,16
+590,35,YYYY-MM-DD,--- Addendum end ---,17
+591,36,YYYY-MM-DD,Exam Title,0
+592,36,YYYY-MM-DD,,1
+593,36,YYYY-MM-DD,The mass in the ... ,2
+594,36,YYYY-MM-DD,,3
+595,36,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+596,36,YYYY-MM-DD,_____________,5
+597,36,YYYY-MM-DD,,6
+598,36,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+599,36,YYYY-MM-DD,,8
+600,36,YYYY-MM-DD,,9
+601,36,YYYY-MM-DD,,10
+602,36,YYYY-MM-DD,,11
+603,36,YYYY-MM-DD,,12
+604,36,YYYY-MM-DD,,13
+605,36,YYYY-MM-DD,--- Addendum ---,14
+606,36,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+607,36,YYYY-MM-DD,,16
+608,36,YYYY-MM-DD,--- Addendum end ---,17
+609,37,YYYY-MM-DD,Exam Title,0
+610,37,YYYY-MM-DD,,1
+611,37,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+612,37,YYYY-MM-DD,,3
+613,37,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+614,37,YYYY-MM-DD,,5
+615,37,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+616,37,YYYY-MM-DD,,7
+617,37,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+618,37,YYYY-MM-DD,,9
+619,37,YYYY-MM-DD,,10
+620,37,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+621,37,YYYY-MM-DD,,12
+622,37,YYYY-MM-DD,BI-RADS: category,13
+623,37,YYYY-MM-DD,,14
+624,37,YYYY-MM-DD,,15
+625,37,YYYY-MM-DD,_____________,16
+626,37,YYYY-MM-DD,,17
+627,37,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+628,38,YYYY-MM-DD,Exam Title,0
+629,38,YYYY-MM-DD,,1
+630,38,YYYY-MM-DD,Compared to Previous: N/A,2
+631,38,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+632,38,YYYY-MM-DD,Mastectomy: N/A,4
+633,38,YYYY-MM-DD,,5
+634,38,YYYY-MM-DD,Recall client in 1 year: N/A,6
+635,38,YYYY-MM-DD,,7
+636,38,YYYY-MM-DD,,8
+637,38,YYYY-MM-DD,BIRADS-category,9
+638,38,YYYY-MM-DD,_____________,10
+639,38,YYYY-MM-DD,,11
+640,38,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+641,39,YYYY-MM-DD,Exam Title,0
+642,39,YYYY-MM-DD,,1
+643,39,YYYY-MM-DD,Compared to Previous: N/A,2
+644,39,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+645,39,YYYY-MM-DD,Mastectomy: N/A,4
+646,39,YYYY-MM-DD,,5
+647,39,YYYY-MM-DD,Recall client in 1 year: N/A,6
+648,39,YYYY-MM-DD,,7
+649,39,YYYY-MM-DD,,8
+650,39,YYYY-MM-DD,BIRADS-category,9
+651,39,YYYY-MM-DD,_____________,10
+652,39,YYYY-MM-DD,,11
+653,39,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+654,40,YYYY-MM-DD,Exam Title,0
+655,40,YYYY-MM-DD,,1
+656,40,YYYY-MM-DD,Compared to Previous: N/A,2
+657,40,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+658,40,YYYY-MM-DD,Mastectomy: N/A,4
+659,40,YYYY-MM-DD,,5
+660,40,YYYY-MM-DD,Recall client in 1 year: N/A,6
+661,40,YYYY-MM-DD,,7
+662,40,YYYY-MM-DD,,8
+663,40,YYYY-MM-DD,BIRADS-category,9
+664,40,YYYY-MM-DD,_____________,10
+665,40,YYYY-MM-DD,,11
+666,40,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+667,41,YYYY-MM-DD,Exam Title,0
+668,41,YYYY-MM-DD,,1
+669,41,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+670,41,YYYY-MM-DD,,3
+671,41,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+672,41,YYYY-MM-DD,,5
+673,41,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+674,41,YYYY-MM-DD,,7
+675,41,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+676,41,YYYY-MM-DD,,9
+677,41,YYYY-MM-DD,,10
+678,41,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+679,41,YYYY-MM-DD,,12
+680,41,YYYY-MM-DD,BI-RADS: category,13
+681,41,YYYY-MM-DD,,14
+682,41,YYYY-MM-DD,,15
+683,41,YYYY-MM-DD,_____________,16
+684,41,YYYY-MM-DD,,17
+685,41,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+686,42,YYYY-MM-DD,Exam Title,0
+687,42,YYYY-MM-DD,,1
+688,42,YYYY-MM-DD,Compared to Previous: N/A,2
+689,42,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+690,42,YYYY-MM-DD,Mastectomy: N/A,4
+691,42,YYYY-MM-DD,,5
+692,42,YYYY-MM-DD,Recall client in 1 year: N/A,6
+693,42,YYYY-MM-DD,,7
+694,42,YYYY-MM-DD,,8
+695,42,YYYY-MM-DD,BIRADS-category,9
+696,42,YYYY-MM-DD,_____________,10
+697,42,YYYY-MM-DD,,11
+698,42,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+699,43,YYYY-MM-DD,Exam Title,0
+700,43,YYYY-MM-DD,,1
+701,43,YYYY-MM-DD,Compared to Previous: N/A,2
+702,43,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+703,43,YYYY-MM-DD,Mastectomy: N/A,4
+704,43,YYYY-MM-DD,,5
+705,43,YYYY-MM-DD,Recall client in 1 year: N/A,6
+706,43,YYYY-MM-DD,,7
+707,43,YYYY-MM-DD,,8
+708,43,YYYY-MM-DD,BIRADS-category,9
+709,43,YYYY-MM-DD,_____________,10
+710,43,YYYY-MM-DD,,11
+711,43,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+712,44,YYYY-MM-DD,Exam Title,0
+713,44,YYYY-MM-DD,,1
+714,44,YYYY-MM-DD,Compared to Previous: N/A,2
+715,44,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+716,44,YYYY-MM-DD,Mastectomy: N/A,4
+717,44,YYYY-MM-DD,,5
+718,44,YYYY-MM-DD,Recall client in 1 year: N/A,6
+719,44,YYYY-MM-DD,,7
+720,44,YYYY-MM-DD,,8
+721,44,YYYY-MM-DD,BIRADS-category,9
+722,44,YYYY-MM-DD,_____________,10
+723,44,YYYY-MM-DD,,11
+724,44,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+725,45,YYYY-MM-DD,Exam Title,0
+726,45,YYYY-MM-DD,,1
+727,45,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+728,45,YYYY-MM-DD,,3
+729,45,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+730,45,YYYY-MM-DD,,5
+731,45,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+732,45,YYYY-MM-DD,,7
+733,45,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+734,45,YYYY-MM-DD,,9
+735,45,YYYY-MM-DD,,10
+736,45,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+737,45,YYYY-MM-DD,,12
+738,45,YYYY-MM-DD,BI-RADS: category,13
+739,45,YYYY-MM-DD,,14
+740,45,YYYY-MM-DD,,15
+741,45,YYYY-MM-DD,_____________,16
+742,45,YYYY-MM-DD,,17
+743,45,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+744,46,YYYY-MM-DD,Exam Title,0
+745,46,YYYY-MM-DD,,1
+746,46,YYYY-MM-DD,CLINICAL INDICATION: N/A  ,2
+747,46,YYYY-MM-DD,,3
+748,46,YYYY-MM-DD,TECHNIQUE: Imaging was performed using a 1.5 T GE magnet...,4
+749,46,YYYY-MM-DD,,5
+750,46,YYYY-MM-DD,REFERENCE EXAM:  Reference is made to the most recent. ,6
+751,46,YYYY-MM-DD,,7
+752,46,YYYY-MM-DD,FINDINGS:  The breasts are ...,8
+753,46,YYYY-MM-DD,,9
+754,46,YYYY-MM-DD,,10
+755,46,YYYY-MM-DD,OPINION: No MRI findings of cancer. ,11
+756,46,YYYY-MM-DD,,12
+757,46,YYYY-MM-DD,BI-RADS: category,13
+758,46,YYYY-MM-DD,,14
+759,46,YYYY-MM-DD,,15
+760,46,YYYY-MM-DD,_____________,16
+761,46,YYYY-MM-DD,,17
+762,46,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist,18
+763,47,YYYY-MM-DD,Exam Title,0
+764,47,YYYY-MM-DD,,1
+765,47,YYYY-MM-DD,The mass in the ... ,2
+766,47,YYYY-MM-DD,,3
+767,47,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+768,47,YYYY-MM-DD,_____________,5
+769,47,YYYY-MM-DD,,6
+770,47,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+771,47,YYYY-MM-DD,,8
+772,47,YYYY-MM-DD,,9
+773,47,YYYY-MM-DD,,10
+774,47,YYYY-MM-DD,,11
+775,47,YYYY-MM-DD,,12
+776,47,YYYY-MM-DD,,13
+777,47,YYYY-MM-DD,--- Addendum ---,14
+778,47,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+779,47,YYYY-MM-DD,,16
+780,47,YYYY-MM-DD,--- Addendum end ---,17
+781,48,YYYY-MM-DD,Exam Title,0
+782,48,YYYY-MM-DD,,1
+783,48,YYYY-MM-DD,Compared to Previous: N/A,2
+784,48,YYYY-MM-DD,Breast Density >= 75%: N/A,3
+785,48,YYYY-MM-DD,Mastectomy: N/A,4
+786,48,YYYY-MM-DD,,5
+787,48,YYYY-MM-DD,Recall client in 1 year: N/A,6
+788,48,YYYY-MM-DD,,7
+789,48,YYYY-MM-DD,,8
+790,48,YYYY-MM-DD,BIRADS-category,9
+791,48,YYYY-MM-DD,_____________,10
+792,48,YYYY-MM-DD,,11
+793,48,YYYY-MM-DD,This report was electronically signed by a radiologist,12
+794,49,YYYY-MM-DD,Exam Title,0
+795,49,YYYY-MM-DD,,1
+796,49,YYYY-MM-DD,The mass in the ... ,2
+797,49,YYYY-MM-DD,,3
+798,49,YYYY-MM-DD,"Informed consent was obtained.  Using aseptic technique, ... Patient was given postprocedure instructions.",4
+799,49,YYYY-MM-DD,_____________,5
+800,49,YYYY-MM-DD,,6
+801,49,YYYY-MM-DD,This report was electronically dictated and signed by a radiologist ,7
+802,49,YYYY-MM-DD,,8
+803,49,YYYY-MM-DD,,9
+804,49,YYYY-MM-DD,,10
+805,49,YYYY-MM-DD,,11
+806,49,YYYY-MM-DD,,12
+807,49,YYYY-MM-DD,,13
+808,49,YYYY-MM-DD,--- Addendum ---,14
+809,49,YYYY-MM-DD,Pathology report for the core biopsy indicates ... ,15
+810,49,YYYY-MM-DD,,16
+811,49,YYYY-MM-DD,--- Addendum end ---,17
