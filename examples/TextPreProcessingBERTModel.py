@@ -11,7 +11,7 @@ parser.add_argument("--dfolder", type=str,
                     help="Folder with CSV files to be processed.")
 parser.add_argument("--ft_folder", type=str,
                     help="Folder with TXT files for fine tuning tasks.")
-parser.add_argument("--pt_id_col", type=str, default="MRN",
+parser.add_argument("--exam_col", type=str, default="AccNum",
                     help="Column name used for patient ID.")
 parser.add_argument("--date_col", type=str, default="ExamDate",
                     help="Column name used for exam date.")
@@ -26,7 +26,7 @@ print('-'*80)
 # Load all data files
 databases = [pd.read_csv(opt.dfolder + '/' + fl)
              for fl in os.listdir(opt.dfolder) if fl.endswith('.csv')]
-databases = [db[[opt.pt_id_col, opt.date_col, opt.txt_col]].copy() for db in
+databases = [db[[opt.exam_col, opt.date_col, opt.txt_col]].copy() for db in
              databases]
 all_data = pd.concat(databases, ignore_index=True)
 all_data = all_data.drop_duplicates(opt.txt_col)
@@ -74,7 +74,7 @@ for i1, dt_set in enumerate([training_csv, val_csv]):
                 rtxt += '\n' + txt_processed['add_in_para_redacted']
             redacted_train_data.append(rtxt)
         except:
-            print('A Report was abandoned.' + str(rp[opt.pt_id_col]) + ' ' +
+            print('A Report was abandoned.' + str(rp[opt.exam_col]) + ' ' +
                   str(rp[opt.date_col]))
             continue
         words = [item for sublist in

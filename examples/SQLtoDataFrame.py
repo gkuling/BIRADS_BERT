@@ -2,6 +2,7 @@ import argparse
 import pandas as pd
 import sys
 from tqdm import tqdm
+import numpy as np
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--input_sql", type=str,
@@ -28,49 +29,47 @@ def eliminate_sequence_number(sql_data,
     string data in the proper sequence to merge multiple lines of the same
     session into one row of information in a dataframe.
     :param sql_data: csv file containing sql output where the report data is
-    split into lines characterizeed by the sequence number.
+        split into lines characterizeed by the sequence number. Requires a
+        SequenceNumber column and an ExamDate column.
     :param accession_label: str, name of the column that contains session
     number
     :param textlabel: str, name of the column that contains report text
     :return: Dataframe of all rows of sql_data file compressed into sessions
     """
-    if 'SequenceNumber' in sql_data.columns:
-        acc_nums = list(set(sql_data[accession_label]))
-        output_data = []
-        acc_nums_iterator = tqdm(acc_nums, desc="SQLtoDataframe Progress: ",
-                                 position=0, leave=True)
-        for num in acc_nums_iterator:
-            temp = sql_data.loc[sql_data[accession_label] == num]
-            temp = temp.drop('ID', 'columns').drop_duplicates()
-            temp = temp.sort_values(['SequenceNumber'])
-            save_value = list(temp.values[0])
-            col_oi = list(temp.columns).index(textlabel)
-            for row in temp.itertuples():
-                if row.SequenceNumber == 0:
-                    continue
+    sql_data = sql_data[[textlabel, accession_label, 'SequenceNumber',
+                         'ExamDate']].replace(np.nan, '', regex=True).astype({textlabel: str})
+
+    acc_nums = list(set(sql_data[accession_label]))
+    output_data = []
+    acc_nums_iterator = tqdm(acc_nums, desc="SQLtoDataframe Progress: ",
+                             position=0, leave=True)
+    for num in acc_nums_iterator:
+        temp = sql_data.loc[sql_data[accession_label] == num]
+        temp = temp.drop_duplicates()
+        temp = temp.sort_values(['SequenceNumber'])
+        save_value = list(temp.values[0])
+        col_oi = list(temp.columns).index(textlabel)
+        for row in temp.itertuples():
+            if row.SequenceNumber == 0:
+                continue
+            else:
+                if row[col_oi+1] == '(null)':
+                    save_value[col_oi] += '\n'
                 else:
-                    if row[col_oi+1] == '(null)':
-                        save_value[col_oi] += '\n'
-                    else:
-                        save_value[col_oi] += '\n' + row[col_oi+1]
-            output_data.append(save_value)
-            sys.stdout.write(
-                '\rFinished analyzing ' + str(len(output_data)/len(acc_nums))
-            )
-            sys.stdout.flush()
-        op_cols = list(sql_data.columns)
-        op_cols.remove('ID')
-        rt_df = pd.DataFrame(output_data,
-                             columns=op_cols)
-        return rt_df
-    else:
-        raise Exception("Sequence Number is not in this dataset. This script "
-                        "needs a sequence number to convert sql data into a "
-                        "dataframe of reports. If your data is already in "
-                        "report form, this script doesn't need to be ran.")
+                    save_value[col_oi] += '\n' + row[col_oi+1]
+        output_data.append(save_value)
+        sys.stdout.write(
+            '\rFinished analyzing ' + str(len(output_data)/len(acc_nums))
+        )
+        sys.stdout.flush()
+    op_cols = list(sql_data.columns)
+    rt_df = pd.DataFrame(output_data,
+                         columns=op_cols)
+    rt_df = rt_df.drop('SequenceNumber', 'columns')
+    return rt_df
 
 
-sql_reports = pd.read_csv(opt.inpput_sql)
+sql_reports = pd.read_csv(opt.input_sql)
 
 reports_processed = eliminate_sequence_number(sql_reports,
                                               accession_label=opt.session_col,

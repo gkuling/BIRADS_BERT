@@ -20,7 +20,7 @@ parser = argparse.ArgumentParser()
 logger = logging.getLogger(__name__)
 # Required parameters
 parser.add_argument("--train_data_file", default=None, type=str,
-                    required=False,
+                    required=True,
                     help="The input training data in a .txt file"
                          "files.")
 parser.add_argument("--output_dir", default=None, type=str, required=True,
@@ -28,7 +28,7 @@ parser.add_argument("--output_dir", default=None, type=str, required=True,
                          "and checkpoints will be written.")
 parser.add_argument('--overwrite_output_dir', action='store_true',
                     help="Overwrite the content of the output directory")
-parser.add_argument("--per_gpu_train_batch_size", default=4, type=int,
+parser.add_argument("--per_gpu_train_batch_size", default=16, type=int,
                     help="Batch size per GPU/CPU for training.")
 parser.add_argument("--do_eval", action='store_true',
                     help="Whether to run eval on the dev set.")
@@ -36,7 +36,7 @@ parser.add_argument("--eval_data_file", default=None, type=str,
                     required=False,
                     help="The input training data in a .txt file"
                          "files.")
-parser.add_argument("--num_train_epochs", default=50.0, type=float,
+parser.add_argument("--num_train_epochs", default=1.0, type=float,
                     help="Total number of training epochs to perform.")
 parser.add_argument("--warmup_steps", default=2000, type=int,
                     help="Linear warmup over warmup_steps.")
