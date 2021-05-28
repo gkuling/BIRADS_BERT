@@ -2,72 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3854f3-7df2-4f6e-b224-2b76c28a3c43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BI-RADS-BERT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_mock_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_mock_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/MLM_Training_transformers.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/MLM_Training_transformers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/SQLtoDataFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/SQLtoDataFrame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/TextPreProcessingBERTModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/TextPreProcessingBERTModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned13.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned13.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned14.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned14.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned15.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned16.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned16.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned17.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned18.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned18.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned19.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned19.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned21.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned22.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned24.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned26.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned27.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned27.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned28.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned28.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned30.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned30.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned31.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned31.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned32.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned32.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned33.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned33.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned34.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned35.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned35.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned36.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned37.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned37.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned38.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned38.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned39.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned40.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned40.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned41.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned41.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned42.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned43.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned43.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned44.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned44.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned45.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned46.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned46.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned47.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned47.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned48.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned49.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned49.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/labeled_data/Sectioned9.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/reports_by_exam.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mock_data/sql_dataframe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mock_data/sql_dataframe.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,12 +97,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622123595832</updated>
-      <workItem from="1622123598404" duration="3717000" />
+      <workItem from="1622123598404" duration="5340000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished Mock data production and readme file">
+      <created>1622127355808</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622127355808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Remove of unneeded files in github">
+      <created>1622127395056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622127395056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished Mock data production and readme file" />
+    <MESSAGE value="Remove of unneeded files in github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove of unneeded files in github" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
