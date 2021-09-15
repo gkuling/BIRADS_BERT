@@ -9,7 +9,7 @@ This implementation could be used on other radiology in house corpus as well. La
 This project was developed using conda environments. To build the conda environment use the line of code below from the command line
 
 ```angular2html
-conda create --name NLPenv --file requirements.txt --channel default --channel conda-forge
+conda create --name NLPenv --file requirements.txt --channel default --channel conda-forge --channel huggingface --channel pytorch
 ```
 
 ## Dataset Organization
