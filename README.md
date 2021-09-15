@@ -80,7 +80,7 @@ python ./examples/MLM_Training_transformers.py.py
 This script will run fine tuning to train a section tokenizer with the option of using auxiliary data. 
 
 ```angular2html
-python ./exmaples/BERTFineTuningSectionTokenization.py 
+python ./examples/BERTFineTuningSectionTokenization.py 
 --dfolder ./mock_data/labeled_data
 --sfolder /folder/to/save/section_tokenizer
 ```
@@ -96,7 +96,7 @@ Optional parser arguements:
 This script will run fine tuning training of field extraction without section tokenization. 
 
 ```angular2html
-python ./exmaples/BERTFineTuningFieldExtractionWoutSectionization.py 
+python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
 --dfolder ./mock_data/labeled_data
 --sfolder /folder/to/save/field_extractor_WoutST
 --field_name Modality
@@ -113,7 +113,7 @@ Optional parser arguements:
 This script will run fine tuning training of field extraction with section tokenization.
 
 ```angular2html
-python ./exmaples/BERTFineTuningFieldExtractionWoutSectionization.py 
+python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
 --dfolder ./mock_data/labeled_data
 --sfolder /folder/to/save/field_extractor
 --field_name Modality
