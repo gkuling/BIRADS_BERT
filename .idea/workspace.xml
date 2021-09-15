@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae3854f3-7df2-4f6e-b224-2b76c28a3c43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +33,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
-  <component name="RunManager" selected="Python.BERTFineTuningSectionTokenization">
+  <component name="RunManager" selected="Python.TextPreProcessingBERTModel">
     <configuration name="BERTFineTuningSectionTokenization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BI-RADS-BERT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,6 +52,28 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/BERTFineTuningSectionTokenization.py" />
       <option name="PARAMETERS" value="--dfolder /home/gkuling/BI-RADS-BERT/mock_data/labeled_data --sfolder /jaylabs/amartel_data2/Grey/github" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TextPreProcessingBERTModel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BI-RADS-BERT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Miniconda3\envs\NLPenv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/TextPreProcessingBERTModel.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -81,9 +106,11 @@
     <list>
       <item itemvalue="Python.BERTFineTuningSectionTokenization" />
       <item itemvalue="Python.build_mock_data" />
+      <item itemvalue="Python.TextPreProcessingBERTModel" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TextPreProcessingBERTModel" />
         <item itemvalue="Python.BERTFineTuningSectionTokenization" />
         <item itemvalue="Python.build_mock_data" />
       </list>
@@ -97,7 +124,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622123595832</updated>
-      <workItem from="1622123598404" duration="5340000" />
+      <workItem from="1622123598404" duration="5425000" />
+      <workItem from="1624033509621" duration="31000" />
+      <workItem from="1626788150113" duration="1689000" />
+      <workItem from="1628099218670" duration="4982000" />
+      <workItem from="1628170895431" duration="66000" />
+      <workItem from="1628274253090" duration="1428000" />
+      <workItem from="1631730252837" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Mock data production and readme file">
       <created>1622127355808</created>
@@ -113,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622127395056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Final Commit">
+      <created>1622211319275</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622211319275</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +162,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished Mock data production and readme file" />
     <MESSAGE value="Remove of unneeded files in github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove of unneeded files in github" />
+    <MESSAGE value="Final Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -136,6 +177,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BI_RADS_BERT$TextPreProcessingBERTModel.coverage" NAME="TextPreProcessingBERTModel Coverage Results" MODIFIED="1631730337697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/BI_RADS_BERT$BERTFineTuningSectionTokenization.coverage" NAME="BERTFineTuningSectionTokenization Coverage Results" MODIFIED="1622125607148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/BI_RADS_BERT$build_mock_data.coverage" NAME="build_mock_data Coverage Results" MODIFIED="1622125599008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
