@@ -4,6 +4,14 @@ Implementation of BI-RADS-BERT & The Advantages of Section Tokenization.
 
 This implementation could be used on other radiology in house corpus as well. Labelling your own data should take the same form as reports and dataframes in './mockdata'. 
 
+## Conda Environment setup
+
+This project was developed using conda environments. To build the conda environment use the line of code below from the command line
+
+```angular2html
+conda create --name NLPenv --file requirements.txt --channel default --channel conda-forge
+```
+
 ## Dataset Organization
 
 Two datasets are needed to build BERT embeddings and fine tuned Field Extractors. 1. dataframe of SQL data, 2. labeled data for field extraction. 
