@@ -2,7 +2,7 @@ import torch
 from transformers import PretrainedConfig, \
     BertTokenizerFast, AdamW
 from .BertForSequenceClassification_aux import BertForSequenceClassification_aux
-from util.TrainingUtils import training_collator
+from utils.TrainingUtils import training_collator
 from sklearn.model_selection import train_test_split
 from models.ClassificationTextDataset import ClasificationTextDataset
 from torch.utils.data import DataLoader

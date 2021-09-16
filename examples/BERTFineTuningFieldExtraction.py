@@ -1,5 +1,5 @@
 import argparse
-from util import TrainingUtils as cutl
+from utils import TrainingUtils as cutl
 from models.BERTFieldExtractor import BERTFieldExtractor
 import numpy as np
 import pandas as pd

@@ -1,8 +1,8 @@
 import argparse
-import util.TrainingUtils as cutl
+import utils.TrainingUtils as cutl
 from models.BERTSectionTokenizer import BERTSectionTokenizer
 from models.BERTSectionTokenizerWithAux import BERTSectionTokenizerWithAux
-from util.TextPreprocessing import report_preprocess, \
+from utils.TextPreprocessing import report_preprocess, \
     determine_report_GT, get_sents_and_redacted, gt_preprocessing
 import numpy as np
 from sklearn.model_selection import StratifiedKFold

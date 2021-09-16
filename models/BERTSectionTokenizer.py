@@ -1,4 +1,4 @@
-from util.TextPreprocessing import report_preprocess, \
+from utils.TextPreprocessing import report_preprocess, \
     determine_report_GT, get_sents_and_redacted, gt_preprocessing
 from .BERTFineTuningDeployment import *
 

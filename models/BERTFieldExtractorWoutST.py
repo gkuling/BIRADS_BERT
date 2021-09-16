@@ -1,5 +1,5 @@
 from models.BERTFineTuningDeployment import *
-from util import TextPreprocessing as TPreP
+from utils import TextPreprocessing as TPreP
 
 
 class BERTFieldExtractorWoutST(BERTFineTuningDeployment):

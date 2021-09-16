@@ -44,7 +44,7 @@ Hospital records keep each individual report line as a separate SQL entry, so by
 ```angular2html
 python ./examples/SQLtoDataFrame.py 
 --input_sql ./mock_data/sql_dataframe.csv 
---save_name /folder/to/save/exam_dataframe
+--save_name /folder/to/save/exam_dataframe/save_file.csv
 ```
 
 This will output an 'exam_dataframe.csv' file that can be used in the next step. 

@@ -3,7 +3,7 @@ import os
 from sklearn.model_selection import train_test_split
 from nltk.tokenize import word_tokenize
 from tqdm import tqdm
-from util.TextPreprocessing import *
+from utils.TextPreprocessing import *
 import pandas as pd
 
 parser = argparse.ArgumentParser()
