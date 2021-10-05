@@ -1,3 +1,6 @@
+import sys
+sys.path.append('.')
+
 import argparse
 from utils import TrainingUtils as cutl
 from models.BERTFieldExtractor import BERTFieldExtractor

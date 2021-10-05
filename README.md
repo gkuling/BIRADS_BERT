@@ -65,7 +65,7 @@ python ./examples/TextPreProcessingBERTModel.py
 This script will now run the BERT pre training with masked language modeling. 
 
 ```angular2html
-python ./examples/MLM_Training_transformers.py.py 
+python ./examples/MLM_Training_transformers.py 
 --train_data_file ./mock_data/pre_training_data/VocabOf39_PreTraining_training.txt 
 --output_dir /folder/to/save/bert/model
 --do_eval 

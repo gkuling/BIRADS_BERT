@@ -1,3 +1,6 @@
+import sys
+sys.path.append('.')
+
 import argparse
 import utils.TrainingUtils as cutl
 from models.BERTSectionTokenizer import BERTSectionTokenizer
