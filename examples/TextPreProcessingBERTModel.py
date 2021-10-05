@@ -1,3 +1,6 @@
+'''
+Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+'''
 import sys
 sys.path.append('.')
 

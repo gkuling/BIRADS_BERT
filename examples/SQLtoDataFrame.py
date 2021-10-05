@@ -1,3 +1,6 @@
+'''
+Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+'''
 import argparse
 import pandas as pd
 import sys

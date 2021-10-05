@@ -1,3 +1,9 @@
+'''
+Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+Codes inspired by Hugging Face Transformers package code run_mlm.py
+https://github.com/huggingface/transformers/blob/master/examples/pytorch
+/language-modeling/run_mlm.py
+'''
 from models.BERTFineTuningDeployment import *
 from utils.TextPreprocessing import report_preprocess, \
     determine_report_GT, get_sents_and_redacted, gt_preprocessing
