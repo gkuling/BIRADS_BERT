@@ -133,7 +133,7 @@ Optional parser arguements:
 
 This code can be used to run statistical analysis of test results that are produced from BERTFineTuning codes. 
 ```angular2html
-python ./examples/post_ExperimentSummary.py --folder /folder/where/xlsx/file/is/located --stat_test 'MannWhitney'
+python ./examples/post_ExperimentSummary.py --folder /folder/where/xlsx/file/is/located --stat_test MannWhitney
 ```
 
 ```--stat_test``` options: 'MannWhitney' and 'McNemar'. 
