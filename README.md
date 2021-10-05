@@ -12,6 +12,7 @@ This project was developed using conda environments. To build the conda environm
 conda create --name NLPenv --file requirements.txt --channel default --channel conda-forge --channel huggingface --channel pytorch
 ```
 
+
 ## Dataset Organization
 
 Two datasets are needed to build BERT embeddings and fine tuned Field Extractors. 1. dataframe of SQL data, 2. labeled data for field extraction. 
