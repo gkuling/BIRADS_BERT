@@ -19,7 +19,6 @@ def mcnemar_test(a,b):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--folder", type=str,
-                    default='/jaylabs/amartel_data2/Grey/NLPRR_Experiments',
                     help="number of epochs of training")
 parser.add_argument("--stat_test", type=str, default='MannWhitney',
                     help="Adhoc test performed. ")

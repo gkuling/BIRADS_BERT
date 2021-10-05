@@ -127,6 +127,20 @@ Optional parser arguements:
 
 ```--k_fold``` If used then the experiment is run with a 5 fold cross validation.
 
+## Additional Codes 
+
+### Post_ExperimentSummary.py
+
+This code can be used to run statistical analysis of test results that are produced from BERTFineTuning codes. 
+```angular2html
+python ./examples/post_ExperimentSummary.py --folder /folder/where/xlsx/file/is/located --stat_test 'MannWhitney'
+```
+
+```--stat_test``` options: 'MannWhitney' and 'McNemar'. 
+
+'MannWhitney': MannWhitney U-Test https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
+
+'McNemar' : McNemar's test https://en.wikipedia.org/wiki/McNemar%27s_test 
 ## Contact 
 
 Please post a Github issue or contact gkuling@gmail.com if you have any questions.
