@@ -72,7 +72,7 @@ python ./examples/MLM_Training_transformers.py
 --eval_data_file ./mock_data/pre_training_data/PreTraining_validation.txt 
 ```
 
-## Hot to Run BERT Fine Tuning
+## How to Run BERT Fine Tuning
 
 ```--pre_trained_model``` parsed arugment that can be used for all the follwing scripts to load a pre trained embedding. The default is ```bert-base-uncased```. To get BioClinical BERT use ```--pre_trained_model emilyalsentzer/Bio_ClinicalBERT```. 
 
