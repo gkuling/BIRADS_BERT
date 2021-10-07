@@ -4,6 +4,9 @@ Codes inspired by Hugging Face Transformers package code run_mlm.py
 https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
 '''
+import sys
+sys.path.append('.')
+
 from models.BERTFineTuningDeployment import *
 from utils import TextPreprocessing as TPreP
 
