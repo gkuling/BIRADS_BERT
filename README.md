@@ -114,7 +114,7 @@ Optional parser arguements:
 This script will run fine tuning training of field extraction with section tokenization.
 
 ```angular2html
-python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
+python ./examples/BERTFineTuningFieldExtraction.py 
 --dfolder ./mock_data/labeled_data
 --sfolder /folder/to/save/field_extractor
 --field_name Modality
