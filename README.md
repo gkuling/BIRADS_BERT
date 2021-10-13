@@ -138,9 +138,9 @@ python ./examples/post_ExperimentSummary.py --folder /folder/where/xlsx/files/ar
 
 ```--stat_test``` options: 'MannWhitney' and 'McNemar'. 
 
-'MannWhitney': MannWhitney U-Test https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
+'MannWhitney': MannWhitney U-Test. This test was used for the Section Tokenizer experimental results comparing the results from different models. https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test
 
-'McNemar' : McNemar's test https://en.wikipedia.org/wiki/McNemar%27s_test 
+'McNemar' : McNemar's test. This test was used for the Field Extraction experimental results comparing the results from different models. https://en.wikipedia.org/wiki/McNemar%27s_test 
 ## Contact 
 
 Please post a Github issue if you have any questions.
