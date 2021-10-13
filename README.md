@@ -132,6 +132,9 @@ Optional parser arguements:
 ### Post_ExperimentSummary.py
 
 This code can be used to run statistical analysis of test results that are produced from BERTFineTuning codes. 
+
+To determine the best final model, we performed statistical significance testing with a 95% confidence. We used the Mann-Whitney U test to compare the medians of different section tokenizers as the distribution of accuracy and G.F1 performance is skewed to the left (medians closer to 100%). For the field extraction classifiers, we used the McNemar test to compare the agreement between two classifiers. The McNemar test was chosen because it has been robustly proven to have an acceptable probability of Type I errors (not detecting a difference between two classifiers when there is a difference). After evaluating both configurations of field extraction explored in this paper, we performed another McNemar test to assist in choosing the best technique. All statistical tests were performed with p-value adjustments for multiple comparisons testing with Bonferonni correction.
+
 ```angular2html
 python ./examples/post_ExperimentSummary.py --folder /folder/where/xlsx/files/are/located --stat_test MannWhitney
 ```
