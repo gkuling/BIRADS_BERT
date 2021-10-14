@@ -104,7 +104,7 @@ if opt.stat_test== 'MannWhitney':
         comp = MultiComp.allpairtest(mannwhitneyu, method='Holm')
         stats_tests[opt.stat_test + '_G.F1'].append(str(comp[0]))
 
-if opt.stat_test== 'McNemar':
+elif opt.stat_test== 'McNemar':
     stats_tests = {'Field': [],
                    opt.stat_test + '_ result':[],
                    'Sample_size': []}
@@ -137,6 +137,11 @@ if opt.stat_test== 'McNemar':
         stats_tests['Field'].append(fld)
         stats_tests[opt.stat_test + '_ result'].append(str(comp[0]))
         stats_tests['Sample_size'].append(df.shape[0])
+else:
+    raise ValueError("Stats test is not recognized. Must choose 'MannWhitney' "
+                     "or 'McNemar'. This {} is not an option.".format(
+        opt.stat_test
+    ))
 
 stats_tests = pd.DataFrame(stats_tests)
 stats_tests.to_csv(opt.folder +'/StatsTests_' + opt.stat_test + '.csv')
