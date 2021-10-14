@@ -62,8 +62,7 @@ python ./examples/TextPreProcessingBERTModel.py
 
 ### Step 3: MLM_Training_transformers.py
 
-This script will now run the BERT pre training with masked language modeling. 
-
+This script will now run the BERT pre training with masked language modeling. The Output directory (```--output_dir```)  used is required to be empty; eitherwise the parser parameter ```--overwrite_output_dir``` is required to overwrite the files in the output directory. 
 ```angular2html
 python ./examples/MLM_Training_transformers.py 
 --train_data_file ./mock_data/pre_training_data/VocabOf39_PreTraining_training.txt 
@@ -129,7 +128,7 @@ Optional parser arguements:
 
 ## Additional Codes 
 
-### Post_ExperimentSummary.py
+### post_ExperimentSummary.py
 
 This code can be used to run statistical analysis of test results that are produced from BERTFineTuning codes. 
 

@@ -1,5 +1,11 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+
+Description: this script will preprocessing the pretraining data into a .txt
+file that can be used for pre training the BERT embedding.
+
+Input: a .csv file that holds the reports for pretraining.
+output: .txt files of pretraining data with vocabulary size, and a validation set.
 '''
 import sys
 sys.path.append('.')
@@ -105,9 +111,6 @@ for i1, dt_set in enumerate([training_csv, val_csv]):
     print(cumulative_words)
     prp_data.update({sets[i1]: train_data})
     prp_data.update({sets[i1] + '_vocab': len(cumulative_vocab)})
-    prp_data.update({sets[i1] + '_redacted': redacted_train_data})
-    prp_data.update({sets[i1] + '_redacted_vocab': len(
-        redacted_cumulative_vocab)})
 
 print('')
 print('Writing TXT files')

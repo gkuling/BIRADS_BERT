@@ -3,6 +3,17 @@ Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
 https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
+
+Description: Training code used to train a model on the identification of a
+section being described in the input text. This code can be used to train the
+section tokenizer with and without auxiliary data.
+
+Input: train and test folders filled with .txt documents holding dictionaries
+    with the input data and field label.
+Output: A test_results.xlsx file with the individual test predictions and
+ground truth, and summary stats of accuracy and G. F1 Score. Saved
+pytorch model (pytorch_model.bin, config.json), and tokenizer (
+special_tokens_map.json, tokenizer_config.json, and vocab.txt).
 '''
 import sys
 sys.path.append('.')
@@ -72,7 +83,7 @@ else:
 
 # Begin Experiment
 metrics = {'Accuracy': [],
-           'GDSC': [],
+           'G.F1': [],
            'Weighted_F1': [],
            'Weighted_precision': [],
            'Weighted_recall': []}
@@ -125,7 +136,7 @@ test_results = pd.DataFrame(metrics)
 
 # Summarize Testing Results
 summary_metrics = {'Accuracy': [],
-                   'GDSC': [],
+                   'G.F1': [],
                    'Weighted_F1': [],
                    'Weighted_precision': [],
                    'Weighted_recall': []}
@@ -139,9 +150,9 @@ for metric in metrics:
 print('Accuracy of BERTSectionTokenizer(): ' +
       str(np.round(summary_metrics['Accuracy'][0]*100)) + '+/-' +
       str(np.round(summary_metrics['Accuracy'][1]*100)) + '%')
-print('GDSC of BERTSectionTokenizer(): ' +
-      str(np.round(summary_metrics['GDSC'][0]*100)) + '+/-' +
-      str(np.round(summary_metrics['GDSC'][1]*100)) + '%')
+print('G.F1 of BERTSectionTokenizer(): ' +
+      str(np.round(summary_metrics['G.F1`'][0]*100)) + '+/-' +
+      str(np.round(summary_metrics['G.F1'][1]*100)) + '%')
 print('-' * 60)
 summary_metrics = pd.DataFrame(summary_metrics)
 

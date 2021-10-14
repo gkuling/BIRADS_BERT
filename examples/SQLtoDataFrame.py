@@ -1,5 +1,12 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+
+Description: This code will convert an SQL .csv file that has reports
+seperated into indidual text lines into a .csv of individual reports.
+
+Input: saved .csv file of sql database needed to be converted.
+Output: a .csv file of the input file with Lines collected into organized
+reports.
 '''
 import argparse
 import pandas as pd

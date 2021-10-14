@@ -1,5 +1,13 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
+
+Script that iwll run statistical tests for comparing tokenizers with
+MannWhitney U-test or classifiers with the McNemar test.
+
+Input: 2 or more .xlsx fiels of different model testing results.
+output: NLPRR_ExperimentsSummary.csv containing a comparison of descriptive
+statistics, and StatsTests_<stats test>.csv containing the multiple
+comparison testing results of the chosen test.
 '''
 import argparse
 import pandas as pd
@@ -40,7 +48,7 @@ for root, dirs, files in os.walk(opt.folder):
 new_df = {'FieldExtraction':[],
           'Model': [],
           'Accuracy': [],
-          'GDSC': [],
+          'G.F1': [],
           'Weighted_F1': [],
           'Weighted_precision': [],
           'Weighted_recall': []}
@@ -66,7 +74,7 @@ fields = list(set([r[0] for r in res]))
 if opt.stat_test== 'MannWhitney':
     stats_tests = {'Field': [],
                    opt.stat_test + '_Acc':[],
-                   opt.stat_test + '_GDSC':[],
+                   opt.stat_test + '_G.F1':[],
                    'Sample_size': []}
     for fld in fields:
         df = pd.DataFrame()
@@ -85,7 +93,7 @@ if opt.stat_test== 'MannWhitney':
         stats_tests['Sample_size'].append(df.shape[0])
         df = pd.DataFrame()
         for i, r in enumerate([r for r in res if r[0]==fld]):
-            df[r[1]] = r[-1]['GDSC'].values
+            df[r[1]] = r[-1]['G.F1'].values
 
         stacked_data = df.stack().reset_index()
         stacked_data = stacked_data.rename(columns={'level_0': 'id',
@@ -94,7 +102,7 @@ if opt.stat_test== 'MannWhitney':
         MultiComp = MultiComparison(stacked_data['result'],
                                     stacked_data['treatment'])
         comp = MultiComp.allpairtest(mannwhitneyu, method='Holm')
-        stats_tests[opt.stat_test + '_GDSC'].append(str(comp[0]))
+        stats_tests[opt.stat_test + '_G.F1'].append(str(comp[0]))
 
 if opt.stat_test== 'McNemar':
     stats_tests = {'Field': [],

@@ -3,6 +3,16 @@ Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
 https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
+
+Description: Training code used to train a BERT embedding in Masked Language
+Modeling for BERTFineTuning Codes.
+
+Input: train and test folders filled with .txt documents holding a list of
+sentences. These .txt files can be created with  TextPReProcessingBERTModel.py
+file.
+Output: A saved Transformer model based on Huggingface Transformers package.
+This includes a cnofig.json, eval_results.txt, pytorch_model.bin,
+trianing_args.bin, and vocab.txt.
 '''
 import sys
 sys.path.append('.')

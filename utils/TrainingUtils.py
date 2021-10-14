@@ -65,7 +65,7 @@ def calculate_metric(pr, gt, met):
     :param pr: prediction from the model
     :param gt: ground truth to test against
     :param met: metric to be evaluated. Implementations are Accuracy,
-    Weighted_F1, Weighted_precision, Weeighted_recall, GDSC (G. F1 measure)
+    Weighted_F1, Weighted_precision, Weighted_recall, G. F1 measure
     :return: metric calculated
     """
     if met == 'Accuracy':
@@ -76,7 +76,7 @@ def calculate_metric(pr, gt, met):
         return precision_score(pr, gt, average='weighted', zero_division=0)
     elif met == 'Weighted_recall':
         return recall_score(pr, gt, average='weighted', zero_division=0)
-    elif met == 'GDSC':
+    elif met == 'G.F1':
         lbls = list(set(pr + gt))
         gt = [lbls.index(e) for e in gt]
         pr = [lbls.index(e) for e in pr]
