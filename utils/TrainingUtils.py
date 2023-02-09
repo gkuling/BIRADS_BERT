@@ -35,14 +35,21 @@ def load_all_data(directory):
     :return: a list of fine tuning data. A list of dict
     """
     full_data = []
-    for file in [fl for fl in os.listdir(directory) if fl.endswith('.txt')]:
-        f = open(directory + '/' + file, 'r')
-        data = f.read()
-        f.close()
+    if os.path.isdir(directory):
+        for file in [fl for fl in os.listdir(directory) if fl.endswith('.txt')]:
+            f = open(directory + '/' + file, 'r')
+            data = f.read()
+            f.close()
 
-        data = eval(data)
-        data['filename'] = file
-        full_data.append(data)
+            data = eval(data)
+            data['filename'] = file
+            full_data.append(data)
+    elif directory.endswith('.xlsx'):
+        full_data = pd.read_excel(directory, engine='openpyxl')
+        full_data = full_data.to_dict('records')
+    else:
+        raise Exception("'directory' must be a folder filled with text files "
+                        "or a .xlsx file. ")
 
     return full_data
 
