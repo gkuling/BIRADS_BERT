@@ -125,15 +125,28 @@ for k, fold in enumerate(folds):
     ct = 0
     print('Amount of Test Subjects: ' + str(len(fold['test'])))
     for report in fold['test']:
-        if opt.report_section in report['sectionized'].keys():
-            # if the required report section is in the sectionized ground
-            # truth, use this example. So else, dont' use it
-            results['subject'].append(report['filename'])
-            results['GT'].append(report[opt.field_name])
-            results['input'].append(report['sectionized'][opt.report_section])
-            results['PR'].append(
-                labeler.predict(x=report['sectionized'][opt.report_section])
-            )
+        if 'sectionized' in report.keys():
+            if opt.report_section in report['sectionized'].keys():
+                # if the required report section is in the sectionized ground
+                # truth, use this example. So else, dont' use it
+                results['subject'].append(report['filename'])
+                results['GT'].append(report[opt.field_name])
+                results['input'].append(report['sectionized'][opt.report_section])
+                results['PR'].append(
+                    labeler.predict(x=report['sectionized'][opt.report_section])
+                )
+        elif opt.report_section in report.keys():
+            if report[opt.report_section]!='':
+                results['subject'].append(report['filename'])
+                results['GT'].append(report[opt.field_name])
+                results['input'].append(
+                    report[opt.report_section])
+                results['PR'].append(
+                    labeler.predict(x=report[opt.report_section])
+                )
+        else:
+             raise Exception('The data must contain a sectionized column or a '
+                             'column matching the report_section')
 
 # Summarize Testing Results
 metrics = {'Accuracy': [],

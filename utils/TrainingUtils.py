@@ -46,6 +46,7 @@ def load_all_data(directory):
             full_data.append(data)
     elif directory.endswith('.xlsx'):
         full_data = pd.read_excel(directory, engine='openpyxl')
+        full_data = full_data.fillna('')
         full_data = full_data.to_dict('records')
     else:
         raise Exception("'directory' must be a folder filled with text files "

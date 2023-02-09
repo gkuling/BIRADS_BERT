@@ -29,20 +29,38 @@ class BERTFieldExtractor(BERTFineTuningDeployment):
         self.model = BertForSequenceClassification_aux.from_pretrained(
             name_or_path, config=self.config)
         self.model.to(self.device)
-
-        dset = [
-            [self.config.label2id[dt[i][
-                self.config.field_extraction_config['field_name']
-            ]],
-             self.tokenizer(dt[i]['sectionized'][
-                                self.config.field_extraction_config[
-                                    'report_section']
-                            ],
-                            truncation=True)['input_ids']
-             ]
-            for i in range(len(dt))
-            if self.config.field_extraction_config['report_section'] in
-            dt[i]['sectionized'].keys()]
+        if all(['sectionized' in d.keys() for d in dt]):
+            dset = [
+                [self.config.label2id[dt[i][
+                    self.config.field_extraction_config['field_name']
+                ]],
+                 self.tokenizer(dt[i]['sectionized'][
+                                    self.config.field_extraction_config[
+                                        'report_section']
+                                ],
+                                truncation=True)['input_ids']
+                 ]
+                for i in range(len(dt))
+                if self.config.field_extraction_config['report_section'] in
+                dt[i]['sectionized'].keys()]
+        elif all([self.config.field_extraction_config['report_section'] in
+                  d.keys() for d in dt]):
+            dset = [
+                [self.config.label2id[dt[i][
+                    self.config.field_extraction_config['field_name']
+                ]],
+                 self.tokenizer(dt[i][
+                                    self.config.field_extraction_config[
+                                        'report_section']
+                                ],
+                                truncation=True)['input_ids']
+                 ]
+                for i in range(len(dt))
+                if dt[i][self.config.field_extraction_config[
+                             'report_section']]!='']
+        else:
+            raise Exception('the data set must have a sectioned column or a '
+                            'column name matching the report_section')
         return dset
 
     def predict(self, x):
