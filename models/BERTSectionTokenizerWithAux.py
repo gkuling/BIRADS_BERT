@@ -67,9 +67,17 @@ class BERTSectionTokenizerWithAux(BERTFineTuningDeployment):
             dt_Temp = dset_split[key]
             dset = []
             for report in tqdm(dt_Temp):
-                sectionized = {key: gt_preprocessing(report['sectionized'][key])
-                               for key in report['sectionized'].keys()
-                               if key in self.config.label2id.keys()}
+                if 'sectionized' in report.keys():
+                    sectionized = {
+                        key: gt_preprocessing(report['sectionized'][key])
+                        for key in report['sectionized'].keys()
+                        if key in self.config.label2id.keys()}
+                else:
+                    sectionized = {
+                        key: gt_preprocessing(report[key])
+                        for key in labels
+                        if key in self.config.label2id.keys() and report[
+                            key] != ''}
                 processed_data = report_preprocess(report['original_report'])
                 sents, orig_sents = get_sents_and_redacted(processed_data)
                 GT = determine_report_GT(orig_sents,

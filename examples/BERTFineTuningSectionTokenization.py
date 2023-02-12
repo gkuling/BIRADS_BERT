@@ -90,18 +90,18 @@ metrics = {'Accuracy': [],
 for k, fold in enumerate(folds):
     print('Running the ' + str(k+1) + ' kfold experiment.')
     # Initialize Model
-    if opt.aux_data:
-        sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
-    else:
-        sec_tknzr = BERTSectionTokenizer(redacted_input=opt.use_redacted)
-    sec_tknzr.from_pretrained(opt.pre_trained_model)
-
-    # Begin Training
-    sec_tknzr.fine_tune(fold['train'],
-                        max_epochs=opt.n_epochs,
-                        batch_size=opt.batch_size,
-                        ablation_portion=opt.data_portion)
-    sec_tknzr.save_model(opt.sfolder + str(k))
+    # if opt.aux_data:
+    #     sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
+    # else:
+    #     sec_tknzr = BERTSectionTokenizer(redacted_input=opt.use_redacted)
+    # sec_tknzr.from_pretrained(opt.pre_trained_model)
+    #
+    # # Begin Training
+    # sec_tknzr.fine_tune(fold['train'],
+    #                     max_epochs=opt.n_epochs,
+    #                     batch_size=opt.batch_size,
+    #                     ablation_portion=opt.data_portion)
+    # sec_tknzr.save_model(opt.sfolder + str(k))
 
     if opt.aux_data:
         sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
@@ -119,9 +119,15 @@ for k, fold in enumerate(folds):
     print('Amount of Test Subjects: ' + str(len(fold['test'])))
 
     for report in fold['test']:
-        sectionized = {key: gt_preprocessing(report['sectionized'][key])
-                       for key in report['sectionized'].keys()
-                       if key in sec_tknzr.config.label2id.keys()}
+        if 'sectionized' in report.keys():
+            sectionized = {key: gt_preprocessing(report['sectionized'][key])
+                           for key in report['sectionized'].keys()
+                           if key in sec_tknzr.config.label2id.keys()}
+        else:
+            sectionized = {
+                key: gt_preprocessing(report[key])
+                for key in sec_tknzr.config.label2id.keys()
+                if key in sec_tknzr.config.label2id.keys() and report[key] != ''}
         processed_data = report_preprocess(report['original_report'])
         sents, orig_sents = get_sents_and_redacted(processed_data)
         GT = determine_report_GT(orig_sents,
@@ -151,7 +157,7 @@ print('Accuracy of BERTSectionTokenizer(): ' +
       str(np.round(summary_metrics['Accuracy'][0]*100)) + '+/-' +
       str(np.round(summary_metrics['Accuracy'][1]*100)) + '%')
 print('G.F1 of BERTSectionTokenizer(): ' +
-      str(np.round(summary_metrics['G.F1`'][0]*100)) + '+/-' +
+      str(np.round(summary_metrics['G.F1'][0]*100)) + '+/-' +
       str(np.round(summary_metrics['G.F1'][1]*100)) + '%')
 print('-' * 60)
 summary_metrics = pd.DataFrame(summary_metrics)
