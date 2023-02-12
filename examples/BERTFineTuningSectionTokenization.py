@@ -90,18 +90,18 @@ metrics = {'Accuracy': [],
 for k, fold in enumerate(folds):
     print('Running the ' + str(k+1) + ' kfold experiment.')
     # Initialize Model
-    # if opt.aux_data:
-    #     sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
-    # else:
-    #     sec_tknzr = BERTSectionTokenizer(redacted_input=opt.use_redacted)
-    # sec_tknzr.from_pretrained(opt.pre_trained_model)
-    #
-    # # Begin Training
-    # sec_tknzr.fine_tune(fold['train'],
-    #                     max_epochs=opt.n_epochs,
-    #                     batch_size=opt.batch_size,
-    #                     ablation_portion=opt.data_portion)
-    # sec_tknzr.save_model(opt.sfolder + str(k))
+    if opt.aux_data:
+        sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
+    else:
+        sec_tknzr = BERTSectionTokenizer(redacted_input=opt.use_redacted)
+    sec_tknzr.from_pretrained(opt.pre_trained_model)
+
+    # Begin Training
+    sec_tknzr.fine_tune(fold['train'],
+                        max_epochs=opt.n_epochs,
+                        batch_size=opt.batch_size,
+                        ablation_portion=opt.data_portion)
+    sec_tknzr.save_model(opt.sfolder + str(k))
 
     if opt.aux_data:
         sec_tknzr = BERTSectionTokenizerWithAux(redacted_input=opt.use_redacted)
