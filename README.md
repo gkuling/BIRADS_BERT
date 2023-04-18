@@ -1,6 +1,6 @@
 # BI-RADS BERT
 
-Implementation of BI-RADS-BERT & The Advantages of Section Tokenization. 
+Implementation of BI-RADS-BERT & The Advantages of Section Segmentation. 
 
 This implementation could be used on other radiology in house corpus as well. Labelling your own data should take the same form as reports and dataframes in './mockdata'. 
 
@@ -75,12 +75,12 @@ python ./examples/MLM_Training_transformers.py
 
 ```--pre_trained_model``` parsed arugment that can be used for all the follwing scripts to load a pre trained embedding. The default is ```bert-base-uncased```. To get BioClinical BERT use ```--pre_trained_model emilyalsentzer/Bio_ClinicalBERT```. 
 
-### Step 4: BERTFineTuningSectionTokenization.py
+### Step 4: BERTFineTuningSectionSegmentation.py
 
 This script will run fine tuning to train a section tokenizer with the option of using auxiliary data. 
 
 ```angular2html
-python ./examples/BERTFineTuningSectionTokenization.py 
+python ./examples/BERTFineTuningSectionSegmentation.py 
 --dfolder ./mock_data/labeled_data
 --sfolder /folder/to/save/section_tokenizer
 ```
@@ -93,7 +93,7 @@ Optional parser arguements:
 
 ### Step 5: BERTFineTuningFieldExtractionWoutSectionization.py
 
-This script will run fine tuning training of field extraction without section tokenization. 
+This script will run fine tuning training of field extraction without section segmentation. 
 
 ```angular2html
 python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
@@ -110,7 +110,7 @@ Optional parser arguements:
 
 ### Step 6: BERTFineTuningFieldExtraction.py
 
-This script will run fine tuning training of field extraction with section tokenization.
+This script will run fine tuning training of field extraction with section segmentation.
 
 ```angular2html
 python ./examples/BERTFineTuningFieldExtraction.py 

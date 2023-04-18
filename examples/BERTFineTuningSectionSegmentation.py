@@ -168,4 +168,4 @@ sheets = ['Summary_Metrics', 'Test_results']
 
 # run function
 cutl.dfs_tabs(dfs, sheets, opt.sfolder + '_test_results.xlsx')
-print('End of BERTFineTuningSectionTokenization.py Script')
+print('End of BERTFineTuningSectionSegmentation.py Script')

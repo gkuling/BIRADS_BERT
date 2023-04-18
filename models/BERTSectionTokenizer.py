@@ -13,7 +13,7 @@ from .BERTFineTuningDeployment import *
 
 class BERTSectionTokenizer(BERTFineTuningDeployment):
     """
-    BERTFineTuning Deployment for section tokenization without auxiliary data
+    BERTFineTuning Deployment for section segmentation without auxiliary data
     """
     def __init__(self, redacted_input=False):
         """

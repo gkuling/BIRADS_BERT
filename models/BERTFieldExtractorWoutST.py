@@ -13,11 +13,11 @@ from utils import TextPreprocessing as TPreP
 
 class BERTFieldExtractorWoutST(BERTFineTuningDeployment):
     """
-    BERTFineTuningDeployment for Field Extraction without section tokenization
+    BERTFineTuningDeployment for Field Extraction without section segmentation
     """
     def __init__(self, redacted_input=False, max_len=512):
         """
-        Initializer for BERTFieldExtractor without Section tokenization
+        Initializer for BERTFieldExtractor without Section segmentation
         :param redacted_input: bool, whether to use redacted data
         :param max_len: int, max length of input sequence
         """

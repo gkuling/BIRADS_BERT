@@ -825,7 +825,7 @@ def join_list_item_to_content(snts):
 
 def gt_preprocessing(txt):
     """
-    Preprocessing method for the GT of section tokenization.
+    Preprocessing method for the GT of section segmentation.
     :param txt: preprocessing of text in the GT data.
     :return: text that is cleaned up.
     """

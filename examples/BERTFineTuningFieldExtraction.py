@@ -6,7 +6,7 @@ https://github.com/huggingface/transformers/blob/master/examples/pytorch
 
 Description: Training code used to train a model on the identification of a
 field in the input text. This is meant to train a classifier WITH section
-tokenization as a pre processing step.
+segmentation as a pre processing step.
 
 Input: train and test folders filled with .txt documents holding dictionaries
     with the input data and field label.
