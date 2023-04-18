@@ -1,0 +1,1301 @@
+,original_report,PID,date,sectionized,BPE,Density,Menopausal_Status,Modality,PreviousCa,Purpose,filename
+0,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",100,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Scattered,Post-Menopausal,BIO-MRI,Positive,Unknown,Sectioned0.txt
+1,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",101,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Scattered,Post-Menopausal,Other,Positive,Diagnostic,Sectioned1.txt
+2,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",110,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Fatty,Post-Menopausal,MG-MRI,Negative,Unknown,Sectioned10.txt
+3,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",111,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Fatty,Post-Menopausal,BIO-MG,Suspicious,Screening,Sectioned11.txt
+4,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",112,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Fatty,Not Stated,US,Suspicious,Unknown,Sectioned12.txt
+5,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",113,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Fatty,Not Stated,Other,Positive,Diagnostic,Sectioned13.txt
+6,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",114,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Post-Menopausal,BIO-MG,Negative,Unknown,Sectioned14.txt
+7,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",115,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Post-Menopausal,MG,Negative,Unknown,Sectioned15.txt
+8,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",116,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Scattered,Not Stated,MG,Suspicious,Diagnostic,Sectioned16.txt
+9,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",117,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Fatty,Post-Menopausal,MG-MRI,Positive,Diagnostic,Sectioned17.txt
+10,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",118,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Not Stated,Post-Menopausal,MG-US,Positive,Diagnostic,Sectioned18.txt
+11,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",119,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Dense,Post-Menopausal,BIO-MG,Negative,Screening,Sectioned19.txt
+12,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",102,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Not Stated,Post-Menopausal,MRI,Suspicious,Unknown,Sectioned2.txt
+13,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",120,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Not Stated,Not Stated,MG,Suspicious,Unknown,Sectioned20.txt
+14,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",121,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Fatty,Not Stated,BIO-MRI,Positive,Diagnostic,Sectioned21.txt
+15,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",122,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Scattered,Post-Menopausal,BIO-MG,Negative,Screening,Sectioned22.txt
+16,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",123,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Fatty,Post-Menopausal,Other,Suspicious,Unknown,Sectioned23.txt
+17,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",124,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Fatty,Not Stated,Other,Positive,Diagnostic,Sectioned24.txt
+18,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",125,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Scattered,Not Stated,BIO-MG-US,Positive,Screening,Sectioned25.txt
+19,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",126,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Dense,Pre-Menopausal,BIO-MG-MRI,Suspicious,Screening,Sectioned26.txt
+20,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",127,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Fatty,Post-Menopausal,MG,Positive,Diagnostic,Sectioned27.txt
+21,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",128,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Fatty,Pre-Menopausal,US,Negative,Unknown,Sectioned28.txt
+22,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",129,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Fatty,Pre-Menopausal,BIO-US,Suspicious,Screening,Sectioned29.txt
+23,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",103,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Not Stated,Post-Menopausal,MG-MRI,Negative,Screening,Sectioned3.txt
+24,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",130,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Pre-Menopausal,MG-US,Positive,Screening,Sectioned30.txt
+25,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",131,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,<= 75%,Pre-Menopausal,BIO-MG-MRI,Suspicious,Diagnostic,Sectioned31.txt
+26,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",132,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Dense,Pre-Menopausal,MRI,Suspicious,Unknown,Sectioned32.txt
+27,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",133,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Scattered,Pre-Menopausal,MG,Suspicious,Unknown,Sectioned33.txt
+28,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",134,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Scattered,Not Stated,BIO-MG-MRI,Positive,Screening,Sectioned34.txt
+29,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",135,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Fatty,Not Stated,BIO-MRI,Positive,Diagnostic,Sectioned35.txt
+30,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",136,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Scattered,Not Stated,BIO-MG-MRI,Positive,Diagnostic,Sectioned36.txt
+31,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",137,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Not Stated,Post-Menopausal,BIO-MG-MRI,Negative,Unknown,Sectioned37.txt
+32,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",138,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,<= 75%,Not Stated,Other,Suspicious,Screening,Sectioned38.txt
+33,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",139,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Scattered,Not Stated,MRI,Positive,Screening,Sectioned39.txt
+34,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",104,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Heterogeneous,Post-Menopausal,BIO-MRI,Suspicious,Diagnostic,Sectioned4.txt
+35,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",140,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Dense,Pre-Menopausal,BIO-MG-MRI,Suspicious,Diagnostic,Sectioned40.txt
+36,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",141,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,<= 75%,Pre-Menopausal,BIO-MRI,Positive,Diagnostic,Sectioned41.txt
+37,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",142,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Heterogeneous,Not Stated,Other,Negative,Unknown,Sectioned42.txt
+38,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",143,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Not Stated,Pre-Menopausal,MG,Positive,Screening,Sectioned43.txt
+39,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",144,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,<= 75%,Post-Menopausal,BIO-MRI,Positive,Unknown,Sectioned44.txt
+40,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",145,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,<= 75%,Not Stated,BIO-MG,Negative,Screening,Sectioned45.txt
+41,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",146,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Scattered,Not Stated,BIO-MRI,Positive,Unknown,Sectioned46.txt
+42,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",147,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Not Stated,Not Stated,BIO-MG-US,Suspicious,Diagnostic,Sectioned47.txt
+43,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",148,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Not Stated,Pre-Menopausal,Other,Suspicious,Diagnostic,Sectioned48.txt
+44,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",149,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Post-Menopausal,MG-MRI,Positive,Unknown,Sectioned49.txt
+45,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",105,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Dense,Post-Menopausal,Other,Positive,Unknown,Sectioned5.txt
+46,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",150,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Scattered,Not Stated,BIO-MG-US,Suspicious,Diagnostic,Sectioned50.txt
+47,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",151,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,<= 75%,Pre-Menopausal,BIO-MG-US,Suspicious,Screening,Sectioned51.txt
+48,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",152,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Not Stated,Not Stated,BIO-MG-MRI,Suspicious,Diagnostic,Sectioned52.txt
+49,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",153,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Not Stated,Post-Menopausal,BIO-MG-MRI,Negative,Unknown,Sectioned53.txt
+50,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",154,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Not Stated,MRI,Suspicious,Screening,Sectioned54.txt
+51,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",155,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Heterogeneous,Post-Menopausal,BIO-MG,Positive,Diagnostic,Sectioned55.txt
+52,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",156,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Post-Menopausal,BIO-MG,Negative,Screening,Sectioned56.txt
+53,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",157,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Scattered,Pre-Menopausal,BIO-MG-MRI,Negative,Diagnostic,Sectioned57.txt
+54,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",158,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Fatty,Pre-Menopausal,US,Suspicious,Diagnostic,Sectioned58.txt
+55,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",159,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Not Stated,Other,Suspicious,Screening,Sectioned59.txt
+56,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",106,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,<= 75%,Pre-Menopausal,Other,Negative,Screening,Sectioned6.txt
+57,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",160,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Dense,Pre-Menopausal,BIO-MG,Positive,Unknown,Sectioned60.txt
+58,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",161,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Not Stated,Post-Menopausal,BIO-US,Positive,Unknown,Sectioned61.txt
+59,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",162,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Fatty,Post-Menopausal,BIO-US,Suspicious,Unknown,Sectioned62.txt
+60,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",163,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Dense,Post-Menopausal,Other,Negative,Diagnostic,Sectioned63.txt
+61,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",164,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Not Stated,Not Stated,BIO-MG-US,Positive,Screening,Sectioned64.txt
+62,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",165,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Fatty,Post-Menopausal,BIO-US,Positive,Diagnostic,Sectioned65.txt
+63,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",166,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Scattered,Pre-Menopausal,MG-MRI,Suspicious,Unknown,Sectioned66.txt
+64,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",167,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Fatty,Post-Menopausal,BIO-MRI,Suspicious,Unknown,Sectioned67.txt
+65,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",168,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Heterogeneous,Not Stated,BIO-MG-US,Suspicious,Screening,Sectioned68.txt
+66,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",169,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Dense,Post-Menopausal,US,Positive,Diagnostic,Sectioned69.txt
+67,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",107,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Scattered,Post-Menopausal,US,Positive,Screening,Sectioned7.txt
+68,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",170,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Scattered,Not Stated,Other,Suspicious,Screening,Sectioned70.txt
+69,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",171,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Not Stated,Post-Menopausal,BIO-MG,Negative,Screening,Sectioned71.txt
+70,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",172,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Not Stated,BIO-MRI,Negative,Diagnostic,Sectioned72.txt
+71,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",173,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Dense,Pre-Menopausal,MRI,Negative,Unknown,Sectioned73.txt
+72,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",174,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Fatty,Not Stated,US,Negative,Diagnostic,Sectioned74.txt
+73,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",175,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Heterogeneous,Post-Menopausal,US,Negative,Screening,Sectioned75.txt
+74,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",176,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Not Stated,BIO-US,Positive,Screening,Sectioned76.txt
+75,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",177,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Heterogeneous,Post-Menopausal,BIO-US,Suspicious,Screening,Sectioned77.txt
+76,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",178,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Fatty,Post-Menopausal,BIO-US,Positive,Unknown,Sectioned78.txt
+77,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",179,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Scattered,Not Stated,MRI,Suspicious,Screening,Sectioned79.txt
+78,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",108,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Scattered,Not Stated,MG,Positive,Diagnostic,Sectioned8.txt
+79,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",180,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Scattered,Not Stated,MG,Positive,Screening,Sectioned80.txt
+80,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",181,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Post-Menopausal,MRI,Positive,Diagnostic,Sectioned81.txt
+81,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",182,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Dense,Post-Menopausal,MG,Negative,Diagnostic,Sectioned82.txt
+82,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",183,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Heterogeneous,Post-Menopausal,MG-MRI,Positive,Diagnostic,Sectioned83.txt
+83,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",184,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,<= 75%,Post-Menopausal,MG-US,Suspicious,Screening,Sectioned84.txt
+84,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",185,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Scattered,Pre-Menopausal,MRI,Negative,Diagnostic,Sectioned85.txt
+85,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",186,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Heterogeneous,Not Stated,MG-MRI,Positive,Screening,Sectioned86.txt
+86,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",187,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Dense,Not Stated,MG-US,Negative,Diagnostic,Sectioned87.txt
+87,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",188,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Minimal,Heterogeneous,Pre-Menopausal,MG-MRI,Suspicious,Unknown,Sectioned88.txt
+88,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",189,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Heterogeneous,Post-Menopausal,BIO-MRI,Negative,Unknown,Sectioned89.txt
+89,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",109,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Scattered,Not Stated,MRI,Negative,Screening,Sectioned9.txt
+90,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",190,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Not Stated,Not Stated,BIO-MG-US,Positive,Screening,Sectioned90.txt
+91,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",191,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Not Stated,Pre-Menopausal,BIO-MG-US,Suspicious,Diagnostic,Sectioned91.txt
+92,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",192,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Not Stated,Pre-Menopausal,BIO-MG-MRI,Positive,Diagnostic,Sectioned92.txt
+93,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",193,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Pre-Menopausal,BIO-US,Suspicious,Screening,Sectioned93.txt
+94,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",194,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Dense,Not Stated,BIO-MG,Negative,Diagnostic,Sectioned94.txt
+95,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",195,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Moderate,Fatty,Pre-Menopausal,MG-US,Positive,Diagnostic,Sectioned95.txt
+96,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",196,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Mild,Heterogeneous,Not Stated,MG-MRI,Positive,Diagnostic,Sectioned96.txt
+97,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",197,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Scattered,Pre-Menopausal,US,Negative,Unknown,Sectioned97.txt
+98,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",198,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Not Stated,Fatty,Not Stated,US,Negative,Screening,Sectioned98.txt
+99,"Exam Title
+
+Compared to Previous: N/A
+Breast Density >= 75%: N/A
+Mastectomy: N/A
+
+Recall client in 1 year: N/A
+
+
+BIRADS-category
+_____________
+
+This report was electronically signed by a radiologist",199,YYYY-MM-DD,"{'Title': 'Exam Title', 'PrIM': 'Compared to Previous: N/A', 'Findings': 'Breast Density >= 75%: N/A. Mastectomy: N/A. Recall client in 1 year: N/A  ', 'Dx': 'BIRADS-category ; ', 'Sig': 'This report was electronically signed by a radiologist'}",Marked,Dense,Post-Menopausal,Other,Negative,Unknown,Sectioned99.txt

@@ -20,7 +20,16 @@ Two datasets are needed to build BERT embeddings and fine tuned Field Extractors
 Dataframe of SQL data: example file './mock_data/sql_dataframe.csv'. 
 This file was efficiently made by producing a spreadsheet of all entries in the sql table and saving them as a csv file. It will require that each line of the report be split and coordinated with a SequenceNumber column to combine all the reports. Then continue to the **'How to Run BERT Pretraining'** Section.
 
-Labeled data for Field Extraction: example of files in './mock_data/labaled_data'. Exach txt file is a save dict object with fields: 
+Labeled data for Field Extraction and Section Segmentation: This data can be in one of 3 forms 
+1. an xlsx file: One column must be "ReportText" where the example is present. Each column is the fields of interest and each Section of the report is a column of its own. Example of this is  
+```angular2html
+\mock_data\labeled_data.xlsx
+```  
+2. an csv file: One column must be "ReportText" where the example is present. Each column is the fields of interest and each Section of the report is a column of its own. Example of this is  
+```angular2html
+\mock_data\labeled_data.csv
+```
+3. a folder of txt files that each contain a dictionary of data. Example of txt files in './mock_data/labaled_data'. Each txt file is a save dict object with fields: 
 ```angular2html
 example = {
     'original_report': original text report unprocessed from the exam_dataframe.csv, 
@@ -32,8 +41,6 @@ example = {
     ...
 }
 ```
-
-
 
 ## How to Run BERT Pretraining 
 
@@ -56,8 +63,8 @@ This script is ran to convert the exam_dataframe.csv file into a pre_training te
 
 ```angular2html
 python ./examples/TextPreProcessingBERTModel.py 
---dfolder /folder/that/contains/exam_dataframe 
---ft_folder ./mock_data/labeled_data
+--dfolder ./mock_data/exam_dataframe.csv 
+--ft_folder ./mock_data/pre_training_data
 ```
 
 ### Step 3: MLM_Training_transformers.py
@@ -81,7 +88,7 @@ This script will run fine tuning to train a section tokenizer with the option of
 
 ```angular2html
 python ./examples/BERTFineTuningSectionSegmentation.py 
---dfolder ./mock_data/labeled_data
+--dfolder ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/section_tokenizer
 ```
 
@@ -97,7 +104,7 @@ This script will run fine tuning training of field extraction without section se
 
 ```angular2html
 python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
---dfolder ./mock_data/labeled_data
+--dfolder ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/field_extractor_WoutST
 --field_name Modality
 ```
@@ -114,7 +121,7 @@ This script will run fine tuning training of field extraction with section segme
 
 ```angular2html
 python ./examples/BERTFineTuningFieldExtraction.py 
---dfolder ./mock_data/labeled_data
+--dfolder ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/field_extractor
 --field_name Modality
 --report_section Title
