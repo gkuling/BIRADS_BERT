@@ -88,7 +88,7 @@ This script will run fine tuning to train a section tokenizer with the option of
 
 ```angular2html
 python ./examples/BERTFineTuningSectionSegmentation.py 
---dfolder ./mock_data/labeled_data.xlsx
+--data_location ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/section_tokenizer
 ```
 
@@ -103,8 +103,8 @@ Optional parser arguements:
 This script will run fine tuning training of field extraction without section segmentation. 
 
 ```angular2html
-python ./examples/BERTFineTuningFieldExtractionWoutSectionization.py 
---dfolder ./mock_data/labeled_data.xlsx
+python ./examples/BERTFineTuningFieldExtractionWoutSegmentation.py 
+--data_location ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/field_extractor_WoutST
 --field_name Modality
 ```
@@ -121,7 +121,7 @@ This script will run fine tuning training of field extraction with section segme
 
 ```angular2html
 python ./examples/BERTFineTuningFieldExtraction.py 
---dfolder ./mock_data/labeled_data.xlsx
+--data_location ./mock_data/labeled_data.xlsx
 --sfolder /folder/to/save/field_extractor
 --field_name Modality
 --report_section Title

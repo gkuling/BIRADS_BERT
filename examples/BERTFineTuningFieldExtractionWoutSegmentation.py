@@ -28,19 +28,20 @@ from sklearn.model_selection import StratifiedKFold
 cutl.set_seed(20210429)
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--n_epochs", type=int, default=4,
-                    help="number of epochs of training")
-parser.add_argument("--batch_size", type=int, default=32,
-                    help="size of the batches")
+
+parser.add_argument("--data_location", type=str,
+                    help="folder to find experimental data. Must have a train"
+                         " and test folder.")
+parser.add_argument("--sfolder", type=str,
+                    help="folder to save data")
 parser.add_argument('--pre_trained_model', type=str,
                     default='bert-base-uncased',
                     help="The directory of pretrained model or the pretrained "
                          "weights from huggingface.")
-parser.add_argument("--sfolder", type=str,
-                    help="folder to save data")
-parser.add_argument("--dfolder", type=str,
-                    help="folder to find experimental data. Must have a train"
-                         " and test folder.")
+parser.add_argument("--n_epochs", type=int, default=4,
+                    help="number of epochs of training")
+parser.add_argument("--batch_size", type=int, default=32,
+                    help="size of the batches")
 parser.add_argument('--k_fold', action='store_true')
 parser.add_argument("--use_redacted", action='store_true')
 parser.add_argument('--field_name', type=str, required=True,
