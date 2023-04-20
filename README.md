@@ -135,6 +135,17 @@ Optional parser arguements:
 
 ## Additional Codes 
 
+### InferenceBERT.py
+
+This Script gives an example of how to run the BERT model inference on new data, either as a folder of txt file, a csv file or an xlsx file.
+
+```angular2html
+python ./examples/InferenceBERT.py 
+--data_location ./mock_data/input_data.xlsx
+--pre_trained_model /folder/where/field_extractor/saved
+--text_column ReportTxt
+```
+
 ### post_ExperimentSummary.py
 
 This code can be used to run statistical analysis of test results that are produced from BERTFineTuning codes. 

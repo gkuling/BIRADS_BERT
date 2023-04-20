@@ -61,7 +61,7 @@ print('-'*80)
 
 # Set up data for training and testing
 
-data = cutl.load_all_data(opt.dfolder)
+data = cutl.load_all_data(opt.data_location)
 
 Labels = list(set([row[opt.field_name] for row in data]))
 Labels.sort()

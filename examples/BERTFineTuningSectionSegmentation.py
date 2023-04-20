@@ -58,7 +58,7 @@ print(opt)
 print('-'*80)
 
 # Set up data for training and testing
-data = cutl.load_all_data(opt.dfolder)
+data = cutl.load_all_data(opt.data_location)
 
 modLabels = list(set([row['Modality'] for row in data]))
 modLabels.sort()
