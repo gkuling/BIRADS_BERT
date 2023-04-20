@@ -47,11 +47,6 @@ labeler.from_pretrained(opt.pre_trained_model)
 # Begin Testing
 data = cutl.load_all_data(opt.data_location)
 
-test_res = []
-incorrect = []
-correct_ex = []
-acc = []
-ct = 0
 print('Amount of Test Subjects: ' + str(len(data)))
 
 for report in data:
