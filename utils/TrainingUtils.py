@@ -134,10 +134,10 @@ def dfs_tabs(df_list, sheet_list, file_name):
     :param sheet_list: Names of the sheets for each dataframe
     :param file_name: Place where you wish to save the excel file .xlsx
     """
-    writer = pd.ExcelWriter(file_name)
-    for dataframe, sheet in zip(df_list, sheet_list):
-        dataframe.to_excel(writer, sheet_name=sheet, startrow=0, startcol=0)
-    writer.save()
+    with pd.ExcelWriter(file_name) as writer:
+        for dataframe, sheet in zip(df_list, sheet_list):
+            dataframe.to_excel(writer, sheet_name=sheet, startrow=0,
+                               startcol=0)
 
 def set_seed(sd):
     """

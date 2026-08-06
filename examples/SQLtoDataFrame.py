@@ -75,7 +75,7 @@ def eliminate_sequence_number(sql_data,
     op_cols = list(sql_data.columns)
     rt_df = pd.DataFrame(output_data,
                          columns=op_cols)
-    rt_df = rt_df.drop('SequenceNumber', 'columns')
+    rt_df = rt_df.drop(columns='SequenceNumber')
     return rt_df
 
 

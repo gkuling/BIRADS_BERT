@@ -12,18 +12,22 @@ comparison testing results of the chosen test.
 import argparse
 import pandas as pd
 import os
+from collections import namedtuple
 from tqdm import tqdm
 from statsmodels.stats.multicomp import MultiComparison
 from sklearn.metrics import confusion_matrix
 from statsmodels.stats.contingency_tables import mcnemar
-from scipy.stats.stats import FriedmanchisquareResult
 from scipy.stats import mannwhitneyu
+
+# statsmodels' allpairtest only reads fields 0 and 1 of a test result, so a
+# plain (statistic, pvalue) tuple is all mcnemar_test needs to return.
+StatResult = namedtuple('StatResult', ['statistic', 'pvalue'])
 
 def mcnemar_test(a,b):
     ct = confusion_matrix(a,b)
     test = mcnemar(ct)
-    return FriedmanchisquareResult(statistic=test.statistic,
-                                   pvalue=test.pvalue)
+    return StatResult(statistic=test.statistic,
+                      pvalue=test.pvalue)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--folder", type=str,
