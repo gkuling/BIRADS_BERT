@@ -1,11 +1,9 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
-https://github.com/huggingface/transformers/blob/master/examples/pytorch
-/language-modeling/run_mlm.py
+https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
 '''
 import torch
-import torch.utils.checkpoint
 from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 
@@ -25,13 +23,13 @@ class BertForSequenceClassification_aux(BertPreTrainedModel):
             'aux_data_size'
         """
         super().__init__(config)
-        self.num_labels = config.num_labels
+        self.num_labels = cconfig.num_labels
 
         self.bert = BertModel(config)
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.classifier = nn.Linear(config.hidden_size +
                                     (config.aux_data_size > 0) * 128,
-                                    config.num_labels)
+                                    cconfig.num_labels)
         if config.aux_data_size > 0:
             self.aux_encoder = nn.Sequential(
                 nn.Linear(config.aux_data_size, 32),
@@ -66,10 +64,10 @@ class BertForSequenceClassification_aux(BertPreTrainedModel):
         labels (:obj:`torch.LongTensor` of shape :obj:`(batch_size,)`,
         `optional`):
             Labels for computing the sequence classification/regression loss.
-            Indices should be in :obj:`[0, ..., onfig.num_labels - 1]`.
-            If :obj:`config.num_labels == 1` a regression loss is
+            Indices should be in :obj:`[0, ..., config.num_labels - 1]`.
+            If :obj:`cconfig.num_labels == 1` a regression loss is
                 computed (Mean-Square loss),
-            If :obj:`config.num_labels > 1` a classification loss is
+            If :obj:`cconfig.num_labels > 1` a classification loss is
                 computed (Cross-Entropy).
         """
         return_dict = return_dict if return_dict is not None else \

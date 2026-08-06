@@ -1,8 +1,7 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
-https://github.com/huggingface/transformers/blob/master/examples/pytorch
-/language-modeling/run_mlm.py
+https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
 
 Description: Training code used to train a model on the identification of a
 section being described in the input text. This code can be used to train the

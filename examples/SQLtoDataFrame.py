@@ -2,7 +2,7 @@
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 
 Description: This code will convert an SQL .csv file that has reports
-seperated into indidual text lines into a .csv of individual reports.
+separated into individual text lines into a .csv of individual reports.
 
 Input: saved .csv file of sql database needed to be converted.
 Output: a .csv file of the input file with Lines collected into organized
@@ -10,7 +10,6 @@ reports.
 '''
 import argparse
 import pandas as pd
-import sys
 from tqdm import tqdm
 import numpy as np
 
@@ -39,7 +38,7 @@ def eliminate_sequence_number(sql_data,
     string data in the proper sequence to merge multiple lines of the same
     session into one row of information in a dataframe.
     :param sql_data: csv file containing sql output where the report data is
-        split into lines characterizeed by the sequence number. Requires a
+        split into lines characterized by the sequence number. Requires a
         SequenceNumber column and an ExamDate column.
     :param accession_label: str, name of the column that contains session
     number
@@ -68,10 +67,6 @@ def eliminate_sequence_number(sql_data,
                 else:
                     save_value[col_oi] += '\n' + row[col_oi+1]
         output_data.append(save_value)
-        sys.stdout.write(
-            '\rFinished analyzing ' + str(len(output_data)/len(acc_nums))
-        )
-        sys.stdout.flush()
     op_cols = list(sql_data.columns)
     rt_df = pd.DataFrame(output_data,
                          columns=op_cols)

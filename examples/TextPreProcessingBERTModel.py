@@ -110,11 +110,24 @@ for i1, dt_set in enumerate([training_csv, val_csv]):
     print('Total Words in set:')
     print(cumulative_words)
     prp_data.update({sets[i1]: train_data})
+    prp_data.update({sets[i1] + '_redacted': redacted_train_data})
     prp_data.update({sets[i1] + '_vocab': len(cumulative_vocab)})
 
 print('')
 print('Writing TXT files')
-for dt_set in [key for key in prp_data.keys() if '_vocab' not in key]:
+def write_pretraining_file(reports, output_dir):
+    f = open(output_dir, 'w')
+    for rp in tqdm(reports):
+        if len(rp) > 1:
+            f.write(rp + '\n')
+        else:
+            continue
+    f.close()
+    print('Saved ' + output_dir)
+    print('')
+
+for dt_set in [key for key in prp_data.keys()
+               if '_vocab' not in key and not key.endswith('_redacted')]:
     if 'training' in dt_set:
         output_dir = opt.dfolder + \
                      '/VocabOf' + \
@@ -123,15 +136,8 @@ for dt_set in [key for key in prp_data.keys() if '_vocab' not in key]:
                      dt_set + '.txt'
     else:
         output_dir = opt.dfolder + '/PreTraining_' + dt_set + '.txt'
-    f = open(output_dir, 'w')
-    for rp in tqdm(prp_data[dt_set]):
-
-        if len(rp) > 1:
-            f.write(rp + '\n')
-        else:
-            continue
-    f.close()
-    print('Saved ' + output_dir)
-    print('')
+    write_pretraining_file(prp_data[dt_set], output_dir)
+    write_pretraining_file(prp_data[dt_set + '_redacted'],
+                           output_dir.replace('.txt', '_redacted.txt'))
 
 print("End of TextPreProcessingBERTModel.py Script.")

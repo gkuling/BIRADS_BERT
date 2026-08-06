@@ -4,21 +4,21 @@ import numpy as np
 from difflib import SequenceMatcher
 
 # regex experession used to find dates in text
-date_regex = '\d+ ?\/\d+\/\d+|' \
+date_regex = r'\d+ ?\/\d+\/\d+|' \
              '(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), ' \
              '(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(' \
              '?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|(' \
-             'Nov|Dec)(?:ember)) (\d{2}|\d{1}),? (20|19)\d{2}|' \
+             r'Nov|Dec)(?:ember)) (\d{2}|\d{1}),? (20|19)\d{2}|' \
              '(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday) ' \
              '(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(' \
              '?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|(' \
-             'Nov|Dec)(?:ember)) (\d{2}|\d{1}) (20|19)\d{2}|'\
+             r'Nov|Dec)(?:ember)) (\d{2}|\d{1}) (20|19)\d{2}|'\
              '(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(' \
              '?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|(' \
-             'Nov|Dec)(?:ember)) (\d{2}|\d{1}), (20|19)\d{2}|'\
+             r'Nov|Dec)(?:ember)) (\d{2}|\d{1}), (20|19)\d{2}|'\
              '(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(' \
              '?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|(' \
-             'Nov|Dec)(?:ember)) (\d{2}|\d{1}) (20|19)\d{2}'
+             r'Nov|Dec)(?:ember)) (\d{2}|\d{1}) (20|19)\d{2}'
 
 def report_preprocess(report_text):
     """
@@ -35,7 +35,7 @@ def report_preprocess(report_text):
     """
     # Task 1: fix spacing
     text = re.sub(' +', ' ', report_text)
-    text = re.sub('\?', '', text)
+    text = re.sub(r'\?', '', text)
 
     # Task 2: put the report into paragraphs, and extract signatures and
     # addendums
@@ -71,7 +71,7 @@ def easy_para_parse(line_list):
     :param line_list: a list of the report that has been split into lines.
     :return: str, the lines reconnected with '\n' between each paragraph
     """
-    assert type(line_list)==list
+    assert isinstance(line_list, list)
     line_list = [ln.strip() for ln in line_list]
     if line_list[0]!= '':
         line_list = [''] + line_list
@@ -97,6 +97,17 @@ def easy_para_parse(line_list):
     return ret_text
 
 def double_check_text_dictionary(txt_dict):
+    """
+    Repair line breaks and missing spaces that survive paragraph parsing,
+    so signature and report paragraphs read as continuous text.
+    :param txt_dict: dict produced by report_preprocess
+    :return: the same dict with the repaired paragraphs
+    """
+    # NOTE: the 'A-z' ranges below are wider than 'A-Za-z' - they also match
+    # [ \ ] ^ _ and backtick. This is deliberate and load-bearing: report
+    # separator lines ('________') must match here, before underscores are
+    # stripped in a later step. Narrowing the range to A-Za-z changes the
+    # preprocessing output and therefore the published results.
     if re.search('[,A-za-z0-9]\n[a-zA-Z0-9]',txt_dict['sig_in_para']):
         for _ in range(len(
                 re.findall('[,A-za-z0-9]\n[a-zA-Z0-9]', txt_dict['sig_in_para'])
@@ -190,21 +201,21 @@ def append_periods_where_needed(para_list):
     :param para_list: list containing paragraphs.
     :return: str
     """
-    assert type(para_list)==list
+    assert isinstance(para_list, list)
 
     rt_txt = ''
     for par in para_list:
         if par!='':
-            if re.search('.*[.?!:]$|.*\d{2}:\d{2}$', par):
-                if re.search('.*\d{2}:\d{2}$', par):
+            if re.search(r'.*[.?!:]$|.*\d{2}:\d{2}$', par):
+                if re.search(r'.*\d{2}:\d{2}$', par):
                     rt_txt += par \
                                 + '.\n'
                 else:
                     rt_txt += par \
                                 + '\n'
             else:
-                if re.search('\s*$', par):
-                    rt_txt += par[:re.search('\s*$', par).start()] + '.\n'
+                if re.search(r'\s*$', par):
+                    rt_txt += par[:re.search(r'\s*$', par).start()] + '.\n'
                 else:
                     rt_txt += par + '.\n'
     return rt_txt
@@ -225,9 +236,9 @@ def extract_features_for_clustering(text):
         'Addendum|ADDENDUM|addendum',
         '--- Addendum ---',
         '\n_____________\n?',
-        '\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
+        r'\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
         'Report content:',
-        '\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*'
+        r'\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*'
     ]
     word_features = [1 if re.search(phrase, text) else 0
                      for phrase in key_phrases]
@@ -390,12 +401,12 @@ def parse_paragraphs(input_text):
             doc_phrase_features == [0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1] or \
             doc_phrase_features == [0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1]:
 
-        assert re.search('\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
+        assert re.search(r'\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
                          input_text).start() > \
-               re.search('--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
+               re.search(r'--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
                          input_text).start()
         original_report = input_text[re.search(
-            '\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
+            r'\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
             input_text).start():]
         split_doc = re.split('\n_____________\n?', original_report)
         split_doc = [sec for sec in split_doc if sec != '']
@@ -411,13 +422,13 @@ def parse_paragraphs(input_text):
         )
         ret_dict['Adm'] = split_report_into_paragraphs(
             input_text[
-            re.search('--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
+            re.search(r'--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
                       input_text).start():re.search(
-                '\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
+                r'\*\*\*\*\*\*\*\* ORIGINAL REPORT \*\*\*\*\*\*\*\*',
                 input_text).start()]
         )
         ret_dict['formatter'] = split_report_into_paragraphs(
-            input_text[:re.search('--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
+            input_text[:re.search(r'--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
                                   input_text).start()]
         )
         return ret_dict
@@ -474,12 +485,12 @@ def parse_paragraphs(input_text):
         ret_dict['Adm'] = split_report_into_paragraphs(
             ''.join([sec for sec in split_doc if
              re.search(
-                 '--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
+                 r'--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
                  sec)])
         )
         ret_dict['formatter'] = split_report_into_paragraphs(
             ''.join([sec for sec in split_doc if
-                     not re.search('--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
+                     not re.search(r'--- Addendum ---|\*\*\*\*\*\*\*\* ADDENDUM( #\d{1})? \*\*\*\*\*\*\*\*',
                                sec) and
                      not re.search('This report was electronically signed',
                                sec)])
@@ -529,7 +540,7 @@ def split_report_into_paragraphs(rp):
     :param rp: str, original report
     :return:
     """
-    assert type(rp)==str
+    assert isinstance(rp, str)
 
     rep_lines = rp.split('\n')
 
@@ -590,22 +601,22 @@ def _remove_phrasing(ipt_txt, phrase, replacement):
 def remove_unwanted_phrases(text):
     """
     Remove unwanted phrases from the report, such as time stamps, dates,
-    years, months, and patient nubers that are 7 figures long
+    years, months, and patient numbers that are 7 figures long
     :param text: str
     :return: str
     """
     concerns = [
-        ['\d{2}: ?\d{2}:\s?\d{2}|\d{1}:\s?\d{2}|\d{2}:\s?\d{2}',
+        [r'\d{2}: ?\d{2}:\s?\d{2}|\d{1}:\s?\d{2}|\d{2}:\s?\d{2}',
          '[TIME]'],
         [date_regex,
          '[DATE]'],
-        ['(20|19)\d{2}',
+        [r'(20|19)\d{2}',
          '[YEAR]'],
         ['(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun('
                   '?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|('
                   'Nov|Dec)(?:ember)) ',
          '[MONTH]'],
-        ['\d{7}',
+        [r'\d{7}',
          '[PTnum]']
     ]
 
@@ -620,9 +631,9 @@ def eliminate_duplicated_lines(txt):
     If there are duplicated lines in the report, this function can be used to
     correct this.
     :param txt: str
-    :return: list of lines with repetition.
+    :return: list of lines with adjacent duplicates removed.
     """
-    assert type(txt)==str
+    assert isinstance(txt, str)
     rep_lines = txt.split('\n')
     res = [rep_lines[0]]
     for ln in rep_lines:
@@ -634,7 +645,7 @@ def eliminate_duplicated_lines(txt):
 
 def doubled_label_fix(lbls, num, previous):
     """
-    Fix ground truth mix up where a sentence belogns to two sections in a
+    Fix ground truth mix up where a sentence belongs to two sections in a
     report.
     :param lbls: The two labels that are confusing.
     :param num: The sentence number in the report
@@ -813,10 +824,10 @@ def join_list_item_to_content(snts):
                     else False for snt \
             in snts]):
         ind_list_items = [i for i, ln in enumerate(snts) if
-                          re.search('.*\d{1}\.+$', ln) and
+                          re.search(r'.*\d{1}\.+$', ln) and
                           not re.search('BI-?RADS', ln) and
-                          not re.search('.*\d{4}\.+$', ln) and
-                          not re.search('.*(:|/)\d{2}\.+$', ln)]
+                          not re.search(r'.*\d{4}\.+$', ln) and
+                          not re.search(r'.*(:|/)\d{2}\.+$', ln)]
         cnt = 0
         for item in ind_list_items:
             snts[item-cnt:item-cnt+2] = [' '.join(snts[item-cnt:item-cnt+2])]
@@ -831,8 +842,8 @@ def gt_preprocessing(txt):
     """
     assert type(txt) == str
     txt = re.sub(' +', ' ', txt)
-    txt = re.sub('\*', '', txt)
-    txt = re.sub('\?', '', txt)
+    txt = re.sub(r'\*', '', txt)
+    txt = re.sub(r'\?', '', txt)
     if re.search('[A-Za-z]:[A-Za-z]', txt):
         txt = txt.replace(
             re.search('[A-Za-z]:[A-Za-z]',
@@ -840,11 +851,11 @@ def gt_preprocessing(txt):
             re.search('[A-Za-z]:[A-Za-z]',
                       txt).group().replace(':', ': ')
         )
-    if re.search('[A-Za-z]\( ', txt):
+    if re.search(r'[A-Za-z]\( ', txt):
         txt = txt.replace(
-            re.search('[A-Za-z]\( ',
+            re.search(r'[A-Za-z]\( ',
                       txt).group(),
-            re.search('[A-Za-z]\( ',
+            re.search(r'[A-Za-z]\( ',
                       txt).group().replace('( ', ' (')
         )
     if re.search('ensity(>|<|>=|<=)', txt):

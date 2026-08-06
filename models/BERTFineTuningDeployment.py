@@ -1,24 +1,18 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
-https://github.com/huggingface/transformers/blob/master/examples/pytorch
-/language-modeling/run_mlm.py
+https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
 '''
-import sys
-sys.path.append('.')
-
 import torch
 from transformers import PretrainedConfig, \
     BertTokenizerFast, AdamW
-from .BertForSequenceClassification_aux import BertForSequenceClassification_aux
+from models.BertForSequenceClassification_aux import BertForSequenceClassification_aux
 from utils.TrainingUtils import training_collator
 from sklearn.model_selection import train_test_split
-from models.ClassificationTextDataset import ClasificationTextDataset
+from models.ClassificationTextDataset import ClassificationTextDataset
 from torch.utils.data import DataLoader
-from collections import Counter
 from tqdm import tqdm
 import os
-import numpy as np
 
 class BERTFineTuningDeployment(object):
     """
@@ -26,7 +20,7 @@ class BERTFineTuningDeployment(object):
     """
     def __init__(self, redacted_input=False, aux_data=0):
         """
-        Initilization of object
+        Initialization of object
         :param redacted_input: bool
         :param aux_data: int, length of auxiliary data vector.
         """
@@ -71,7 +65,7 @@ class BERTFineTuningDeployment(object):
 
     def from_pretrained(self, model_folder):
         """
-        load model from model_folder, or a huggging face online available
+        load model from model_folder, or a hugging face online available
         pretrained embedding.
         :param model_folder:
         :return:
@@ -99,7 +93,7 @@ class BERTFineTuningDeployment(object):
         :return:
         """
         prepared_data = self.setup_data_for_training(data)
-        if type(prepared_data)==dict:
+        if isinstance(prepared_data, dict):
             train_data = prepared_data['training']
             dev_data = prepared_data['val']
         else:
@@ -124,8 +118,8 @@ class BERTFineTuningDeployment(object):
                 random_state=20210330
             )
         if self.aux_data==0:
-            tr_dset = ClasificationTextDataset(train_data, aux_data=False)
-            dv_dset = ClasificationTextDataset(dev_data, aux_data=False)
+            tr_dset = ClassificationTextDataset(train_data, aux_data=False)
+            dv_dset = ClassificationTextDataset(dev_data, aux_data=False)
             tr_dtldr = DataLoader(tr_dset, btch_sz, shuffle=True,
                                   collate_fn=lambda batch: training_collator(
                                       batch))
@@ -133,8 +127,8 @@ class BERTFineTuningDeployment(object):
                                   collate_fn=lambda batch: training_collator(
                                       batch))
         else:
-            tr_dset = ClasificationTextDataset(train_data, aux_data=True)
-            dv_dset = ClasificationTextDataset(dev_data, aux_data=True)
+            tr_dset = ClassificationTextDataset(train_data, aux_data=True)
+            dv_dset = ClassificationTextDataset(dev_data, aux_data=True)
 
 
             tr_dtldr = DataLoader(tr_dset, btch_sz, shuffle=True,

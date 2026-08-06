@@ -1,8 +1,7 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
-https://github.com/huggingface/transformers/blob/master/examples/pytorch
-/language-modeling/run_mlm.py
+https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
 
 Description: This Script gives an example of how to run the BERT model
 inference on new data, either as a folder of txt files, a csv file or an

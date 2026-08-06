@@ -1,10 +1,10 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 
-Script that iwll run statistical tests for comparing tokenizers with
+Script that will run statistical tests for comparing tokenizers with
 MannWhitney U-test or classifiers with the McNemar test.
 
-Input: 2 or more .xlsx fiels of different model testing results.
+Input: 2 or more .xlsx files of different model testing results.
 output: NLPRR_ExperimentsSummary.csv containing a comparison of descriptive
 statistics, and StatsTests_<stats test>.csv containing the multiple
 comparison testing results of the chosen test.

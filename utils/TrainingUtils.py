@@ -27,7 +27,7 @@ def new_metrics_dict():
 
 def split_train_test(dataset, strat=None):
     """
-    implementation of train test split ir or if not stratification is given.
+    implementation of train test split with or without stratification.
     (see train_test_split() from scikit-learn documentation)
     :param dataset: data to be split
     :param strat: stratification for dataset
@@ -95,11 +95,11 @@ def load_all_data(directory):
 
 def calculate_testing_metrics(pred, gt, current_metrics):
     """
-    Implementation to update the mcurrent_metrics dict with the next test sample
+    Implementation to update the current_metrics dict with the next test sample
     :param pred: prediction from model
-    :param gt: ground truth tot est against
+    :param gt: ground truth to test against
     :param current_metrics: dict containing all metrics as keys
-    :return: current emtrics with the test results appended on
+    :return: current metrics with the test results appended on
     """
     for key in current_metrics.keys():
         current_metrics[key].extend([calculate_metric(pred, gt, key)])
@@ -154,7 +154,7 @@ def calculate_metric(pr, gt, met):
 
 def dfs_tabs(df_list, sheet_list, file_name):
     """
-    Combine a set of dataframes into an excel sheet, where exach dataframe is a
+    Combine a set of dataframes into an excel sheet, where each dataframe is a
     sheet in the excel spreadsheet.
     :param df_list: list containing the dataframes to be combined.
     :param sheet_list: Names of the sheets for each dataframe
@@ -179,10 +179,10 @@ def set_seed(sd):
 
 def training_collator(btch, max_len=None):
     """
-    Combines batch files into a collated tensor for traininng. Can have a max
+    Combines batch files into a collated tensor for training. Can have a max
     sequence length that you wish to adhere to, or if None will make the max
     length the longest sequence in the batch
-    :param btch: batch file recievevd from the data laoder
+    :param btch: batch file received from the data loader
     :param max_len: len of sequence you wish for the batch to adhere to
     :return: batch with collated data
     """

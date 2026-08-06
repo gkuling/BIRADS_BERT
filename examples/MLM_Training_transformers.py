@@ -1,8 +1,7 @@
 '''
 Copyright (c) 2020, Martel Lab, Sunnybrook Research Institute
 Codes inspired by Hugging Face Transformers package code run_mlm.py
-https://github.com/huggingface/transformers/blob/main/examples/pytorch/
-language-modeling/run_mlm.py
+https://github.com/huggingface/transformers/blob/main/examples/pytorch/language-modeling/run_mlm.py
 
 Description: Training code used to train a BERT embedding in Masked Language
 Modeling for BERTFineTuning Codes.
@@ -10,8 +9,8 @@ Modeling for BERTFineTuning Codes.
 Input: training and validation .txt files holding one sentence per line.
 These .txt files can be created with TextPreProcessingBERTModel.py.
 Output: A saved Transformer model based on Huggingface Transformers package.
-This includes a cnofig.json, eval_results.txt, pytorch_model.bin,
-trianing_args.bin, and vocab.txt.
+This includes a config.json, eval_results.txt, pytorch_model.bin,
+training_args.bin, and vocab.txt.
 '''
 import sys
 sys.path.append('.')
@@ -330,9 +329,15 @@ set_seed(seed)
 
 logger.info("Beginning Tokenizer Training on data in " + args.train_data_file)
 paths = args.train_data_file
-args.vocab_size = int(''.join([char for char in args.train_data_file.split(
-    '/')[-1] if char.isnumeric()]))
-if not args.preliminary_model != 'fromScratch' and \
+vocab_digits = ''.join([char for char in args.train_data_file.split(
+    '/')[-1] if char.isnumeric()])
+if not vocab_digits:
+    raise ValueError('--train_data_file name must carry the vocabulary size '
+                     'as digits (e.g. VocabOf39_PreTraining_training.txt); '
+                     "got '" + args.train_data_file.split('/')[-1] + "'")
+args.vocab_size = int(vocab_digits)
+special_tokens = ["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"]
+if args.preliminary_model == 'fromScratch' and \
         not args.start_from_checkpoint:
     # Building custom Tokenizer
     tokenizer = BertWordPieceTokenizer(
@@ -342,10 +347,10 @@ if not args.preliminary_model != 'fromScratch' and \
     )
     tokenizer.train(
         paths,
-        vocab_size=args.vocab_size + 5,
+        vocab_size=args.vocab_size + len(special_tokens),
         min_frequency=2,
         show_progress=True,
-        special_tokens=["[PAD]", "[UNK]", "[CLS]", "[SEP]", "[MASK]"],
+        special_tokens=special_tokens,
         limit_alphabet=1000,
         wordpieces_prefix="##",
     )
