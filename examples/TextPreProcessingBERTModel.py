@@ -86,9 +86,8 @@ for i1, dt_set in enumerate([training_csv, val_csv]):
             if 'add_in_para_redacted' in txt_processed.keys():
                 rtxt += '\n' + txt_processed['add_in_para_redacted']
             redacted_train_data.append(rtxt)
-        except:
-            print('A Report was abandoned.' + str(rp[opt.exam_col]) + ' ' +
-                  str(rp[opt.date_col]))
+        except Exception:
+            print('A Report was abandoned: ' + repr(rp[:80]))
             continue
         words = [item for sublist in
                  [word_tokenize(snt) for snt in sent_tokenize(txt)]

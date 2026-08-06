@@ -5,12 +5,12 @@ https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
 
 Description: This Script gives an example of how to run the BERT model
-inference on new data, either as a folder of txt file, a csv file or an xlsx
-file.
+inference on new data, either as a folder of txt files, a csv file or an
+xlsx file.
 
 Input: location of the data, a pretrained model, and the input text column.
-Output: The result will be saved in the same folder as the input file with the
-name extension _BERTApraised
+Output: The result will be saved beside the input file (or folder) with the
+name extension _BERTAppraised
 '''
 import sys
 sys.path.append('.')
@@ -26,8 +26,9 @@ cutl.set_seed(20210429)
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--data_location", type=str,
-                    help="folder to find experimental data. Must have a train"
-                         " and test folder.")
+                    help="Data to run inference on: a folder of .txt files "
+                         "that each hold a saved dict, or a single .csv or "
+                         ".xlsx file.")
 parser.add_argument('--pre_trained_model', type=str,
                     default='bert-base-uncased',
                     help="The directory of pretrained model or the pretrained "
@@ -49,22 +50,28 @@ data = cutl.load_all_data(opt.data_location)
 
 print('Amount of Test Subjects: ' + str(len(data)))
 
-for report in data:
-    data['prediction'].append(labeler.predict(x=report[opt.text_column]))
+if opt.text_column not in data[0]:
+    raise KeyError('--text_column ' + opt.text_column + ' not found in the '
+                   'data. Available columns: ' + str(sorted(data[0].keys())))
 
+predictions = []
+for report in data:
+    predictions.append(labeler.predict(x=report[opt.text_column]))
+
+output = pd.DataFrame(data)
+output['prediction'] = predictions
 
 if os.path.isdir(opt.data_location):
-    pd.DataFrame(data).to_csv(os.path.join(opt.data_location,
-                                           'BERTApraised.csv'))
+    output.to_csv(opt.data_location.rstrip(os.sep) + '_BERTAppraised.csv',
+                  index=False)
 elif opt.data_location.endswith('.xlsx'):
-    pd.DataFrame(data).to_excel(
-        opt.data_location.replace('.xlsx',
-                                  '_BERTAppraised.xlsx'),
-        engine='openpyxl'
+    output.to_excel(
+        opt.data_location.replace('.xlsx', '_BERTAppraised.xlsx'),
+        engine='openpyxl', index=False
     )
 elif opt.data_location.endswith('.csv'):
-    pd.DataFrame(data).to_csv(
-        opt.data_location.replace('.csv',
-                                  '_BERTAppraised.csv')
+    output.to_csv(
+        opt.data_location.replace('.csv', '_BERTAppraised.csv'),
+        index=False
     )
 

@@ -7,9 +7,8 @@ language-modeling/run_mlm.py
 Description: Training code used to train a BERT embedding in Masked Language
 Modeling for BERTFineTuning Codes.
 
-Input: train and test folders filled with .txt documents holding a list of
-sentences. These .txt files can be created with  TextPReProcessingBERTModel.py
-file.
+Input: training and validation .txt files holding one sentence per line.
+These .txt files can be created with TextPreProcessingBERTModel.py.
 Output: A saved Transformer model based on Huggingface Transformers package.
 This includes a cnofig.json, eval_results.txt, pytorch_model.bin,
 trianing_args.bin, and vocab.txt.
@@ -68,6 +67,9 @@ parser.add_argument('--logging_steps', type=int, default=10000,
                     help="Log every X updates steps.")
 parser.add_argument('--block_size', type=int, default=32,
                     help="Max sequence length used in tokenizer and dataset.")
+parser.add_argument('--local_rank', type=int, default=-1,
+                    help="For distributed training: local_rank. -1 means no "
+                         "distributed training.")
 parser.add_argument("--start_from_checkpoint", action='store_true',
                     help="Start training from latest checkpoint.")
 parser.add_argument("--preliminary_model", type=str, default='fromScratch',
@@ -365,14 +367,14 @@ model.to(args.device)
 train_dataset = TextDataset(
     tokenizer=tokenizer,
     file_path=args.train_data_file,
-    block_size=32,
+    block_size=args.block_size,
     overwrite_cache=args.overwrite_output_dir
 )
 
 eval_dataset = TextDataset(
     tokenizer=tokenizer,
     file_path=args.eval_data_file,
-    block_size=32,
+    block_size=args.block_size,
     overwrite_cache=args.overwrite_output_dir
 )
 if args.data_portion < 1.0:

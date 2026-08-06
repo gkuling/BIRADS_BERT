@@ -8,8 +8,8 @@ Description: Training code used to train a model on the identification of a
 field in the input text. This is meant to train a classifier WITH section
 segmentation as a pre processing step.
 
-Input: train and test folders filled with .txt documents holding dictionaries
-    with the input data and field label.
+Input: labeled data as a folder of .txt documents holding dictionaries
+    with the input data and field label, or a single .csv/.xlsx file.
 Output: A test_results.xlsx file with the individual test predictions and
 ground truth, and summary stats of accuracy and G. F1 Score. Saved
 pytorch model (pytorch_model.bin, config.json), and tokenizer (
@@ -30,8 +30,9 @@ cutl.set_seed(20210429)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_location", type=str,
-                    help="folder to find experimental data. Must have a train"
-                         " and test folder.")
+                    help="Labeled data to train on: a folder of .txt files "
+                         "that each hold a saved dict, or a single .csv or "
+                         ".xlsx file.")
 parser.add_argument("--sfolder", type=str,
                     help="folder to save data")
 parser.add_argument('--pre_trained_model', type=str,

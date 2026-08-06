@@ -31,7 +31,8 @@ def mcnemar_test(a,b):
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--folder", type=str,
-                    help="number of epochs of training")
+                    help="Folder containing 2 or more .xlsx result files "
+                         "produced by the fine-tuning scripts.")
 parser.add_argument("--stat_test", type=str, default='MannWhitney',
                     help="Adhoc test performed. ")
 opt = parser.parse_args()
