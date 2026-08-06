@@ -102,16 +102,27 @@ def calculate_metric(pr, gt, met):
     """
     if met == 'Accuracy':
         return len([i for i in range(len(gt)) if gt[i] == pr[i]]) / len(gt)
+    # scikit-learn's convention is (y_true, y_pred). Earlier versions of this
+    # function passed (pr, gt), which weighted the per-class scores by
+    # predicted support instead of true support. Accuracy and G.F1 are
+    # symmetric under that swap (per-class F1 keeps tp and exchanges fp/fn,
+    # and 2*tp + fp + fn is unchanged), so they are unaffected by this fix;
+    # weighted recall equals accuracy for single-label multiclass either way.
     elif met == 'Weighted_F1':
-        return f1_score(pr, gt, average='weighted', zero_division=0)
+        return f1_score(gt, pr, average='weighted', zero_division=0)
     elif met == 'Weighted_precision':
-        return precision_score(pr, gt, average='weighted', zero_division=0)
+        return precision_score(gt, pr, average='weighted', zero_division=0)
     elif met == 'Weighted_recall':
-        return recall_score(pr, gt, average='weighted', zero_division=0)
+        return recall_score(gt, pr, average='weighted', zero_division=0)
     elif met == 'G.F1':
         lbls = list(set(pr + gt))
         gt = [lbls.index(e) for e in gt]
         pr = [lbls.index(e) for e in pr]
+        # Do not "fix" the argument order below by swapping the call sites of
+        # calculate_metric: the class weights w must be computed from ground
+        # truth (gt), and the confusion-matrix orientation cancels out in
+        # 2*tp + fp + fn, so this branch reproduces the published G.F1
+        # exactly as is.
         mcm = multilabel_confusion_matrix(pr, gt)
         w = [1/(np.sum([el == i for el in gt]) + 1e-2)**2 for i in range(len(
             lbls))]
