@@ -212,15 +212,16 @@ class BERTFineTuningDeployment(object):
             global_step = 0
             for batch in (epoch_iterator):
                 self.model.eval()
-                if self.aux_data==0:
-                    outputs = self.model(
-                        input_ids=batch['input_ids'].to(self.device),
-                        labels=batch['labels'].to(self.device))
-                else:
-                    outputs = self.model(
-                        input_ids=batch['input_ids'].to(self.device),
-                        labels=batch['labels'].to(self.device),
-                        aux_data=batch['aux_data'].to(self.device))
+                with torch.no_grad():
+                    if self.aux_data==0:
+                        outputs = self.model(
+                            input_ids=batch['input_ids'].to(self.device),
+                            labels=batch['labels'].to(self.device))
+                    else:
+                        outputs = self.model(
+                            input_ids=batch['input_ids'].to(self.device),
+                            labels=batch['labels'].to(self.device),
+                            aux_data=batch['aux_data'].to(self.device))
                 loss = outputs['loss']
                 if torch.cuda.device_count()>1:
                     loss = loss.mean()

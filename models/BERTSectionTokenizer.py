@@ -37,7 +37,7 @@ class BERTSectionTokenizer(BERTSectionTokenizerBase):
         :param pred_on: list of sentences being predicted on (unused here)
         :return: list of logits tensors
         """
-        return [self.model.forward(
+        return [self.model(
             input_ids=torch.tensor(
                 x_enc
             )[None,:].to(self.device)

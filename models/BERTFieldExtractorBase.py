@@ -74,10 +74,12 @@ class BERTFieldExtractorBase(BERTFineTuningDeployment):
         :param x: str
         :return: label of classification
         """
-        prediction = self.model.forward(
-            input_ids=torch.tensor(
-                self.tokenizer(self._encode_input(x),
-                               truncation=True)['input_ids']
-            )[None, :].to(self.device)
-        )['logits']
+        self.model.eval()
+        with torch.no_grad():
+            prediction = self.model(
+                input_ids=torch.tensor(
+                    self.tokenizer(self._encode_input(x),
+                                   truncation=True)['input_ids']
+                )[None, :].to(self.device)
+            )['logits']
         return self._logits_to_label(prediction)

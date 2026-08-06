@@ -147,7 +147,8 @@ class BERTSectionTokenizerBase(BERTFineTuningDeployment):
         encodings = [self.tokenizer(snt, truncation=True)['input_ids'] for snt
                      in pred_on]
 
-        prediction = self._predict_logits(encodings, pred_on)
+        with torch.no_grad():
+            prediction = self._predict_logits(encodings, pred_on)
         label_out = [self._logits_to_label(lbl) for lbl in prediction]
 
         output = {}
