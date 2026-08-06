@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# HuggingFace TextDataset caches (regenerated on demand)
+cached_lm_*
+*.lock
+
 # C extensions
 *.so
 
