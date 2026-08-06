@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "BI-RADS BERT"
+authors:
+  - family-names: Kuling
+    given-names: Grey
+  - family-names: Curpen
+    given-names: Belinda
+  - family-names: Martel
+    given-names: Anne L.
+repository-code: "https://github.com/gkuling/BIRADS_BERT"
+license: MIT
+preferred-citation:
+  type: article
+  title: "BI-RADS BERT and Using Section Segmentation to Understand Radiology Reports"
+  authors:
+    - family-names: Kuling
+      given-names: Grey
+    - family-names: Curpen
+      given-names: Belinda
+    - family-names: Martel
+      given-names: Anne L.
+  journal: "Journal of Imaging"
+  volume: 8
+  issue: 5
+  start: 131
+  year: 2022
+  doi: 10.3390/jimaging8050131

@@ -1,3 +1,6 @@
+# Conda package spec (not a pip requirements file). Install with the
+# 'conda create --name NLPenv --file requirements.txt ...' command in the
+# README. These exact versions produced the published results.
 python==3.7.10
 pandas==1.2.4
 numpy==1.19.2
