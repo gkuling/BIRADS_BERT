@@ -1,4 +1,5 @@
 from sklearn.model_selection import train_test_split
+import ast
 import os
 import pandas as pd
 from sklearn.metrics import f1_score, precision_score, recall_score, \
@@ -28,6 +29,23 @@ def train_test_spliting(dataset, strat=None):
                                        random_state=rd_state)
     return train, test
 
+def parse_stringified_cells(record):
+    """
+    Convert dict-valued fields that a csv/xlsx round trip flattened to
+    strings (e.g. 'sectionized') back into dicts, so all load_all_data
+    branches yield identically shaped records. Blank cells from fillna('')
+    and ordinary report text pass through unchanged.
+    :param record: dict for one report, as produced by DataFrame.to_dict
+    :return: the same dict with parseable dict-literal strings converted
+    """
+    for key, value in record.items():
+        if isinstance(value, str) and value.lstrip().startswith('{'):
+            try:
+                record[key] = ast.literal_eval(value)
+            except (ValueError, SyntaxError):
+                pass
+    return record
+
 def load_all_data(directory):
     """
     Pull in txt data files that have fine tuning examples saved as dict
@@ -41,17 +59,19 @@ def load_all_data(directory):
             data = f.read()
             f.close()
 
-            data = eval(data)
+            data = ast.literal_eval(data)
             data['filename'] = file
             full_data.append(data)
     elif directory.endswith('.xlsx'):
         full_data = pd.read_excel(directory, engine='openpyxl')
         full_data = full_data.fillna('')
         full_data = full_data.to_dict('records')
+        full_data = [parse_stringified_cells(rec) for rec in full_data]
     elif directory.endswith('.csv'):
         full_data = pd.read_csv(directory)
         full_data = full_data.fillna('')
         full_data = full_data.to_dict('records')
+        full_data = [parse_stringified_cells(rec) for rec in full_data]
     else:
         raise Exception("'directory' must be a folder filled with text files "
                         "or a .xlsx file. ")

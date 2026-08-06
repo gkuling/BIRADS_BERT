@@ -11,6 +11,7 @@ import sys
 sys.path.append('.')
 
 import argparse
+import ast
 import os
 from sklearn.model_selection import train_test_split
 from nltk.tokenize import word_tokenize
@@ -55,7 +56,7 @@ for file in val_set:
     with open(file, 'r') as text:
         data = text.read()
 
-    data = eval(data)
+    data = ast.literal_eval(data)
     all_data = all_data.loc[all_data[opt.txt_col] != data[
         'original_report']].copy()
 print('Final Pretraining Amount of reports: ')
