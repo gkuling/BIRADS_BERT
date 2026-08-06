@@ -18,40 +18,23 @@ special_tokens_map.json, tokenizer_config.json, and vocab.txt).
 import sys
 sys.path.append('.')
 
-import argparse
-import utils.TrainingUtils as cutl
+import numpy as np
+import pandas as pd
+
 from models.BERTSectionTokenizer import BERTSectionTokenizer
 from models.BERTSectionTokenizerWithAux import BERTSectionTokenizerWithAux
+from utils import ExperimentUtils as exutl
+from utils import TrainingUtils as cutl
 from utils.TextPreprocessing import report_preprocess, \
     determine_report_GT, get_sents_and_redacted, gt_preprocessing
-import numpy as np
-from sklearn.model_selection import StratifiedKFold
-import pandas as pd
 
 cutl.set_seed(20210501)
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--data_location", type=str,
-                    help="Labeled data to train on: a folder of .txt files "
-                         "that each hold a saved dict, or a single .csv or "
-                         ".xlsx file.")
-parser.add_argument("--sfolder", type=str,
-                    help="folder to save data")
-parser.add_argument('--pre_trained_model', type=str,
-                    default='bert-base-uncased',
-                    help="The directory of pretrained model or the pretrained "
-                         "weights from huggingface.")
-parser.add_argument("--n_epochs", type=int, default=4,
-                    help="number of epochs of training")
-parser.add_argument("--batch_size", type=int, default=32,
-                    help="size of the batches")
-parser.add_argument("--aux_data", action='store_true')
-parser.add_argument("--use_redacted", action='store_true')
+parser = exutl.build_common_parser()
+parser.add_argument("--aux_data", action='store_true',
+                    help="Train the section tokenizer with auxiliary data.")
 parser.add_argument("--data_portion", type=float, default=1.0,
                     help="Portion of data to be used for training. ")
-parser.add_argument("--k_fold", action='store_true',
-                    help="Choice to run the experiment in a 5 kfold validation "
-                         "experiment. ")
 opt = parser.parse_args()
 
 print('-'*80)
@@ -60,34 +43,10 @@ print('-'*80)
 
 # Set up data for training and testing
 data = cutl.load_all_data(opt.data_location)
-
-modLabels = list(set([row['Modality'] for row in data]))
-modLabels.sort()
-if opt.k_fold:
-    folds = []
-    skf = StratifiedKFold(n_splits=5)
-
-    for train_index, test_index in skf.split(data,
-                                             [modLabels.index(row['Modality'])
-                                              for row in data]):
-        train, test = [data[i] for i in train_index], \
-                      [data[i] for i in test_index]
-        folds.append(
-            {'train': train, 'test': test}
-        )
-    print('Beginning K-Fold training Experiment')
-else:
-    train, test = cutl.train_test_spliting(data,
-                                           [modLabels.index(row['Modality'])
-                                            for row in data])
-    folds = [{'train': train, 'test': test}]
+folds, _ = exutl.build_folds(data, 'Modality', k_fold=opt.k_fold)
 
 # Begin Experiment
-metrics = {'Accuracy': [],
-           'G.F1': [],
-           'Weighted_F1': [],
-           'Weighted_precision': [],
-           'Weighted_recall': []}
+metrics = cutl.new_metrics_dict()
 for k, fold in enumerate(folds):
     print('Running the ' + str(k+1) + ' kfold experiment.')
     # Initialize Model
@@ -111,14 +70,10 @@ for k, fold in enumerate(folds):
     sec_tknzr.from_pretrained(opt.sfolder + str(k))
 
     # Begin Testing
-
-    test_res = []
-    incorrect = []
-    correct_ex = []
-    acc = []
-    ct = 0
+    # Metrics are computed once per report, so Test_results holds one row
+    # per report: post_ExperimentSummary.py's Mann-Whitney branch consumes
+    # exactly this per-report distribution.
     print('Amount of Test Subjects: ' + str(len(fold['test'])))
-
     for report in fold['test']:
         if 'sectionized' in report.keys():
             sectionized = {key: gt_preprocessing(report['sectionized'][key])
@@ -142,11 +97,7 @@ for k, fold in enumerate(folds):
 test_results = pd.DataFrame(metrics)
 
 # Summarize Testing Results
-summary_metrics = {'Accuracy': [],
-                   'G.F1': [],
-                   'Weighted_F1': [],
-                   'Weighted_precision': [],
-                   'Weighted_recall': []}
+summary_metrics = cutl.new_metrics_dict()
 metrics = test_results.columns
 for metric in metrics:
     ave = test_results[
@@ -163,10 +114,5 @@ print('G.F1 of BERTSectionTokenizer(): ' +
 print('-' * 60)
 summary_metrics = pd.DataFrame(summary_metrics)
 
-# list of dataframes and sheet names
-dfs = [summary_metrics, test_results]
-sheets = ['Summary_Metrics', 'Test_results']
-
-# run function
-cutl.dfs_tabs(dfs, sheets, opt.sfolder + '_test_results.xlsx')
+exutl.write_experiment_results(summary_metrics, test_results, opt.sfolder)
 print('End of BERTFineTuningSectionSegmentation.py Script')

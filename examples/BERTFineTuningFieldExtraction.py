@@ -19,32 +19,16 @@ special_tokens_map.json, tokenizer_config.json, and vocab.txt).
 import sys
 sys.path.append('.')
 
-import argparse
-from utils import TrainingUtils as cutl
-from models.BERTFieldExtractor import BERTFieldExtractor
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import StratifiedKFold
+
+from models.BERTFieldExtractor import BERTFieldExtractor
+from utils import ExperimentUtils as exutl
+from utils import TrainingUtils as cutl
 
 cutl.set_seed(20210429)
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--data_location", type=str,
-                    help="Labeled data to train on: a folder of .txt files "
-                         "that each hold a saved dict, or a single .csv or "
-                         ".xlsx file.")
-parser.add_argument("--sfolder", type=str,
-                    help="folder to save data")
-parser.add_argument('--pre_trained_model', type=str,
-                    default='bert-base-uncased',
-                    help="The directory of pretrained model or the pretrained "
-                         "weights from huggingface.")
-parser.add_argument("--n_epochs", type=int, default=4,
-                    help="number of epochs of training")
-parser.add_argument("--batch_size", type=int, default=32,
-                    help="size of the batches")
-parser.add_argument('--k_fold', action='store_true')
-parser.add_argument("--use_redacted", action='store_true')
+parser = exutl.build_common_parser()
 parser.add_argument('--field_name', type=str, required=True,
                     help='Field of interest to be extracted from reports.')
 parser.add_argument('--report_section', type=str, required=True,
@@ -61,34 +45,10 @@ print(opt)
 print('-'*80)
 
 # Set up data for training and testing
-
 data = cutl.load_all_data(opt.data_location)
-
-Labels = list(set([row[opt.field_name] for row in data]))
-Labels.sort()
-if opt.k_fold:
-    folds = []
-    skf = StratifiedKFold(n_splits=5)
-
-    for train_index, test_index in skf.split(
-            data,
-            [Labels.index(row[opt.field_name]) for row in data]
-    ):
-        train, test = [data[i] for i in train_index], \
-                      [data[i] for i in test_index]
-        folds.append(
-            {'train': train, 'test': test}
-        )
-    print('Beginning K-Fold training Experiment')
-else:
-    train, test = cutl.train_test_spliting(
-        data,
-        [Labels.index(row[opt.field_name]) for
-         row in data])
-    folds = [{'train': train, 'test': test}]
+folds, Labels = exutl.build_folds(data, opt.field_name, k_fold=opt.k_fold)
 
 # Begin Experiment
-
 results = {'subject': [],
            'input': [],
            'GT': [],
@@ -98,15 +58,10 @@ for k, fold in enumerate(folds):
     # Initialize Model
     labeler = BERTFieldExtractor(redacted_input=opt.use_redacted,
                                  max_len=opt.max_sent_len)
-
     labeler.from_pretrained(opt.pre_trained_model)
+    exutl.configure_field_extractor(labeler, Labels, opt.field_name,
+                                    report_section=opt.report_section)
 
-    labeler.config.num_labels = len(Labels)
-    labeler.config.label2id = {lbl: i for i, lbl in enumerate(Labels)}
-    labeler.config.id2label = {i: lbl for i, lbl in enumerate(Labels)}
-    labeler.config.field_extraction_config = {'field_name': opt.field_name,
-                                              'report_section':
-                                                  opt.report_section}
     # Begin Training
     labeler.fine_tune(fold['train'],
                       max_epochs=opt.n_epochs,
@@ -118,18 +73,14 @@ for k, fold in enumerate(folds):
     labeler.from_pretrained(opt.sfolder + str(k))
 
     # Begin Testing
-
-    test_res = []
-    incorrect = []
-    correct_ex = []
-    acc = []
-    ct = 0
+    # Predictions are pooled across folds into per-subject PR/GT rows:
+    # post_ExperimentSummary.py's McNemar branch consumes exactly this shape.
     print('Amount of Test Subjects: ' + str(len(fold['test'])))
     for report in fold['test']:
         if 'sectionized' in report.keys():
             if opt.report_section in report['sectionized'].keys():
                 # if the required report section is in the sectionized ground
-                # truth, use this example. So else, dont' use it
+                # truth, use this example. Otherwise, don't use it
                 results['subject'].append(report['filename'])
                 results['GT'].append(report[opt.field_name])
                 results['input'].append(report['sectionized'][opt.report_section])
@@ -150,12 +101,8 @@ for k, fold in enumerate(folds):
                              'column matching the report_section')
 
 # Summarize Testing Results
-metrics = {'Accuracy': [],
-           'G.F1': [],
-           'Weighted_F1': [],
-           'Weighted_precision': [],
-           'Weighted_recall': []}
-metrics = cutl.calculate_testing_metrics(results['PR'], results['GT'], metrics)
+metrics = cutl.calculate_testing_metrics(results['PR'], results['GT'],
+                                         cutl.new_metrics_dict())
 
 test_results = pd.DataFrame(results)
 summary_metrics = pd.DataFrame(metrics)
@@ -166,10 +113,5 @@ print('G.F1 of BERTFieldExtractor(): ' + str(np.round(
     metrics['G.F1'][0]*100)))
 print('-' * 60)
 
-# list of dataframes and sheet names
-dfs = [summary_metrics, test_results]
-sheets = ['Summary_Metrics', 'Test_results']
-
-# run function
-cutl.dfs_tabs(dfs, sheets, opt.sfolder + '_test_results.xlsx')
+exutl.write_experiment_results(summary_metrics, test_results, opt.sfolder)
 print('End of BERTFineTuningFieldExtraction.py Script')

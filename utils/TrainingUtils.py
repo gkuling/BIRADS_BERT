@@ -10,7 +10,22 @@ import torch
 
 rd_state = 20200709
 
-def train_test_spliting(dataset, strat=None):
+# Metric order is load-bearing: it sets the column order of the
+# Summary_Metrics sheet in every experiment workbook.
+METRIC_NAMES = ('Accuracy',
+                'G.F1',
+                'Weighted_F1',
+                'Weighted_precision',
+                'Weighted_recall')
+
+def new_metrics_dict():
+    """
+    Fresh metric accumulator for calculate_testing_metrics.
+    :return: dict mapping each metric name to an empty list
+    """
+    return {name: [] for name in METRIC_NAMES}
+
+def split_train_test(dataset, strat=None):
     """
     implementation of train test split ir or if not stratification is given.
     (see train_test_split() from scikit-learn documentation)
