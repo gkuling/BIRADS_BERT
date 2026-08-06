@@ -4,78 +4,42 @@ Codes inspired by Hugging Face Transformers package code run_mlm.py
 https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
 '''
-from models.BERTFineTuningDeployment import *
+from models.BERTFieldExtractorBase import BERTFieldExtractorBase
 
-class BERTFieldExtractor(BERTFineTuningDeployment):
-    """
-    BERTFineTuningDeployment for field extraction
-    """
-    def __init__(self, redacted_input=False, max_len=512):
-        """
-        Initialization of BERTFineTuningDeployment
-        :param redacted_input: bool, whether to predict on redacted data
-        :param max_len: int, max sequence length used for the model
-        """
-        super(BERTFieldExtractor, self).__init__(redacted_input)
-        self.max_len = max_len
 
-    def setup_data_for_training(self, dt):
+class BERTFieldExtractor(BERTFieldExtractorBase):
+    """
+    BERTFineTuningDeployment for field extraction. Twin of
+    BERTFieldExtractorWoutST: this arm classifies a single report section
+    (config.field_extraction_config['report_section']) produced by section
+    segmentation, where its twin classifies the whole preprocessed report.
+    """
+
+    def _text_label_pairs(self, dt):
         """
-        setp up of data and model for training.
+        Pair each record's configured report section with its field label.
+        Records may carry sections inside a 'sectionized' dict or as
+        top-level columns.
         :param dt: list of dicts, data for training
-        :return: list, of preprocessed data, [label, input tokens]
+        :return: list of (text, label) tuples
         """
-        name_or_path = self.config._name_or_path
-        self.model = BertForSequenceClassification_aux.from_pretrained(
-            name_or_path, config=self.config)
-        self.model.to(self.device)
+        section = self.config.field_extraction_config['report_section']
         if all(['sectionized' in d.keys() for d in dt]):
-            dset = [
-                [self.config.label2id[dt[i][
-                    self.config.field_extraction_config['field_name']
-                ]],
-                 self.tokenizer(dt[i]['sectionized'][
-                                    self.config.field_extraction_config[
-                                        'report_section']
-                                ],
-                                truncation=True)['input_ids']
-                 ]
-                for i in range(len(dt))
-                if self.config.field_extraction_config['report_section'] in
-                dt[i]['sectionized'].keys()]
-        elif all([self.config.field_extraction_config['report_section'] in
-                  d.keys() for d in dt]):
-            dset = [
-                [self.config.label2id[dt[i][
-                    self.config.field_extraction_config['field_name']
-                ]],
-                 self.tokenizer(dt[i][
-                                    self.config.field_extraction_config[
-                                        'report_section']
-                                ],
-                                truncation=True)['input_ids']
-                 ]
-                for i in range(len(dt))
-                if dt[i][self.config.field_extraction_config[
-                             'report_section']]!='']
+            return [(d['sectionized'][section], self._field_label(d))
+                    for d in dt
+                    if section in d['sectionized'].keys()]
+        elif all([section in d.keys() for d in dt]):
+            return [(d[section], self._field_label(d))
+                    for d in dt
+                    if d[section]!='']
         else:
             raise Exception('the data set must have a sectioned column or a '
                             'column name matching the report_section')
-        return dset
 
-    def predict(self, x):
+    def _encode_input(self, x):
         """
-        prediction on text x
+        The input is already a report section; tokenize it as is.
         :param x: str
-        :return: label of classification
+        :return: str
         """
-        prediction = self.model.forward(
-            input_ids=torch.tensor(
-                self.tokenizer(x, truncation=True)['input_ids']
-            )[None, :].to(self.device)
-        )['logits']
-        return self.config.id2label[
-            torch.softmax(
-                prediction, dim=1
-            ).argmax().item()
-        ]
+        return x

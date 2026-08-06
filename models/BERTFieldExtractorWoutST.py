@@ -4,65 +4,32 @@ Codes inspired by Hugging Face Transformers package code run_mlm.py
 https://github.com/huggingface/transformers/blob/master/examples/pytorch
 /language-modeling/run_mlm.py
 '''
-import sys
-sys.path.append('.')
-
-from models.BERTFineTuningDeployment import *
+from models.BERTFieldExtractorBase import BERTFieldExtractorBase
 from utils import TextPreprocessing as TPreP
 
 
-class BERTFieldExtractorWoutST(BERTFineTuningDeployment):
+class BERTFieldExtractorWoutST(BERTFieldExtractorBase):
     """
-    BERTFineTuningDeployment for Field Extraction without section segmentation
+    BERTFineTuningDeployment for Field Extraction without section
+    segmentation. Twin of BERTFieldExtractor: this arm classifies the whole
+    preprocessed report, where its twin classifies a single report section
+    produced by section segmentation.
     """
-    def __init__(self, redacted_input=False, max_len=512):
-        """
-        Initializer for BERTFieldExtractor without Section segmentation
-        :param redacted_input: bool, whether to use redacted data
-        :param max_len: int, max length of input sequence
-        """
-        super(BERTFieldExtractorWoutST, self).__init__(redacted_input)
-        self.max_len = max_len
 
-    def setup_data_for_training(self, dt):
+    def _text_label_pairs(self, dt):
         """
-        set up of training data and model for training
+        Pair each record's preprocessed full report with its field label.
         :param dt: list of dicts, data for training
-        :return: list, of preprocessed data, [label, input tokens]
+        :return: list of (text, label) tuples
         """
-        name_or_path = self.config._name_or_path
-        self.model = BertForSequenceClassification_aux.from_pretrained(
-            name_or_path, config=self.config)
-        self.model.to(self.device)
+        return [(TPreP.report_preprocess(d['original_report'])['rep_in_para'],
+                 self._field_label(d))
+                for d in dt]
 
-        dset = [
-            [self.config.label2id[dt[i][
-                self.config.field_extraction_config['field_name']
-            ]],
-             self.tokenizer(
-                 TPreP.report_preprocess(dt[i]['original_report'])[
-                     'rep_in_para'],
-                 truncation=True
-             )['input_ids']]
-            for i in range(len(dt))]
-        return dset
-
-    def predict(self, x):
+    def _encode_input(self, x):
         """
-        prediction on x
-        :param x: str
-        :return: label of classification
+        Preprocess the raw report before tokenization.
+        :param x: str, raw report text
+        :return: str, report collapsed into paragraphs
         """
-        prediction = self.model.forward(
-            input_ids=torch.tensor(
-                self.tokenizer(
-                    TPreP.report_preprocess(x)['rep_in_para'],
-                    truncation=True
-                )['input_ids']
-            )[None, :].to(self.device)
-        )['logits']
-        return self.config.id2label[
-            torch.softmax(
-                prediction, dim=1
-            ).argmax().item()
-        ]
+        return TPreP.report_preprocess(x)['rep_in_para']

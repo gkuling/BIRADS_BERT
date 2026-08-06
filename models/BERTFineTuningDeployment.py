@@ -56,6 +56,19 @@ class BERTFineTuningDeployment(object):
         """
         raise NotImplementedError()
 
+    def _logits_to_label(self, logits):
+        """
+        Map classifier logits for one example to their label string.
+        Every predict path in this repo calls the model on a single
+        example, so logits always have shape (1, num_labels); softmax over
+        the last dim and a flat argmax are equivalent for that shape.
+        :param logits: tensor of shape (1, num_labels)
+        :return: str, label
+        """
+        return self.config.id2label[
+            torch.softmax(logits, dim=-1).argmax(-1).item()
+        ]
+
     def from_pretrained(self, model_folder):
         """
         load model from model_folder, or a huggging face online available
